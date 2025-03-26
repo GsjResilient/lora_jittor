@@ -1,0 +1,2058 @@
+==================================================================================================== - 2025-03-23 16:06:28,565 - log
+        - platform : local - 2025-03-23 16:06:28,565 - log
+        - local_rank : 0 - 2025-03-23 16:06:28,565 - log
+        - rank : 0 - 2025-03-23 16:06:28,565 - log
+        - device : cuda:0 - 2025-03-23 16:06:28,565 - log
+        - world_size : 1 - 2025-03-23 16:06:28,565 - log
+        - random_seed : 10 - 2025-03-23 16:06:28,565 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-23 16:06:28,565 - log
+        - batch_size : 1 - 2025-03-23 16:06:28,565 - log
+        - seq_len : 256 - 2025-03-23 16:06:28,565 - log
+        - eval_len : 64 - 2025-03-23 16:06:28,565 - log
+        - min_length : 0 - 2025-03-23 16:06:28,565 - log
+        - model_card : gpt2.md - 2025-03-23 16:06:28,565 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-23 16:06:28,565 - log
+        - lora_dim : 4 - 2025-03-23 16:06:28,565 - log
+        - lora_alpha : 32 - 2025-03-23 16:06:28,565 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-23 16:06:28,565 - log
+        - beam : 10 - 2025-03-23 16:06:28,565 - log
+        - length_penalty : 0.8 - 2025-03-23 16:06:28,565 - log
+        - no_repeat_ngram_size : 4 - 2025-03-23 16:06:28,565 - log
+        - repetition_penalty : 1.0 - 2025-03-23 16:06:28,565 - log
+        - eos_token_id : [50256, 628] - 2025-03-23 16:06:28,565 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-23 16:06:28,565 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-23 16:06:28,565 - log
+==================================================================================================== - 2025-03-23 16:06:28,565 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-23 16:06:28,565 - log
+loading model pretrained weight. - 2025-03-23 16:06:31,389 - log
+model sampling ... - 2025-03-23 16:06:33,146 - log
+inference samples: 0 - 2025-03-23 16:06:35,413 - log
+inference samples: 10 - 2025-03-23 16:06:55,925 - log
+inference samples: 20 - 2025-03-23 16:07:16,581 - log
+inference samples: 30 - 2025-03-23 16:07:37,295 - log
+inference samples: 40 - 2025-03-23 16:07:57,950 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.525.b10p08r4.jsonl - 2025-03-23 16:08:08,307 - log
+cleanup dist ... - 2025-03-23 16:08:08,307 - log
+SCORES:
+============== - 2025-03-23 16:08:19,468 - log
+BLEU: 0.2480 - 2025-03-23 16:08:19,468 - log
+NIST: 3.4980 - 2025-03-23 16:08:19,468 - log
+METEOR: 0.2887 - 2025-03-23 16:08:19,468 - log
+ROUGE_L: 0.4619 - 2025-03-23 16:08:19,468 - log
+CIDEr: 1.5470 - 2025-03-23 16:08:19,468 - log
+
+ - 2025-03-23 16:08:19,468 - log
+==================================================================================================== - 2025-03-24 08:30:47,997 - log
+        - platform : local - 2025-03-24 08:30:47,998 - log
+        - local_rank : 0 - 2025-03-24 08:30:47,998 - log
+        - rank : 0 - 2025-03-24 08:30:47,998 - log
+        - device : cuda:0 - 2025-03-24 08:30:47,998 - log
+        - world_size : 1 - 2025-03-24 08:30:47,998 - log
+        - random_seed : 10 - 2025-03-24 08:30:47,998 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 08:30:47,998 - log
+        - batch_size : 1 - 2025-03-24 08:30:47,998 - log
+        - seq_len : 256 - 2025-03-24 08:30:47,998 - log
+        - eval_len : 64 - 2025-03-24 08:30:47,998 - log
+        - min_length : 0 - 2025-03-24 08:30:47,998 - log
+        - model_card : gpt2.md - 2025-03-24 08:30:47,998 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 08:30:47,998 - log
+        - lora_dim : 4 - 2025-03-24 08:30:47,998 - log
+        - lora_alpha : 32 - 2025-03-24 08:30:47,998 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 08:30:47,998 - log
+        - beam : 10 - 2025-03-24 08:30:47,998 - log
+        - length_penalty : 0.8 - 2025-03-24 08:30:47,998 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 08:30:47,998 - log
+        - repetition_penalty : 1.0 - 2025-03-24 08:30:47,998 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 08:30:47,998 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 08:30:47,998 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 08:30:47,998 - log
+==================================================================================================== - 2025-03-24 08:30:47,998 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 08:30:47,998 - log
+==================================================================================================== - 2025-03-24 08:49:39,699 - log
+        - platform : local - 2025-03-24 08:49:39,700 - log
+        - local_rank : 0 - 2025-03-24 08:49:39,700 - log
+        - rank : 0 - 2025-03-24 08:49:39,700 - log
+        - device : cuda:0 - 2025-03-24 08:49:39,700 - log
+        - world_size : 1 - 2025-03-24 08:49:39,700 - log
+        - random_seed : 10 - 2025-03-24 08:49:39,700 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 08:49:39,700 - log
+        - batch_size : 1 - 2025-03-24 08:49:39,700 - log
+        - seq_len : 256 - 2025-03-24 08:49:39,700 - log
+        - eval_len : 64 - 2025-03-24 08:49:39,700 - log
+        - min_length : 0 - 2025-03-24 08:49:39,700 - log
+        - model_card : gpt2.md - 2025-03-24 08:49:39,700 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 08:49:39,700 - log
+        - lora_dim : 4 - 2025-03-24 08:49:39,700 - log
+        - lora_alpha : 32 - 2025-03-24 08:49:39,700 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 08:49:39,700 - log
+        - beam : 10 - 2025-03-24 08:49:39,700 - log
+        - length_penalty : 0.8 - 2025-03-24 08:49:39,700 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 08:49:39,700 - log
+        - repetition_penalty : 1.0 - 2025-03-24 08:49:39,700 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 08:49:39,700 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 08:49:39,700 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 08:49:39,700 - log
+==================================================================================================== - 2025-03-24 08:49:39,700 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 08:49:39,700 - log
+loading model pretrained weight. - 2025-03-24 08:49:42,403 - log
+model sampling ... - 2025-03-24 08:49:45,421 - log
+inference samples: 0 - 2025-03-24 08:49:47,753 - log
+inference samples: 10 - 2025-03-24 08:50:08,310 - log
+inference samples: 20 - 2025-03-24 08:50:29,036 - log
+inference samples: 30 - 2025-03-24 08:50:49,902 - log
+inference samples: 40 - 2025-03-24 08:51:10,727 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.525.b10p08r4.jsonl - 2025-03-24 08:51:21,165 - log
+cleanup dist ... - 2025-03-24 08:51:21,170 - log
+SCORES:
+============== - 2025-03-24 08:51:30,944 - log
+BLEU: 0.2480 - 2025-03-24 08:51:30,944 - log
+NIST: 3.4980 - 2025-03-24 08:51:30,944 - log
+METEOR: 0.2887 - 2025-03-24 08:51:30,944 - log
+ROUGE_L: 0.4619 - 2025-03-24 08:51:30,944 - log
+CIDEr: 1.5470 - 2025-03-24 08:51:30,944 - log
+
+ - 2025-03-24 08:51:30,944 - log
+==================================================================================================== - 2025-03-24 09:02:50,063 - log
+        - platform : local - 2025-03-24 09:02:50,064 - log
+        - local_rank : 0 - 2025-03-24 09:02:50,064 - log
+        - rank : 0 - 2025-03-24 09:02:50,064 - log
+        - device : cuda:0 - 2025-03-24 09:02:50,064 - log
+        - world_size : 1 - 2025-03-24 09:02:50,064 - log
+        - random_seed : 10 - 2025-03-24 09:02:50,064 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 09:02:50,064 - log
+        - batch_size : 1 - 2025-03-24 09:02:50,064 - log
+        - seq_len : 256 - 2025-03-24 09:02:50,064 - log
+        - eval_len : 64 - 2025-03-24 09:02:50,064 - log
+        - min_length : 0 - 2025-03-24 09:02:50,064 - log
+        - model_card : gpt2.md - 2025-03-24 09:02:50,064 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 09:02:50,064 - log
+        - lora_dim : 4 - 2025-03-24 09:02:50,064 - log
+        - lora_alpha : 32 - 2025-03-24 09:02:50,064 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 09:02:50,064 - log
+        - beam : 10 - 2025-03-24 09:02:50,064 - log
+        - length_penalty : 0.8 - 2025-03-24 09:02:50,064 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 09:02:50,064 - log
+        - repetition_penalty : 1.0 - 2025-03-24 09:02:50,064 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 09:02:50,064 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 09:02:50,064 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 09:02:50,064 - log
+==================================================================================================== - 2025-03-24 09:02:50,064 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 09:02:50,064 - log
+==================================================================================================== - 2025-03-24 09:42:20,009 - log
+        - platform : local - 2025-03-24 09:42:20,010 - log
+        - local_rank : 0 - 2025-03-24 09:42:20,010 - log
+        - rank : 0 - 2025-03-24 09:42:20,010 - log
+        - device : cuda:0 - 2025-03-24 09:42:20,010 - log
+        - world_size : 1 - 2025-03-24 09:42:20,010 - log
+        - random_seed : 10 - 2025-03-24 09:42:20,010 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 09:42:20,010 - log
+        - batch_size : 1 - 2025-03-24 09:42:20,010 - log
+        - seq_len : 256 - 2025-03-24 09:42:20,010 - log
+        - eval_len : 64 - 2025-03-24 09:42:20,010 - log
+        - min_length : 0 - 2025-03-24 09:42:20,010 - log
+        - model_card : gpt2.md - 2025-03-24 09:42:20,010 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 09:42:20,010 - log
+        - lora_dim : 4 - 2025-03-24 09:42:20,010 - log
+        - lora_alpha : 32 - 2025-03-24 09:42:20,010 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 09:42:20,011 - log
+        - beam : 10 - 2025-03-24 09:42:20,011 - log
+        - length_penalty : 0.8 - 2025-03-24 09:42:20,011 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 09:42:20,011 - log
+        - repetition_penalty : 1.0 - 2025-03-24 09:42:20,011 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 09:42:20,011 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 09:42:20,011 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 09:42:20,011 - log
+==================================================================================================== - 2025-03-24 09:42:20,011 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 09:42:20,011 - log
+loading model pretrained weight. - 2025-03-24 09:42:22,688 - log
+==================================================================================================== - 2025-03-24 09:43:55,774 - log
+        - platform : local - 2025-03-24 09:43:55,774 - log
+        - local_rank : 0 - 2025-03-24 09:43:55,774 - log
+        - rank : 0 - 2025-03-24 09:43:55,774 - log
+        - device : cuda:0 - 2025-03-24 09:43:55,774 - log
+        - world_size : 1 - 2025-03-24 09:43:55,774 - log
+        - random_seed : 10 - 2025-03-24 09:43:55,774 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 09:43:55,774 - log
+        - batch_size : 1 - 2025-03-24 09:43:55,774 - log
+        - seq_len : 256 - 2025-03-24 09:43:55,774 - log
+        - eval_len : 64 - 2025-03-24 09:43:55,774 - log
+        - min_length : 0 - 2025-03-24 09:43:55,774 - log
+        - model_card : gpt2.md - 2025-03-24 09:43:55,774 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 09:43:55,775 - log
+        - lora_dim : 4 - 2025-03-24 09:43:55,775 - log
+        - lora_alpha : 32 - 2025-03-24 09:43:55,775 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 09:43:55,775 - log
+        - beam : 10 - 2025-03-24 09:43:55,775 - log
+        - length_penalty : 0.8 - 2025-03-24 09:43:55,775 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 09:43:55,775 - log
+        - repetition_penalty : 1.0 - 2025-03-24 09:43:55,775 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 09:43:55,775 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 09:43:55,775 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 09:43:55,775 - log
+==================================================================================================== - 2025-03-24 09:43:55,775 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 09:43:55,775 - log
+loading model pretrained weight. - 2025-03-24 09:43:58,418 - log
+model sampling ... - 2025-03-24 09:44:01,249 - log
+inference samples: 0 - 2025-03-24 09:44:03,705 - log
+inference samples: 10 - 2025-03-24 09:44:24,428 - log
+inference samples: 20 - 2025-03-24 09:44:45,304 - log
+inference samples: 30 - 2025-03-24 09:45:06,277 - log
+inference samples: 40 - 2025-03-24 09:45:27,176 - log
+==================================================================================================== - 2025-03-24 10:16:23,009 - log
+        - platform : local - 2025-03-24 10:16:23,014 - log
+        - local_rank : 0 - 2025-03-24 10:16:23,014 - log
+        - rank : 0 - 2025-03-24 10:16:23,014 - log
+        - device : cuda:0 - 2025-03-24 10:16:23,014 - log
+        - world_size : 1 - 2025-03-24 10:16:23,014 - log
+        - random_seed : 10 - 2025-03-24 10:16:23,014 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 10:16:23,014 - log
+        - batch_size : 1 - 2025-03-24 10:16:23,014 - log
+        - seq_len : 256 - 2025-03-24 10:16:23,014 - log
+        - eval_len : 64 - 2025-03-24 10:16:23,014 - log
+        - min_length : 0 - 2025-03-24 10:16:23,014 - log
+        - model_card : gpt2.md - 2025-03-24 10:16:23,014 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 10:16:23,014 - log
+        - lora_dim : 4 - 2025-03-24 10:16:23,014 - log
+        - lora_alpha : 32 - 2025-03-24 10:16:23,014 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 10:16:23,014 - log
+        - beam : 10 - 2025-03-24 10:16:23,014 - log
+        - length_penalty : 0.8 - 2025-03-24 10:16:23,014 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 10:16:23,014 - log
+        - repetition_penalty : 1.0 - 2025-03-24 10:16:23,014 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 10:16:23,014 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 10:16:23,014 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 10:16:23,014 - log
+==================================================================================================== - 2025-03-24 10:16:23,014 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 10:16:23,014 - log
+==================================================================================================== - 2025-03-24 10:19:41,512 - log
+        - platform : local - 2025-03-24 10:19:41,512 - log
+        - local_rank : 0 - 2025-03-24 10:19:41,512 - log
+        - rank : 0 - 2025-03-24 10:19:41,512 - log
+        - device : cuda:0 - 2025-03-24 10:19:41,512 - log
+        - world_size : 1 - 2025-03-24 10:19:41,512 - log
+        - random_seed : 10 - 2025-03-24 10:19:41,512 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 10:19:41,512 - log
+        - batch_size : 1 - 2025-03-24 10:19:41,512 - log
+        - seq_len : 256 - 2025-03-24 10:19:41,512 - log
+        - eval_len : 64 - 2025-03-24 10:19:41,512 - log
+        - min_length : 0 - 2025-03-24 10:19:41,512 - log
+        - model_card : gpt2.md - 2025-03-24 10:19:41,512 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 10:19:41,512 - log
+        - lora_dim : 4 - 2025-03-24 10:19:41,512 - log
+        - lora_alpha : 32 - 2025-03-24 10:19:41,512 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 10:19:41,512 - log
+        - beam : 10 - 2025-03-24 10:19:41,512 - log
+        - length_penalty : 0.8 - 2025-03-24 10:19:41,512 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 10:19:41,512 - log
+        - repetition_penalty : 1.0 - 2025-03-24 10:19:41,512 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 10:19:41,512 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 10:19:41,512 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 10:19:41,513 - log
+==================================================================================================== - 2025-03-24 10:19:41,513 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 10:19:41,513 - log
+loading model pretrained weight. - 2025-03-24 10:19:44,102 - log
+model sampling ... - 2025-03-24 10:19:46,535 - log
+inference samples: 0 - 2025-03-24 10:19:48,843 - log
+==================================================================================================== - 2025-03-24 12:06:45,948 - log
+        - platform : local - 2025-03-24 12:06:45,948 - log
+        - local_rank : 0 - 2025-03-24 12:06:45,948 - log
+        - rank : 0 - 2025-03-24 12:06:45,948 - log
+        - device : cuda:0 - 2025-03-24 12:06:45,948 - log
+        - world_size : 1 - 2025-03-24 12:06:45,948 - log
+        - random_seed : 10 - 2025-03-24 12:06:45,948 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 12:06:45,948 - log
+        - batch_size : 1 - 2025-03-24 12:06:45,948 - log
+        - seq_len : 256 - 2025-03-24 12:06:45,948 - log
+        - eval_len : 64 - 2025-03-24 12:06:45,948 - log
+        - min_length : 0 - 2025-03-24 12:06:45,948 - log
+        - model_card : gpt2.md - 2025-03-24 12:06:45,948 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 12:06:45,948 - log
+        - lora_dim : 4 - 2025-03-24 12:06:45,948 - log
+        - lora_alpha : 32 - 2025-03-24 12:06:45,948 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 12:06:45,948 - log
+        - beam : 10 - 2025-03-24 12:06:45,948 - log
+        - length_penalty : 0.8 - 2025-03-24 12:06:45,948 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 12:06:45,948 - log
+        - repetition_penalty : 1.0 - 2025-03-24 12:06:45,948 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 12:06:45,948 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 12:06:45,948 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 12:06:45,948 - log
+==================================================================================================== - 2025-03-24 12:06:45,948 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 12:06:45,948 - log
+loading model pretrained weight. - 2025-03-24 12:06:48,796 - log
+model sampling ... - 2025-03-24 12:06:51,622 - log
+inference samples: 0 - 2025-03-24 12:06:54,078 - log
+inference samples: 10 - 2025-03-24 12:07:14,738 - log
+inference samples: 20 - 2025-03-24 12:07:35,514 - log
+inference samples: 30 - 2025-03-24 12:07:56,313 - log
+inference samples: 40 - 2025-03-24 12:08:17,129 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.525.b10p08r4.jsonl - 2025-03-24 12:08:27,611 - log
+cleanup dist ... - 2025-03-24 12:08:27,611 - log
+SCORES:
+============== - 2025-03-24 12:08:37,194 - log
+BLEU: 0.2480 - 2025-03-24 12:08:37,194 - log
+NIST: 3.4980 - 2025-03-24 12:08:37,194 - log
+METEOR: 0.2887 - 2025-03-24 12:08:37,194 - log
+ROUGE_L: 0.4619 - 2025-03-24 12:08:37,194 - log
+CIDEr: 1.5470 - 2025-03-24 12:08:37,194 - log
+
+ - 2025-03-24 12:08:37,194 - log
+==================================================================================================== - 2025-03-24 12:21:04,665 - log
+        - platform : local - 2025-03-24 12:21:04,669 - log
+        - local_rank : 0 - 2025-03-24 12:21:04,669 - log
+        - rank : 0 - 2025-03-24 12:21:04,669 - log
+        - device : cuda:0 - 2025-03-24 12:21:04,669 - log
+        - world_size : 1 - 2025-03-24 12:21:04,669 - log
+        - random_seed : 10 - 2025-03-24 12:21:04,669 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 12:21:04,669 - log
+        - batch_size : 1 - 2025-03-24 12:21:04,669 - log
+        - seq_len : 256 - 2025-03-24 12:21:04,669 - log
+        - eval_len : 64 - 2025-03-24 12:21:04,669 - log
+        - min_length : 0 - 2025-03-24 12:21:04,669 - log
+        - model_card : gpt2.md - 2025-03-24 12:21:04,669 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 12:21:04,669 - log
+        - lora_dim : 4 - 2025-03-24 12:21:04,669 - log
+        - lora_alpha : 32 - 2025-03-24 12:21:04,669 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 12:21:04,669 - log
+        - beam : 10 - 2025-03-24 12:21:04,669 - log
+        - length_penalty : 0.8 - 2025-03-24 12:21:04,670 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 12:21:04,670 - log
+        - repetition_penalty : 1.0 - 2025-03-24 12:21:04,670 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 12:21:04,670 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 12:21:04,670 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 12:21:04,670 - log
+==================================================================================================== - 2025-03-24 12:21:04,670 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 12:21:04,670 - log
+loading model pretrained weight. - 2025-03-24 12:21:07,234 - log
+model sampling ... - 2025-03-24 12:21:09,869 - log
+inference samples: 0 - 2025-03-24 12:21:12,137 - log
+inference samples: 10 - 2025-03-24 12:21:32,704 - log
+inference samples: 20 - 2025-03-24 12:21:53,566 - log
+inference samples: 30 - 2025-03-24 12:22:14,355 - log
+==================================================================================================== - 2025-03-24 12:28:51,765 - log
+        - platform : local - 2025-03-24 12:28:51,769 - log
+        - local_rank : 0 - 2025-03-24 12:28:51,769 - log
+        - rank : 0 - 2025-03-24 12:28:51,769 - log
+        - device : cuda:0 - 2025-03-24 12:28:51,769 - log
+        - world_size : 1 - 2025-03-24 12:28:51,769 - log
+        - random_seed : 10 - 2025-03-24 12:28:51,769 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 12:28:51,769 - log
+        - batch_size : 1 - 2025-03-24 12:28:51,769 - log
+        - seq_len : 256 - 2025-03-24 12:28:51,769 - log
+        - eval_len : 64 - 2025-03-24 12:28:51,769 - log
+        - min_length : 0 - 2025-03-24 12:28:51,769 - log
+        - model_card : gpt2.md - 2025-03-24 12:28:51,769 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 12:28:51,769 - log
+        - lora_dim : 4 - 2025-03-24 12:28:51,769 - log
+        - lora_alpha : 32 - 2025-03-24 12:28:51,769 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 12:28:51,769 - log
+        - beam : 10 - 2025-03-24 12:28:51,769 - log
+        - length_penalty : 0.8 - 2025-03-24 12:28:51,769 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 12:28:51,769 - log
+        - repetition_penalty : 1.0 - 2025-03-24 12:28:51,769 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 12:28:51,769 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 12:28:51,769 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 12:28:51,769 - log
+==================================================================================================== - 2025-03-24 12:28:51,769 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 12:28:51,769 - log
+loading model pretrained weight. - 2025-03-24 12:28:54,382 - log
+model sampling ... - 2025-03-24 12:28:56,927 - log
+inference samples: 0 - 2025-03-24 12:28:59,212 - log
+SCORES:
+============== - 2025-03-24 12:29:10,630 - log
+BLEU: 0.2480 - 2025-03-24 12:29:10,630 - log
+NIST: 3.4980 - 2025-03-24 12:29:10,630 - log
+METEOR: 0.2887 - 2025-03-24 12:29:10,630 - log
+ROUGE_L: 0.4619 - 2025-03-24 12:29:10,630 - log
+CIDEr: 1.5470 - 2025-03-24 12:29:10,630 - log
+
+ - 2025-03-24 12:29:10,630 - log
+==================================================================================================== - 2025-03-24 12:29:29,318 - log
+        - platform : local - 2025-03-24 12:29:29,319 - log
+        - local_rank : 0 - 2025-03-24 12:29:29,319 - log
+        - rank : 0 - 2025-03-24 12:29:29,319 - log
+        - device : cuda:0 - 2025-03-24 12:29:29,319 - log
+        - world_size : 1 - 2025-03-24 12:29:29,319 - log
+        - random_seed : 10 - 2025-03-24 12:29:29,319 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 12:29:29,319 - log
+        - batch_size : 1 - 2025-03-24 12:29:29,319 - log
+        - seq_len : 256 - 2025-03-24 12:29:29,319 - log
+        - eval_len : 64 - 2025-03-24 12:29:29,319 - log
+        - min_length : 0 - 2025-03-24 12:29:29,319 - log
+        - model_card : gpt2.md - 2025-03-24 12:29:29,319 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 12:29:29,319 - log
+        - lora_dim : 4 - 2025-03-24 12:29:29,319 - log
+        - lora_alpha : 32 - 2025-03-24 12:29:29,319 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 12:29:29,319 - log
+        - beam : 10 - 2025-03-24 12:29:29,319 - log
+        - length_penalty : 0.8 - 2025-03-24 12:29:29,319 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 12:29:29,319 - log
+        - repetition_penalty : 1.0 - 2025-03-24 12:29:29,319 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 12:29:29,319 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 12:29:29,319 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 12:29:29,319 - log
+==================================================================================================== - 2025-03-24 12:29:29,319 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 12:29:29,319 - log
+loading model pretrained weight. - 2025-03-24 12:29:31,993 - log
+==================================================================================================== - 2025-03-24 14:08:18,177 - log
+        - platform : local - 2025-03-24 14:08:18,182 - log
+        - local_rank : 0 - 2025-03-24 14:08:18,182 - log
+        - rank : 0 - 2025-03-24 14:08:18,182 - log
+        - device : cuda:0 - 2025-03-24 14:08:18,182 - log
+        - world_size : 1 - 2025-03-24 14:08:18,182 - log
+        - random_seed : 10 - 2025-03-24 14:08:18,182 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 14:08:18,182 - log
+        - batch_size : 1 - 2025-03-24 14:08:18,182 - log
+        - seq_len : 256 - 2025-03-24 14:08:18,182 - log
+        - eval_len : 64 - 2025-03-24 14:08:18,182 - log
+        - min_length : 0 - 2025-03-24 14:08:18,182 - log
+        - model_card : gpt2.md - 2025-03-24 14:08:18,182 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 14:08:18,182 - log
+        - lora_dim : 4 - 2025-03-24 14:08:18,182 - log
+        - lora_alpha : 32 - 2025-03-24 14:08:18,182 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 14:08:18,182 - log
+        - beam : 10 - 2025-03-24 14:08:18,182 - log
+        - length_penalty : 0.8 - 2025-03-24 14:08:18,182 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 14:08:18,182 - log
+        - repetition_penalty : 1.0 - 2025-03-24 14:08:18,182 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 14:08:18,182 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 14:08:18,182 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 14:08:18,182 - log
+==================================================================================================== - 2025-03-24 14:08:18,182 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 14:08:18,182 - log
+loading model pretrained weight. - 2025-03-24 14:08:20,689 - log
+==================================================================================================== - 2025-03-24 14:46:49,572 - log
+        - platform : local - 2025-03-24 14:46:49,577 - log
+        - local_rank : 0 - 2025-03-24 14:46:49,577 - log
+        - rank : 0 - 2025-03-24 14:46:49,577 - log
+        - device : cuda:0 - 2025-03-24 14:46:49,577 - log
+        - world_size : 1 - 2025-03-24 14:46:49,577 - log
+        - random_seed : 10 - 2025-03-24 14:46:49,577 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 14:46:49,577 - log
+        - batch_size : 1 - 2025-03-24 14:46:49,577 - log
+        - seq_len : 256 - 2025-03-24 14:46:49,577 - log
+        - eval_len : 64 - 2025-03-24 14:46:49,577 - log
+        - min_length : 0 - 2025-03-24 14:46:49,577 - log
+        - model_card : gpt2.md - 2025-03-24 14:46:49,577 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 14:46:49,577 - log
+        - lora_dim : 4 - 2025-03-24 14:46:49,577 - log
+        - lora_alpha : 32 - 2025-03-24 14:46:49,577 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 14:46:49,577 - log
+        - beam : 10 - 2025-03-24 14:46:49,577 - log
+        - length_penalty : 0.8 - 2025-03-24 14:46:49,577 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 14:46:49,577 - log
+        - repetition_penalty : 1.0 - 2025-03-24 14:46:49,577 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 14:46:49,577 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 14:46:49,577 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 14:46:49,577 - log
+==================================================================================================== - 2025-03-24 14:46:49,577 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 14:46:49,577 - log
+==================================================================================================== - 2025-03-24 16:03:23,155 - log
+        - platform : local - 2025-03-24 16:03:23,156 - log
+        - local_rank : 0 - 2025-03-24 16:03:23,156 - log
+        - rank : 0 - 2025-03-24 16:03:23,156 - log
+        - device : cuda:0 - 2025-03-24 16:03:23,156 - log
+        - world_size : 1 - 2025-03-24 16:03:23,156 - log
+        - random_seed : 10 - 2025-03-24 16:03:23,156 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 16:03:23,156 - log
+        - batch_size : 1 - 2025-03-24 16:03:23,156 - log
+        - seq_len : 256 - 2025-03-24 16:03:23,156 - log
+        - eval_len : 64 - 2025-03-24 16:03:23,156 - log
+        - min_length : 0 - 2025-03-24 16:03:23,156 - log
+        - model_card : gpt2.md - 2025-03-24 16:03:23,156 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 16:03:23,156 - log
+        - lora_dim : 4 - 2025-03-24 16:03:23,156 - log
+        - lora_alpha : 32 - 2025-03-24 16:03:23,156 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 16:03:23,156 - log
+        - beam : 10 - 2025-03-24 16:03:23,156 - log
+        - length_penalty : 0.8 - 2025-03-24 16:03:23,156 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 16:03:23,156 - log
+        - repetition_penalty : 1.0 - 2025-03-24 16:03:23,156 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 16:03:23,156 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 16:03:23,156 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 16:03:23,156 - log
+==================================================================================================== - 2025-03-24 16:03:23,156 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 16:03:23,156 - log
+loading model pretrained weight. - 2025-03-24 16:03:25,933 - log
+model sampling ... - 2025-03-24 16:03:27,779 - log
+inference samples: 0 - 2025-03-24 16:03:30,143 - log
+inference samples: 10 - 2025-03-24 16:03:50,843 - log
+inference samples: 20 - 2025-03-24 16:04:11,704 - log
+inference samples: 30 - 2025-03-24 16:04:32,694 - log
+inference samples: 40 - 2025-03-24 16:04:53,512 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.525.b10p08r4.jsonl - 2025-03-24 16:05:03,977 - log
+cleanup dist ... - 2025-03-24 16:05:03,978 - log
+SCORES:
+============== - 2025-03-24 16:05:14,272 - log
+BLEU: 0.2480 - 2025-03-24 16:05:14,272 - log
+NIST: 3.4980 - 2025-03-24 16:05:14,272 - log
+METEOR: 0.2887 - 2025-03-24 16:05:14,272 - log
+ROUGE_L: 0.4619 - 2025-03-24 16:05:14,272 - log
+CIDEr: 1.5470 - 2025-03-24 16:05:14,272 - log
+
+ - 2025-03-24 16:05:14,272 - log
+==================================================================================================== - 2025-03-24 16:18:27,604 - log
+        - platform : local - 2025-03-24 16:18:27,604 - log
+        - local_rank : 0 - 2025-03-24 16:18:27,604 - log
+        - rank : 0 - 2025-03-24 16:18:27,604 - log
+        - device : cuda:0 - 2025-03-24 16:18:27,604 - log
+        - world_size : 1 - 2025-03-24 16:18:27,604 - log
+        - random_seed : 10 - 2025-03-24 16:18:27,604 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 16:18:27,604 - log
+        - batch_size : 1 - 2025-03-24 16:18:27,604 - log
+        - seq_len : 256 - 2025-03-24 16:18:27,604 - log
+        - eval_len : 64 - 2025-03-24 16:18:27,604 - log
+        - min_length : 0 - 2025-03-24 16:18:27,604 - log
+        - model_card : gpt2.md - 2025-03-24 16:18:27,604 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 16:18:27,604 - log
+        - lora_dim : 4 - 2025-03-24 16:18:27,604 - log
+        - lora_alpha : 32 - 2025-03-24 16:18:27,604 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 16:18:27,604 - log
+        - beam : 10 - 2025-03-24 16:18:27,604 - log
+        - length_penalty : 0.8 - 2025-03-24 16:18:27,604 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 16:18:27,604 - log
+        - repetition_penalty : 1.0 - 2025-03-24 16:18:27,604 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 16:18:27,605 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 16:18:27,605 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 16:18:27,605 - log
+==================================================================================================== - 2025-03-24 16:18:27,605 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 16:18:27,605 - log
+loading model pretrained weight. - 2025-03-24 16:18:30,171 - log
+model sampling ... - 2025-03-24 16:18:32,647 - log
+SCORES:
+============== - 2025-03-24 16:18:43,485 - log
+BLEU: 0.2480 - 2025-03-24 16:18:43,485 - log
+NIST: 3.4980 - 2025-03-24 16:18:43,485 - log
+METEOR: 0.2887 - 2025-03-24 16:18:43,485 - log
+ROUGE_L: 0.4619 - 2025-03-24 16:18:43,485 - log
+CIDEr: 1.5470 - 2025-03-24 16:18:43,485 - log
+
+ - 2025-03-24 16:18:43,485 - log
+==================================================================================================== - 2025-03-24 16:25:08,190 - log
+        - platform : local - 2025-03-24 16:25:08,190 - log
+        - local_rank : 0 - 2025-03-24 16:25:08,190 - log
+        - rank : 0 - 2025-03-24 16:25:08,190 - log
+        - device : cuda:0 - 2025-03-24 16:25:08,190 - log
+        - world_size : 1 - 2025-03-24 16:25:08,190 - log
+        - random_seed : 10 - 2025-03-24 16:25:08,190 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 16:25:08,190 - log
+        - batch_size : 1 - 2025-03-24 16:25:08,190 - log
+        - seq_len : 256 - 2025-03-24 16:25:08,190 - log
+        - eval_len : 64 - 2025-03-24 16:25:08,190 - log
+        - min_length : 0 - 2025-03-24 16:25:08,190 - log
+        - model_card : gpt2.md - 2025-03-24 16:25:08,190 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 16:25:08,190 - log
+        - lora_dim : 4 - 2025-03-24 16:25:08,190 - log
+        - lora_alpha : 32 - 2025-03-24 16:25:08,190 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 16:25:08,190 - log
+        - beam : 10 - 2025-03-24 16:25:08,190 - log
+        - length_penalty : 0.8 - 2025-03-24 16:25:08,190 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 16:25:08,190 - log
+        - repetition_penalty : 1.0 - 2025-03-24 16:25:08,190 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 16:25:08,190 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 16:25:08,190 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 16:25:08,190 - log
+==================================================================================================== - 2025-03-24 16:25:08,190 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 16:25:08,190 - log
+loading model pretrained weight. - 2025-03-24 16:25:10,750 - log
+model sampling ... - 2025-03-24 16:25:12,949 - log
+inference samples: 0 - 2025-03-24 16:25:15,204 - log
+inference samples: 10 - 2025-03-24 16:25:35,747 - log
+inference samples: 20 - 2025-03-24 16:25:56,472 - log
+==================================================================================================== - 2025-03-24 16:32:56,853 - log
+        - platform : local - 2025-03-24 16:32:56,857 - log
+        - local_rank : 0 - 2025-03-24 16:32:56,857 - log
+        - rank : 0 - 2025-03-24 16:32:56,857 - log
+        - device : cuda:0 - 2025-03-24 16:32:56,857 - log
+        - world_size : 1 - 2025-03-24 16:32:56,857 - log
+        - random_seed : 10 - 2025-03-24 16:32:56,857 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 16:32:56,857 - log
+        - batch_size : 1 - 2025-03-24 16:32:56,857 - log
+        - seq_len : 256 - 2025-03-24 16:32:56,857 - log
+        - eval_len : 64 - 2025-03-24 16:32:56,857 - log
+        - min_length : 0 - 2025-03-24 16:32:56,857 - log
+        - model_card : gpt2.md - 2025-03-24 16:32:56,857 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 16:32:56,857 - log
+        - lora_dim : 4 - 2025-03-24 16:32:56,857 - log
+        - lora_alpha : 32 - 2025-03-24 16:32:56,857 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 16:32:56,857 - log
+        - beam : 10 - 2025-03-24 16:32:56,857 - log
+        - length_penalty : 0.8 - 2025-03-24 16:32:56,857 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 16:32:56,857 - log
+        - repetition_penalty : 1.0 - 2025-03-24 16:32:56,857 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 16:32:56,857 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 16:32:56,857 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 16:32:56,857 - log
+==================================================================================================== - 2025-03-24 16:32:56,857 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 16:32:56,857 - log
+loading model pretrained weight. - 2025-03-24 16:32:59,417 - log
+==================================================================================================== - 2025-03-24 16:34:02,299 - log
+        - platform : local - 2025-03-24 16:34:02,299 - log
+        - local_rank : 0 - 2025-03-24 16:34:02,299 - log
+        - rank : 0 - 2025-03-24 16:34:02,299 - log
+        - device : cuda:0 - 2025-03-24 16:34:02,299 - log
+        - world_size : 1 - 2025-03-24 16:34:02,299 - log
+        - random_seed : 10 - 2025-03-24 16:34:02,299 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 16:34:02,299 - log
+        - batch_size : 1 - 2025-03-24 16:34:02,299 - log
+        - seq_len : 256 - 2025-03-24 16:34:02,299 - log
+        - eval_len : 64 - 2025-03-24 16:34:02,299 - log
+        - min_length : 0 - 2025-03-24 16:34:02,299 - log
+        - model_card : gpt2.md - 2025-03-24 16:34:02,299 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 16:34:02,299 - log
+        - lora_dim : 4 - 2025-03-24 16:34:02,299 - log
+        - lora_alpha : 32 - 2025-03-24 16:34:02,299 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 16:34:02,299 - log
+        - beam : 10 - 2025-03-24 16:34:02,299 - log
+        - length_penalty : 0.8 - 2025-03-24 16:34:02,299 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 16:34:02,299 - log
+        - repetition_penalty : 1.0 - 2025-03-24 16:34:02,299 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 16:34:02,299 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 16:34:02,299 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 16:34:02,299 - log
+==================================================================================================== - 2025-03-24 16:34:02,299 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 16:34:02,299 - log
+==================================================================================================== - 2025-03-24 16:44:31,934 - log
+        - platform : local - 2025-03-24 16:44:31,935 - log
+        - local_rank : 0 - 2025-03-24 16:44:31,935 - log
+        - rank : 0 - 2025-03-24 16:44:31,935 - log
+        - device : cuda:0 - 2025-03-24 16:44:31,935 - log
+        - world_size : 1 - 2025-03-24 16:44:31,935 - log
+        - random_seed : 10 - 2025-03-24 16:44:31,935 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 16:44:31,935 - log
+        - batch_size : 1 - 2025-03-24 16:44:31,935 - log
+        - seq_len : 256 - 2025-03-24 16:44:31,935 - log
+        - eval_len : 64 - 2025-03-24 16:44:31,935 - log
+        - min_length : 0 - 2025-03-24 16:44:31,935 - log
+        - model_card : gpt2.md - 2025-03-24 16:44:31,935 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 16:44:31,935 - log
+        - lora_dim : 4 - 2025-03-24 16:44:31,935 - log
+        - lora_alpha : 32 - 2025-03-24 16:44:31,935 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 16:44:31,935 - log
+        - beam : 10 - 2025-03-24 16:44:31,935 - log
+        - length_penalty : 0.8 - 2025-03-24 16:44:31,935 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 16:44:31,935 - log
+        - repetition_penalty : 1.0 - 2025-03-24 16:44:31,935 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 16:44:31,935 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 16:44:31,935 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 16:44:31,935 - log
+==================================================================================================== - 2025-03-24 16:44:31,935 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 16:44:31,935 - log
+loading model pretrained weight. - 2025-03-24 16:44:34,597 - log
+model sampling ... - 2025-03-24 16:44:36,986 - log
+inference samples: 0 - 2025-03-24 16:44:39,285 - log
+==================================================================================================== - 2025-03-24 16:57:07,838 - log
+        - platform : local - 2025-03-24 16:57:07,838 - log
+        - local_rank : 0 - 2025-03-24 16:57:07,838 - log
+        - rank : 0 - 2025-03-24 16:57:07,838 - log
+        - device : cuda:0 - 2025-03-24 16:57:07,838 - log
+        - world_size : 1 - 2025-03-24 16:57:07,838 - log
+        - random_seed : 10 - 2025-03-24 16:57:07,838 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 16:57:07,838 - log
+        - batch_size : 1 - 2025-03-24 16:57:07,838 - log
+        - seq_len : 256 - 2025-03-24 16:57:07,838 - log
+        - eval_len : 64 - 2025-03-24 16:57:07,838 - log
+        - min_length : 0 - 2025-03-24 16:57:07,838 - log
+        - model_card : gpt2.md - 2025-03-24 16:57:07,838 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 16:57:07,838 - log
+        - lora_dim : 4 - 2025-03-24 16:57:07,838 - log
+        - lora_alpha : 32 - 2025-03-24 16:57:07,838 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 16:57:07,838 - log
+        - beam : 10 - 2025-03-24 16:57:07,838 - log
+        - length_penalty : 0.8 - 2025-03-24 16:57:07,838 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 16:57:07,838 - log
+        - repetition_penalty : 1.0 - 2025-03-24 16:57:07,838 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 16:57:07,839 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 16:57:07,839 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 16:57:07,839 - log
+==================================================================================================== - 2025-03-24 16:57:07,839 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 16:57:07,839 - log
+==================================================================================================== - 2025-03-24 17:12:39,616 - log
+        - platform : local - 2025-03-24 17:12:39,616 - log
+        - local_rank : 0 - 2025-03-24 17:12:39,616 - log
+        - rank : 0 - 2025-03-24 17:12:39,616 - log
+        - device : cuda:0 - 2025-03-24 17:12:39,616 - log
+        - world_size : 1 - 2025-03-24 17:12:39,616 - log
+        - random_seed : 10 - 2025-03-24 17:12:39,616 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 17:12:39,616 - log
+        - batch_size : 1 - 2025-03-24 17:12:39,616 - log
+        - seq_len : 256 - 2025-03-24 17:12:39,616 - log
+        - eval_len : 64 - 2025-03-24 17:12:39,616 - log
+        - min_length : 0 - 2025-03-24 17:12:39,616 - log
+        - model_card : gpt2.md - 2025-03-24 17:12:39,616 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 17:12:39,616 - log
+        - lora_dim : 4 - 2025-03-24 17:12:39,616 - log
+        - lora_alpha : 32 - 2025-03-24 17:12:39,616 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 17:12:39,616 - log
+        - beam : 10 - 2025-03-24 17:12:39,616 - log
+        - length_penalty : 0.8 - 2025-03-24 17:12:39,616 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 17:12:39,616 - log
+        - repetition_penalty : 1.0 - 2025-03-24 17:12:39,616 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 17:12:39,616 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 17:12:39,616 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 17:12:39,616 - log
+==================================================================================================== - 2025-03-24 17:12:39,616 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 17:12:39,616 - log
+loading model pretrained weight. - 2025-03-24 17:12:42,253 - log
+model sampling ... - 2025-03-24 17:12:44,871 - log
+==================================================================================================== - 2025-03-24 17:21:38,727 - log
+        - platform : local - 2025-03-24 17:21:38,727 - log
+        - local_rank : 0 - 2025-03-24 17:21:38,727 - log
+        - rank : 0 - 2025-03-24 17:21:38,727 - log
+        - device : cuda:0 - 2025-03-24 17:21:38,727 - log
+        - world_size : 1 - 2025-03-24 17:21:38,728 - log
+        - random_seed : 10 - 2025-03-24 17:21:38,728 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 17:21:38,728 - log
+        - batch_size : 1 - 2025-03-24 17:21:38,728 - log
+        - seq_len : 256 - 2025-03-24 17:21:38,728 - log
+        - eval_len : 64 - 2025-03-24 17:21:38,728 - log
+        - min_length : 0 - 2025-03-24 17:21:38,728 - log
+        - model_card : gpt2.md - 2025-03-24 17:21:38,728 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.525.pt - 2025-03-24 17:21:38,728 - log
+        - lora_dim : 4 - 2025-03-24 17:21:38,728 - log
+        - lora_alpha : 32 - 2025-03-24 17:21:38,728 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 17:21:38,728 - log
+        - beam : 10 - 2025-03-24 17:21:38,728 - log
+        - length_penalty : 0.8 - 2025-03-24 17:21:38,728 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 17:21:38,728 - log
+        - repetition_penalty : 1.0 - 2025-03-24 17:21:38,728 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 17:21:38,728 - log
+        - output_file : predict.525.b10p08r4.jsonl - 2025-03-24 17:21:38,728 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 17:21:38,728 - log
+==================================================================================================== - 2025-03-24 17:21:38,728 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 17:21:38,728 - log
+==================================================================================================== - 2025-03-24 21:42:06,719 - log
+        - platform : local - 2025-03-24 21:42:06,719 - log
+        - local_rank : 0 - 2025-03-24 21:42:06,719 - log
+        - rank : 0 - 2025-03-24 21:42:06,719 - log
+        - device : cuda:0 - 2025-03-24 21:42:06,719 - log
+        - world_size : 1 - 2025-03-24 21:42:06,719 - log
+        - random_seed : 10 - 2025-03-24 21:42:06,719 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 21:42:06,719 - log
+        - batch_size : 1 - 2025-03-24 21:42:06,719 - log
+        - seq_len : 64 - 2025-03-24 21:42:06,719 - log
+        - eval_len : 32 - 2025-03-24 21:42:06,719 - log
+        - min_length : 0 - 2025-03-24 21:42:06,719 - log
+        - model_card : gpt2.sm - 2025-03-24 21:42:06,719 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 21:42:06,719 - log
+        - lora_dim : 4 - 2025-03-24 21:42:06,719 - log
+        - lora_alpha : 32 - 2025-03-24 21:42:06,719 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 21:42:06,719 - log
+        - beam : 10 - 2025-03-24 21:42:06,719 - log
+        - length_penalty : 0.8 - 2025-03-24 21:42:06,719 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 21:42:06,719 - log
+        - repetition_penalty : 1.0 - 2025-03-24 21:42:06,720 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 21:42:06,720 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 21:42:06,720 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 21:42:06,720 - log
+==================================================================================================== - 2025-03-24 21:42:06,720 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 21:42:06,720 - log
+loading model pretrained weight. - 2025-03-24 21:42:07,766 - log
+model sampling ... - 2025-03-24 21:42:08,486 - log
+inference samples: 0 - 2025-03-24 21:42:11,102 - log
+inference samples: 10 - 2025-03-24 21:42:34,479 - log
+inference samples: 20 - 2025-03-24 21:42:57,745 - log
+inference samples: 30 - 2025-03-24 21:43:20,901 - log
+inference samples: 40 - 2025-03-24 21:43:44,727 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-24 21:43:56,638 - log
+cleanup dist ... - 2025-03-24 21:43:56,638 - log
+==================================================================================================== - 2025-03-24 21:51:25,631 - log
+        - platform : local - 2025-03-24 21:51:25,631 - log
+        - local_rank : 0 - 2025-03-24 21:51:25,631 - log
+        - rank : 0 - 2025-03-24 21:51:25,631 - log
+        - device : cuda:0 - 2025-03-24 21:51:25,631 - log
+        - world_size : 1 - 2025-03-24 21:51:25,631 - log
+        - random_seed : 10 - 2025-03-24 21:51:25,631 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 21:51:25,631 - log
+        - batch_size : 1 - 2025-03-24 21:51:25,631 - log
+        - seq_len : 64 - 2025-03-24 21:51:25,631 - log
+        - eval_len : 32 - 2025-03-24 21:51:25,631 - log
+        - min_length : 0 - 2025-03-24 21:51:25,631 - log
+        - model_card : gpt2.sm - 2025-03-24 21:51:25,631 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 21:51:25,631 - log
+        - lora_dim : 4 - 2025-03-24 21:51:25,631 - log
+        - lora_alpha : 32 - 2025-03-24 21:51:25,631 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 21:51:25,631 - log
+        - beam : 10 - 2025-03-24 21:51:25,631 - log
+        - length_penalty : 0.8 - 2025-03-24 21:51:25,631 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 21:51:25,631 - log
+        - repetition_penalty : 1.0 - 2025-03-24 21:51:25,631 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 21:51:25,632 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 21:51:25,632 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 21:51:25,632 - log
+==================================================================================================== - 2025-03-24 21:51:25,632 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 21:51:25,632 - log
+loading model pretrained weight. - 2025-03-24 21:51:26,692 - log
+model sampling ... - 2025-03-24 21:51:27,403 - log
+inference samples: 0 - 2025-03-24 21:51:28,009 - log
+==================================================================================================== - 2025-03-24 21:52:03,318 - log
+        - platform : local - 2025-03-24 21:52:03,318 - log
+        - local_rank : 0 - 2025-03-24 21:52:03,318 - log
+        - rank : 0 - 2025-03-24 21:52:03,318 - log
+        - device : cuda:0 - 2025-03-24 21:52:03,318 - log
+        - world_size : 1 - 2025-03-24 21:52:03,318 - log
+        - random_seed : 10 - 2025-03-24 21:52:03,318 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 21:52:03,318 - log
+        - batch_size : 1 - 2025-03-24 21:52:03,318 - log
+        - seq_len : 64 - 2025-03-24 21:52:03,318 - log
+        - eval_len : 32 - 2025-03-24 21:52:03,318 - log
+        - min_length : 0 - 2025-03-24 21:52:03,318 - log
+        - model_card : gpt2.sm - 2025-03-24 21:52:03,318 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 21:52:03,318 - log
+        - lora_dim : 4 - 2025-03-24 21:52:03,318 - log
+        - lora_alpha : 32 - 2025-03-24 21:52:03,318 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 21:52:03,318 - log
+        - beam : 10 - 2025-03-24 21:52:03,318 - log
+        - length_penalty : 0.8 - 2025-03-24 21:52:03,318 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 21:52:03,318 - log
+        - repetition_penalty : 1.0 - 2025-03-24 21:52:03,318 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 21:52:03,318 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 21:52:03,318 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 21:52:03,318 - log
+==================================================================================================== - 2025-03-24 21:52:03,318 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 21:52:03,318 - log
+loading model pretrained weight. - 2025-03-24 21:52:04,377 - log
+==================================================================================================== - 2025-03-24 21:52:29,299 - log
+        - platform : local - 2025-03-24 21:52:29,299 - log
+        - local_rank : 0 - 2025-03-24 21:52:29,299 - log
+        - rank : 0 - 2025-03-24 21:52:29,299 - log
+        - device : cuda:0 - 2025-03-24 21:52:29,299 - log
+        - world_size : 1 - 2025-03-24 21:52:29,299 - log
+        - random_seed : 10 - 2025-03-24 21:52:29,299 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 21:52:29,299 - log
+        - batch_size : 1 - 2025-03-24 21:52:29,299 - log
+        - seq_len : 64 - 2025-03-24 21:52:29,299 - log
+        - eval_len : 32 - 2025-03-24 21:52:29,299 - log
+        - min_length : 0 - 2025-03-24 21:52:29,299 - log
+        - model_card : gpt2.sm - 2025-03-24 21:52:29,299 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 21:52:29,299 - log
+        - lora_dim : 4 - 2025-03-24 21:52:29,299 - log
+        - lora_alpha : 32 - 2025-03-24 21:52:29,299 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 21:52:29,299 - log
+        - beam : 10 - 2025-03-24 21:52:29,299 - log
+        - length_penalty : 0.8 - 2025-03-24 21:52:29,299 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 21:52:29,299 - log
+        - repetition_penalty : 1.0 - 2025-03-24 21:52:29,299 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 21:52:29,299 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 21:52:29,299 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 21:52:29,299 - log
+==================================================================================================== - 2025-03-24 21:52:29,299 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 21:52:29,299 - log
+loading model pretrained weight. - 2025-03-24 21:52:30,362 - log
+==================================================================================================== - 2025-03-24 21:57:17,571 - log
+        - platform : local - 2025-03-24 21:57:17,571 - log
+        - local_rank : 0 - 2025-03-24 21:57:17,571 - log
+        - rank : 0 - 2025-03-24 21:57:17,571 - log
+        - device : cuda:0 - 2025-03-24 21:57:17,571 - log
+        - world_size : 1 - 2025-03-24 21:57:17,571 - log
+        - random_seed : 10 - 2025-03-24 21:57:17,571 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 21:57:17,571 - log
+        - batch_size : 1 - 2025-03-24 21:57:17,571 - log
+        - seq_len : 64 - 2025-03-24 21:57:17,571 - log
+        - eval_len : 32 - 2025-03-24 21:57:17,571 - log
+        - min_length : 0 - 2025-03-24 21:57:17,571 - log
+        - model_card : gpt2.sm - 2025-03-24 21:57:17,571 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 21:57:17,571 - log
+        - lora_dim : 4 - 2025-03-24 21:57:17,571 - log
+        - lora_alpha : 32 - 2025-03-24 21:57:17,571 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 21:57:17,571 - log
+        - beam : 10 - 2025-03-24 21:57:17,571 - log
+        - length_penalty : 0.8 - 2025-03-24 21:57:17,571 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 21:57:17,571 - log
+        - repetition_penalty : 1.0 - 2025-03-24 21:57:17,571 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 21:57:17,571 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 21:57:17,571 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 21:57:17,571 - log
+==================================================================================================== - 2025-03-24 21:57:17,571 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 21:57:17,571 - log
+loading model pretrained weight. - 2025-03-24 21:57:18,621 - log
+model sampling ... - 2025-03-24 21:57:19,307 - log
+inference samples: 0 - 2025-03-24 21:57:19,910 - log
+==================================================================================================== - 2025-03-24 22:01:08,948 - log
+        - platform : local - 2025-03-24 22:01:08,948 - log
+        - local_rank : 0 - 2025-03-24 22:01:08,948 - log
+        - rank : 0 - 2025-03-24 22:01:08,948 - log
+        - device : cuda:0 - 2025-03-24 22:01:08,948 - log
+        - world_size : 1 - 2025-03-24 22:01:08,948 - log
+        - random_seed : 10 - 2025-03-24 22:01:08,948 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:01:08,948 - log
+        - batch_size : 1 - 2025-03-24 22:01:08,948 - log
+        - seq_len : 64 - 2025-03-24 22:01:08,948 - log
+        - eval_len : 32 - 2025-03-24 22:01:08,948 - log
+        - min_length : 0 - 2025-03-24 22:01:08,948 - log
+        - model_card : gpt2.sm - 2025-03-24 22:01:08,948 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:01:08,948 - log
+        - lora_dim : 4 - 2025-03-24 22:01:08,948 - log
+        - lora_alpha : 32 - 2025-03-24 22:01:08,948 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:01:08,948 - log
+        - beam : 10 - 2025-03-24 22:01:08,948 - log
+        - length_penalty : 0.8 - 2025-03-24 22:01:08,948 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:01:08,948 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:01:08,948 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:01:08,948 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:01:08,948 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:01:08,948 - log
+==================================================================================================== - 2025-03-24 22:01:08,948 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:01:08,948 - log
+loading model pretrained weight. - 2025-03-24 22:01:10,005 - log
+model sampling ... - 2025-03-24 22:01:10,692 - log
+inference samples: 0 - 2025-03-24 22:01:11,304 - log
+inference samples: 10 - 2025-03-24 22:01:14,210 - log
+inference samples: 20 - 2025-03-24 22:01:17,103 - log
+inference samples: 30 - 2025-03-24 22:01:20,010 - log
+==================================================================================================== - 2025-03-24 22:02:17,756 - log
+        - platform : local - 2025-03-24 22:02:17,756 - log
+        - local_rank : 0 - 2025-03-24 22:02:17,756 - log
+        - rank : 0 - 2025-03-24 22:02:17,756 - log
+        - device : cuda:0 - 2025-03-24 22:02:17,756 - log
+        - world_size : 1 - 2025-03-24 22:02:17,756 - log
+        - random_seed : 10 - 2025-03-24 22:02:17,756 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:02:17,756 - log
+        - batch_size : 1 - 2025-03-24 22:02:17,756 - log
+        - seq_len : 64 - 2025-03-24 22:02:17,756 - log
+        - eval_len : 32 - 2025-03-24 22:02:17,756 - log
+        - min_length : 0 - 2025-03-24 22:02:17,756 - log
+        - model_card : gpt2.sm - 2025-03-24 22:02:17,756 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:02:17,756 - log
+        - lora_dim : 4 - 2025-03-24 22:02:17,756 - log
+        - lora_alpha : 32 - 2025-03-24 22:02:17,756 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:02:17,756 - log
+        - beam : 10 - 2025-03-24 22:02:17,756 - log
+        - length_penalty : 0.8 - 2025-03-24 22:02:17,756 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:02:17,756 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:02:17,756 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:02:17,756 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:02:17,756 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:02:17,756 - log
+==================================================================================================== - 2025-03-24 22:02:17,756 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:02:17,756 - log
+loading model pretrained weight. - 2025-03-24 22:02:18,814 - log
+model sampling ... - 2025-03-24 22:02:20,720 - log
+inference samples: 0 - 2025-03-24 22:02:21,320 - log
+inference samples: 10 - 2025-03-24 22:02:24,220 - log
+inference samples: 20 - 2025-03-24 22:02:27,145 - log
+inference samples: 30 - 2025-03-24 22:02:30,069 - log
+inference samples: 40 - 2025-03-24 22:02:32,945 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-24 22:02:34,369 - log
+cleanup dist ... - 2025-03-24 22:02:34,369 - log
+==================================================================================================== - 2025-03-24 22:03:06,702 - log
+        - platform : local - 2025-03-24 22:03:06,702 - log
+        - local_rank : 0 - 2025-03-24 22:03:06,702 - log
+        - rank : 0 - 2025-03-24 22:03:06,702 - log
+        - device : cuda:0 - 2025-03-24 22:03:06,702 - log
+        - world_size : 1 - 2025-03-24 22:03:06,702 - log
+        - random_seed : 10 - 2025-03-24 22:03:06,702 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:03:06,702 - log
+        - batch_size : 1 - 2025-03-24 22:03:06,702 - log
+        - seq_len : 64 - 2025-03-24 22:03:06,702 - log
+        - eval_len : 32 - 2025-03-24 22:03:06,702 - log
+        - min_length : 0 - 2025-03-24 22:03:06,702 - log
+        - model_card : gpt2.sm - 2025-03-24 22:03:06,702 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:03:06,702 - log
+        - lora_dim : 4 - 2025-03-24 22:03:06,702 - log
+        - lora_alpha : 32 - 2025-03-24 22:03:06,702 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:03:06,702 - log
+        - beam : 10 - 2025-03-24 22:03:06,702 - log
+        - length_penalty : 0.8 - 2025-03-24 22:03:06,702 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:03:06,702 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:03:06,702 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:03:06,702 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:03:06,702 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:03:06,703 - log
+==================================================================================================== - 2025-03-24 22:03:06,703 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:03:06,703 - log
+loading model pretrained weight. - 2025-03-24 22:03:07,744 - log
+==================================================================================================== - 2025-03-24 22:05:52,127 - log
+        - platform : local - 2025-03-24 22:05:52,127 - log
+        - local_rank : 0 - 2025-03-24 22:05:52,127 - log
+        - rank : 0 - 2025-03-24 22:05:52,127 - log
+        - device : cuda:0 - 2025-03-24 22:05:52,127 - log
+        - world_size : 1 - 2025-03-24 22:05:52,127 - log
+        - random_seed : 10 - 2025-03-24 22:05:52,127 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:05:52,127 - log
+        - batch_size : 1 - 2025-03-24 22:05:52,127 - log
+        - seq_len : 64 - 2025-03-24 22:05:52,127 - log
+        - eval_len : 32 - 2025-03-24 22:05:52,127 - log
+        - min_length : 0 - 2025-03-24 22:05:52,127 - log
+        - model_card : gpt2.sm - 2025-03-24 22:05:52,127 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:05:52,127 - log
+        - lora_dim : 4 - 2025-03-24 22:05:52,127 - log
+        - lora_alpha : 32 - 2025-03-24 22:05:52,127 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:05:52,127 - log
+        - beam : 10 - 2025-03-24 22:05:52,128 - log
+        - length_penalty : 0.8 - 2025-03-24 22:05:52,128 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:05:52,128 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:05:52,128 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:05:52,128 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:05:52,128 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:05:52,128 - log
+==================================================================================================== - 2025-03-24 22:05:52,128 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:05:52,128 - log
+loading model pretrained weight. - 2025-03-24 22:05:53,148 - log
+==================================================================================================== - 2025-03-24 22:06:05,842 - log
+        - platform : local - 2025-03-24 22:06:05,842 - log
+        - local_rank : 0 - 2025-03-24 22:06:05,842 - log
+        - rank : 0 - 2025-03-24 22:06:05,842 - log
+        - device : cuda:0 - 2025-03-24 22:06:05,842 - log
+        - world_size : 1 - 2025-03-24 22:06:05,842 - log
+        - random_seed : 10 - 2025-03-24 22:06:05,842 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:06:05,842 - log
+        - batch_size : 1 - 2025-03-24 22:06:05,842 - log
+        - seq_len : 64 - 2025-03-24 22:06:05,842 - log
+        - eval_len : 32 - 2025-03-24 22:06:05,842 - log
+        - min_length : 0 - 2025-03-24 22:06:05,842 - log
+        - model_card : gpt2.sm - 2025-03-24 22:06:05,842 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:06:05,842 - log
+        - lora_dim : 4 - 2025-03-24 22:06:05,842 - log
+        - lora_alpha : 32 - 2025-03-24 22:06:05,842 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:06:05,842 - log
+        - beam : 10 - 2025-03-24 22:06:05,843 - log
+        - length_penalty : 0.8 - 2025-03-24 22:06:05,843 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:06:05,843 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:06:05,843 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:06:05,843 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:06:05,843 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:06:05,843 - log
+==================================================================================================== - 2025-03-24 22:06:05,843 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:06:05,843 - log
+loading model pretrained weight. - 2025-03-24 22:06:06,903 - log
+model sampling ... - 2025-03-24 22:06:07,595 - log
+inference samples: 0 - 2025-03-24 22:06:08,197 - log
+inference samples: 10 - 2025-03-24 22:06:11,122 - log
+==================================================================================================== - 2025-03-24 22:06:39,908 - log
+        - platform : local - 2025-03-24 22:06:39,908 - log
+        - local_rank : 0 - 2025-03-24 22:06:39,908 - log
+        - rank : 0 - 2025-03-24 22:06:39,908 - log
+        - device : cuda:0 - 2025-03-24 22:06:39,908 - log
+        - world_size : 1 - 2025-03-24 22:06:39,908 - log
+        - random_seed : 10 - 2025-03-24 22:06:39,908 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:06:39,908 - log
+        - batch_size : 1 - 2025-03-24 22:06:39,908 - log
+        - seq_len : 64 - 2025-03-24 22:06:39,908 - log
+        - eval_len : 32 - 2025-03-24 22:06:39,908 - log
+        - min_length : 0 - 2025-03-24 22:06:39,908 - log
+        - model_card : gpt2.sm - 2025-03-24 22:06:39,908 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:06:39,908 - log
+        - lora_dim : 4 - 2025-03-24 22:06:39,908 - log
+        - lora_alpha : 32 - 2025-03-24 22:06:39,908 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:06:39,908 - log
+        - beam : 10 - 2025-03-24 22:06:39,908 - log
+        - length_penalty : 0.8 - 2025-03-24 22:06:39,908 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:06:39,908 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:06:39,908 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:06:39,908 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:06:39,908 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:06:39,908 - log
+==================================================================================================== - 2025-03-24 22:06:39,909 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:06:39,909 - log
+loading model pretrained weight. - 2025-03-24 22:06:40,974 - log
+model sampling ... - 2025-03-24 22:06:41,666 - log
+inference samples: 0 - 2025-03-24 22:06:42,270 - log
+==================================================================================================== - 2025-03-24 22:07:06,857 - log
+        - platform : local - 2025-03-24 22:07:06,857 - log
+        - local_rank : 0 - 2025-03-24 22:07:06,857 - log
+        - rank : 0 - 2025-03-24 22:07:06,857 - log
+        - device : cuda:0 - 2025-03-24 22:07:06,857 - log
+        - world_size : 1 - 2025-03-24 22:07:06,857 - log
+        - random_seed : 10 - 2025-03-24 22:07:06,857 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:07:06,857 - log
+        - batch_size : 1 - 2025-03-24 22:07:06,857 - log
+        - seq_len : 64 - 2025-03-24 22:07:06,857 - log
+        - eval_len : 32 - 2025-03-24 22:07:06,857 - log
+        - min_length : 0 - 2025-03-24 22:07:06,857 - log
+        - model_card : gpt2.sm - 2025-03-24 22:07:06,857 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:07:06,857 - log
+        - lora_dim : 4 - 2025-03-24 22:07:06,857 - log
+        - lora_alpha : 32 - 2025-03-24 22:07:06,857 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:07:06,857 - log
+        - beam : 10 - 2025-03-24 22:07:06,857 - log
+        - length_penalty : 0.8 - 2025-03-24 22:07:06,857 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:07:06,857 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:07:06,857 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:07:06,857 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:07:06,857 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:07:06,857 - log
+==================================================================================================== - 2025-03-24 22:07:06,857 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:07:06,857 - log
+loading model pretrained weight. - 2025-03-24 22:07:07,882 - log
+model sampling ... - 2025-03-24 22:07:08,567 - log
+inference samples: 0 - 2025-03-24 22:07:09,165 - log
+==================================================================================================== - 2025-03-24 22:07:43,846 - log
+        - platform : local - 2025-03-24 22:07:43,846 - log
+        - local_rank : 0 - 2025-03-24 22:07:43,846 - log
+        - rank : 0 - 2025-03-24 22:07:43,846 - log
+        - device : cuda:0 - 2025-03-24 22:07:43,846 - log
+        - world_size : 1 - 2025-03-24 22:07:43,846 - log
+        - random_seed : 10 - 2025-03-24 22:07:43,846 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:07:43,846 - log
+        - batch_size : 1 - 2025-03-24 22:07:43,846 - log
+        - seq_len : 64 - 2025-03-24 22:07:43,846 - log
+        - eval_len : 32 - 2025-03-24 22:07:43,846 - log
+        - min_length : 0 - 2025-03-24 22:07:43,846 - log
+        - model_card : gpt2.sm - 2025-03-24 22:07:43,846 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:07:43,846 - log
+        - lora_dim : 4 - 2025-03-24 22:07:43,846 - log
+        - lora_alpha : 32 - 2025-03-24 22:07:43,846 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:07:43,846 - log
+        - beam : 10 - 2025-03-24 22:07:43,847 - log
+        - length_penalty : 0.8 - 2025-03-24 22:07:43,847 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:07:43,847 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:07:43,847 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:07:43,847 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:07:43,847 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:07:43,847 - log
+==================================================================================================== - 2025-03-24 22:07:43,847 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:07:43,847 - log
+loading model pretrained weight. - 2025-03-24 22:07:44,907 - log
+model sampling ... - 2025-03-24 22:07:45,592 - log
+inference samples: 0 - 2025-03-24 22:07:46,199 - log
+==================================================================================================== - 2025-03-24 22:22:04,825 - log
+        - platform : local - 2025-03-24 22:22:04,825 - log
+        - local_rank : 0 - 2025-03-24 22:22:04,825 - log
+        - rank : 0 - 2025-03-24 22:22:04,825 - log
+        - device : cuda:0 - 2025-03-24 22:22:04,825 - log
+        - world_size : 1 - 2025-03-24 22:22:04,825 - log
+        - random_seed : 10 - 2025-03-24 22:22:04,825 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:22:04,825 - log
+        - batch_size : 1 - 2025-03-24 22:22:04,825 - log
+        - seq_len : 64 - 2025-03-24 22:22:04,825 - log
+        - eval_len : 32 - 2025-03-24 22:22:04,825 - log
+        - min_length : 0 - 2025-03-24 22:22:04,825 - log
+        - model_card : gpt2.sm - 2025-03-24 22:22:04,825 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:22:04,825 - log
+        - lora_dim : 4 - 2025-03-24 22:22:04,825 - log
+        - lora_alpha : 32 - 2025-03-24 22:22:04,825 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:22:04,825 - log
+        - beam : 10 - 2025-03-24 22:22:04,825 - log
+        - length_penalty : 0.8 - 2025-03-24 22:22:04,825 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:22:04,825 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:22:04,825 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:22:04,825 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:22:04,825 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:22:04,825 - log
+==================================================================================================== - 2025-03-24 22:22:04,825 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:22:04,825 - log
+loading model pretrained weight. - 2025-03-24 22:22:05,932 - log
+model sampling ... - 2025-03-24 22:22:06,732 - log
+inference samples: 0 - 2025-03-24 22:22:07,389 - log
+==================================================================================================== - 2025-03-24 22:35:45,598 - log
+        - platform : local - 2025-03-24 22:35:45,598 - log
+        - local_rank : 0 - 2025-03-24 22:35:45,598 - log
+        - rank : 0 - 2025-03-24 22:35:45,598 - log
+        - device : cuda:0 - 2025-03-24 22:35:45,598 - log
+        - world_size : 1 - 2025-03-24 22:35:45,598 - log
+        - random_seed : 10 - 2025-03-24 22:35:45,598 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:35:45,598 - log
+        - batch_size : 1 - 2025-03-24 22:35:45,598 - log
+        - seq_len : 64 - 2025-03-24 22:35:45,598 - log
+        - eval_len : 32 - 2025-03-24 22:35:45,598 - log
+        - min_length : 0 - 2025-03-24 22:35:45,599 - log
+        - model_card : gpt2.sm - 2025-03-24 22:35:45,599 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:35:45,599 - log
+        - lora_dim : 4 - 2025-03-24 22:35:45,599 - log
+        - lora_alpha : 32 - 2025-03-24 22:35:45,599 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:35:45,599 - log
+        - beam : 10 - 2025-03-24 22:35:45,599 - log
+        - length_penalty : 0.8 - 2025-03-24 22:35:45,599 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:35:45,599 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:35:45,599 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:35:45,599 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:35:45,599 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:35:45,599 - log
+==================================================================================================== - 2025-03-24 22:35:45,599 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:35:45,599 - log
+loading model pretrained weight. - 2025-03-24 22:35:46,686 - log
+model sampling ... - 2025-03-24 22:35:47,466 - log
+inference samples: 0 - 2025-03-24 22:35:48,121 - log
+==================================================================================================== - 2025-03-24 22:38:53,625 - log
+        - platform : local - 2025-03-24 22:38:53,625 - log
+        - local_rank : 0 - 2025-03-24 22:38:53,625 - log
+        - rank : 0 - 2025-03-24 22:38:53,625 - log
+        - device : cuda:0 - 2025-03-24 22:38:53,625 - log
+        - world_size : 1 - 2025-03-24 22:38:53,625 - log
+        - random_seed : 10 - 2025-03-24 22:38:53,625 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:38:53,625 - log
+        - batch_size : 1 - 2025-03-24 22:38:53,625 - log
+        - seq_len : 64 - 2025-03-24 22:38:53,625 - log
+        - eval_len : 32 - 2025-03-24 22:38:53,625 - log
+        - min_length : 0 - 2025-03-24 22:38:53,625 - log
+        - model_card : gpt2.sm - 2025-03-24 22:38:53,625 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:38:53,625 - log
+        - lora_dim : 4 - 2025-03-24 22:38:53,625 - log
+        - lora_alpha : 32 - 2025-03-24 22:38:53,625 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:38:53,625 - log
+        - beam : 10 - 2025-03-24 22:38:53,625 - log
+        - length_penalty : 0.8 - 2025-03-24 22:38:53,625 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:38:53,625 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:38:53,625 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:38:53,625 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:38:53,625 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:38:53,625 - log
+==================================================================================================== - 2025-03-24 22:38:53,625 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:38:53,625 - log
+loading model pretrained weight. - 2025-03-24 22:38:54,757 - log
+==================================================================================================== - 2025-03-24 22:42:44,898 - log
+        - platform : local - 2025-03-24 22:42:44,898 - log
+        - local_rank : 0 - 2025-03-24 22:42:44,898 - log
+        - rank : 0 - 2025-03-24 22:42:44,898 - log
+        - device : cuda:0 - 2025-03-24 22:42:44,898 - log
+        - world_size : 1 - 2025-03-24 22:42:44,898 - log
+        - random_seed : 10 - 2025-03-24 22:42:44,898 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:42:44,898 - log
+        - batch_size : 1 - 2025-03-24 22:42:44,898 - log
+        - seq_len : 64 - 2025-03-24 22:42:44,898 - log
+        - eval_len : 32 - 2025-03-24 22:42:44,898 - log
+        - min_length : 0 - 2025-03-24 22:42:44,899 - log
+        - model_card : gpt2.sm - 2025-03-24 22:42:44,899 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:42:44,899 - log
+        - lora_dim : 4 - 2025-03-24 22:42:44,899 - log
+        - lora_alpha : 32 - 2025-03-24 22:42:44,899 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:42:44,899 - log
+        - beam : 10 - 2025-03-24 22:42:44,899 - log
+        - length_penalty : 0.8 - 2025-03-24 22:42:44,899 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:42:44,899 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:42:44,899 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:42:44,899 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:42:44,899 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:42:44,899 - log
+==================================================================================================== - 2025-03-24 22:42:44,899 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:42:44,899 - log
+loading model pretrained weight. - 2025-03-24 22:42:45,996 - log
+model sampling ... - 2025-03-24 22:42:46,783 - log
+inference samples: 0 - 2025-03-24 22:42:47,442 - log
+==================================================================================================== - 2025-03-24 22:53:48,723 - log
+        - platform : local - 2025-03-24 22:53:48,724 - log
+        - local_rank : 0 - 2025-03-24 22:53:48,724 - log
+        - rank : 0 - 2025-03-24 22:53:48,724 - log
+        - device : cuda:0 - 2025-03-24 22:53:48,724 - log
+        - world_size : 1 - 2025-03-24 22:53:48,724 - log
+        - random_seed : 10 - 2025-03-24 22:53:48,724 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-24 22:53:48,724 - log
+        - batch_size : 1 - 2025-03-24 22:53:48,724 - log
+        - seq_len : 64 - 2025-03-24 22:53:48,724 - log
+        - eval_len : 32 - 2025-03-24 22:53:48,724 - log
+        - min_length : 0 - 2025-03-24 22:53:48,724 - log
+        - model_card : gpt2.sm - 2025-03-24 22:53:48,724 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-24 22:53:48,724 - log
+        - lora_dim : 4 - 2025-03-24 22:53:48,724 - log
+        - lora_alpha : 32 - 2025-03-24 22:53:48,724 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-24 22:53:48,724 - log
+        - beam : 10 - 2025-03-24 22:53:48,724 - log
+        - length_penalty : 0.8 - 2025-03-24 22:53:48,724 - log
+        - no_repeat_ngram_size : 4 - 2025-03-24 22:53:48,724 - log
+        - repetition_penalty : 1.0 - 2025-03-24 22:53:48,724 - log
+        - eos_token_id : [50256, 628] - 2025-03-24 22:53:48,724 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-24 22:53:48,724 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-24 22:53:48,724 - log
+==================================================================================================== - 2025-03-24 22:53:48,724 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-24 22:53:48,724 - log
+loading model pretrained weight. - 2025-03-24 22:53:49,806 - log
+model sampling ... - 2025-03-24 22:53:50,592 - log
+inference samples: 0 - 2025-03-24 22:53:51,254 - log
+==================================================================================================== - 2025-03-25 08:20:00,392 - log
+        - platform : local - 2025-03-25 08:20:00,392 - log
+        - local_rank : 0 - 2025-03-25 08:20:00,392 - log
+        - rank : 0 - 2025-03-25 08:20:00,392 - log
+        - device : cuda:0 - 2025-03-25 08:20:00,392 - log
+        - world_size : 1 - 2025-03-25 08:20:00,392 - log
+        - random_seed : 10 - 2025-03-25 08:20:00,392 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:20:00,392 - log
+        - batch_size : 1 - 2025-03-25 08:20:00,392 - log
+        - seq_len : 64 - 2025-03-25 08:20:00,392 - log
+        - eval_len : 32 - 2025-03-25 08:20:00,392 - log
+        - min_length : 0 - 2025-03-25 08:20:00,392 - log
+        - model_card : gpt2.sm - 2025-03-25 08:20:00,393 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:20:00,393 - log
+        - lora_dim : 4 - 2025-03-25 08:20:00,393 - log
+        - lora_alpha : 32 - 2025-03-25 08:20:00,393 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:20:00,393 - log
+        - beam : 10 - 2025-03-25 08:20:00,393 - log
+        - length_penalty : 0.8 - 2025-03-25 08:20:00,393 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:20:00,393 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:20:00,393 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:20:00,393 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:20:00,393 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:20:00,393 - log
+==================================================================================================== - 2025-03-25 08:20:00,393 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:20:00,393 - log
+loading model pretrained weight. - 2025-03-25 08:20:01,422 - log
+model sampling ... - 2025-03-25 08:20:02,414 - log
+inference samples: 0 - 2025-03-25 08:20:03,219 - log
+inference samples: 10 - 2025-03-25 08:20:06,137 - log
+inference samples: 20 - 2025-03-25 08:20:09,028 - log
+inference samples: 30 - 2025-03-25 08:20:11,900 - log
+inference samples: 40 - 2025-03-25 08:20:14,779 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 08:20:16,214 - log
+cleanup dist ... - 2025-03-25 08:20:16,215 - log
+==================================================================================================== - 2025-03-25 08:24:33,894 - log
+        - platform : local - 2025-03-25 08:24:33,894 - log
+        - local_rank : 0 - 2025-03-25 08:24:33,894 - log
+        - rank : 0 - 2025-03-25 08:24:33,894 - log
+        - device : cuda:0 - 2025-03-25 08:24:33,894 - log
+        - world_size : 1 - 2025-03-25 08:24:33,894 - log
+        - random_seed : 10 - 2025-03-25 08:24:33,894 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:24:33,894 - log
+        - batch_size : 1 - 2025-03-25 08:24:33,894 - log
+        - seq_len : 64 - 2025-03-25 08:24:33,894 - log
+        - eval_len : 32 - 2025-03-25 08:24:33,894 - log
+        - min_length : 0 - 2025-03-25 08:24:33,894 - log
+        - model_card : gpt2.sm - 2025-03-25 08:24:33,894 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:24:33,894 - log
+        - lora_dim : 4 - 2025-03-25 08:24:33,894 - log
+        - lora_alpha : 32 - 2025-03-25 08:24:33,894 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:24:33,894 - log
+        - beam : 10 - 2025-03-25 08:24:33,894 - log
+        - length_penalty : 0.8 - 2025-03-25 08:24:33,894 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:24:33,894 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:24:33,894 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:24:33,894 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:24:33,894 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:24:33,894 - log
+==================================================================================================== - 2025-03-25 08:24:33,894 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:24:33,894 - log
+loading model pretrained weight. - 2025-03-25 08:24:34,947 - log
+model sampling ... - 2025-03-25 08:24:35,645 - log
+inference samples: 0 - 2025-03-25 08:24:36,261 - log
+inference samples: 10 - 2025-03-25 08:24:39,222 - log
+==================================================================================================== - 2025-03-25 08:27:49,556 - log
+        - platform : local - 2025-03-25 08:27:49,556 - log
+        - local_rank : 0 - 2025-03-25 08:27:49,556 - log
+        - rank : 0 - 2025-03-25 08:27:49,556 - log
+        - device : cuda:0 - 2025-03-25 08:27:49,556 - log
+        - world_size : 1 - 2025-03-25 08:27:49,556 - log
+        - random_seed : 10 - 2025-03-25 08:27:49,556 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:27:49,556 - log
+        - batch_size : 1 - 2025-03-25 08:27:49,556 - log
+        - seq_len : 64 - 2025-03-25 08:27:49,556 - log
+        - eval_len : 32 - 2025-03-25 08:27:49,556 - log
+        - min_length : 0 - 2025-03-25 08:27:49,556 - log
+        - model_card : gpt2.sm - 2025-03-25 08:27:49,556 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:27:49,556 - log
+        - lora_dim : 4 - 2025-03-25 08:27:49,556 - log
+        - lora_alpha : 32 - 2025-03-25 08:27:49,556 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:27:49,556 - log
+        - beam : 10 - 2025-03-25 08:27:49,556 - log
+        - length_penalty : 0.8 - 2025-03-25 08:27:49,556 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:27:49,556 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:27:49,556 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:27:49,556 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:27:49,556 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:27:49,556 - log
+==================================================================================================== - 2025-03-25 08:27:49,556 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:27:49,556 - log
+loading model pretrained weight. - 2025-03-25 08:27:50,597 - log
+model sampling ... - 2025-03-25 08:27:51,263 - log
+inference samples: 0 - 2025-03-25 08:27:51,863 - log
+inference samples: 10 - 2025-03-25 08:27:54,766 - log
+==================================================================================================== - 2025-03-25 08:31:29,767 - log
+        - platform : local - 2025-03-25 08:31:29,767 - log
+        - local_rank : 0 - 2025-03-25 08:31:29,767 - log
+        - rank : 0 - 2025-03-25 08:31:29,767 - log
+        - device : cuda:0 - 2025-03-25 08:31:29,767 - log
+        - world_size : 1 - 2025-03-25 08:31:29,767 - log
+        - random_seed : 10 - 2025-03-25 08:31:29,767 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:31:29,767 - log
+        - batch_size : 1 - 2025-03-25 08:31:29,767 - log
+        - seq_len : 64 - 2025-03-25 08:31:29,767 - log
+        - eval_len : 32 - 2025-03-25 08:31:29,768 - log
+        - min_length : 0 - 2025-03-25 08:31:29,768 - log
+        - model_card : gpt2.sm - 2025-03-25 08:31:29,768 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:31:29,768 - log
+        - lora_dim : 4 - 2025-03-25 08:31:29,768 - log
+        - lora_alpha : 32 - 2025-03-25 08:31:29,768 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:31:29,768 - log
+        - beam : 10 - 2025-03-25 08:31:29,768 - log
+        - length_penalty : 0.8 - 2025-03-25 08:31:29,768 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:31:29,768 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:31:29,768 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:31:29,768 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:31:29,768 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:31:29,768 - log
+==================================================================================================== - 2025-03-25 08:31:29,768 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:31:29,768 - log
+loading model pretrained weight. - 2025-03-25 08:31:30,809 - log
+model sampling ... - 2025-03-25 08:31:31,472 - log
+inference samples: 0 - 2025-03-25 08:31:32,076 - log
+==================================================================================================== - 2025-03-25 08:34:44,022 - log
+        - platform : local - 2025-03-25 08:34:44,022 - log
+        - local_rank : 0 - 2025-03-25 08:34:44,022 - log
+        - rank : 0 - 2025-03-25 08:34:44,022 - log
+        - device : cuda:0 - 2025-03-25 08:34:44,022 - log
+        - world_size : 1 - 2025-03-25 08:34:44,022 - log
+        - random_seed : 10 - 2025-03-25 08:34:44,022 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:34:44,022 - log
+        - batch_size : 1 - 2025-03-25 08:34:44,022 - log
+        - seq_len : 64 - 2025-03-25 08:34:44,022 - log
+        - eval_len : 32 - 2025-03-25 08:34:44,022 - log
+        - min_length : 0 - 2025-03-25 08:34:44,022 - log
+        - model_card : gpt2.sm - 2025-03-25 08:34:44,022 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:34:44,022 - log
+        - lora_dim : 4 - 2025-03-25 08:34:44,022 - log
+        - lora_alpha : 32 - 2025-03-25 08:34:44,022 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:34:44,022 - log
+        - beam : 10 - 2025-03-25 08:34:44,022 - log
+        - length_penalty : 0.8 - 2025-03-25 08:34:44,022 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:34:44,022 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:34:44,022 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:34:44,022 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:34:44,022 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:34:44,022 - log
+==================================================================================================== - 2025-03-25 08:34:44,022 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:34:44,022 - log
+loading model pretrained weight. - 2025-03-25 08:34:45,083 - log
+model sampling ... - 2025-03-25 08:34:45,758 - log
+inference samples: 0 - 2025-03-25 08:34:46,351 - log
+inference samples: 10 - 2025-03-25 08:34:49,216 - log
+==================================================================================================== - 2025-03-25 08:36:58,829 - log
+        - platform : local - 2025-03-25 08:36:58,829 - log
+        - local_rank : 0 - 2025-03-25 08:36:58,829 - log
+        - rank : 0 - 2025-03-25 08:36:58,829 - log
+        - device : cuda:0 - 2025-03-25 08:36:58,829 - log
+        - world_size : 1 - 2025-03-25 08:36:58,829 - log
+        - random_seed : 10 - 2025-03-25 08:36:58,829 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:36:58,829 - log
+        - batch_size : 1 - 2025-03-25 08:36:58,829 - log
+        - seq_len : 64 - 2025-03-25 08:36:58,829 - log
+        - eval_len : 32 - 2025-03-25 08:36:58,829 - log
+        - min_length : 0 - 2025-03-25 08:36:58,829 - log
+        - model_card : gpt2.sm - 2025-03-25 08:36:58,829 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:36:58,829 - log
+        - lora_dim : 4 - 2025-03-25 08:36:58,829 - log
+        - lora_alpha : 32 - 2025-03-25 08:36:58,829 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:36:58,829 - log
+        - beam : 10 - 2025-03-25 08:36:58,829 - log
+        - length_penalty : 0.8 - 2025-03-25 08:36:58,829 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:36:58,829 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:36:58,829 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:36:58,829 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:36:58,829 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:36:58,829 - log
+==================================================================================================== - 2025-03-25 08:36:58,829 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:36:58,829 - log
+loading model pretrained weight. - 2025-03-25 08:36:59,880 - log
+model sampling ... - 2025-03-25 08:37:00,546 - log
+inference samples: 0 - 2025-03-25 08:37:01,147 - log
+inference samples: 10 - 2025-03-25 08:37:04,076 - log
+inference samples: 20 - 2025-03-25 08:37:06,988 - log
+==================================================================================================== - 2025-03-25 08:40:18,656 - log
+        - platform : local - 2025-03-25 08:40:18,656 - log
+        - local_rank : 0 - 2025-03-25 08:40:18,656 - log
+        - rank : 0 - 2025-03-25 08:40:18,656 - log
+        - device : cuda:0 - 2025-03-25 08:40:18,656 - log
+        - world_size : 1 - 2025-03-25 08:40:18,656 - log
+        - random_seed : 10 - 2025-03-25 08:40:18,656 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:40:18,656 - log
+        - batch_size : 1 - 2025-03-25 08:40:18,656 - log
+        - seq_len : 64 - 2025-03-25 08:40:18,656 - log
+        - eval_len : 32 - 2025-03-25 08:40:18,656 - log
+        - min_length : 0 - 2025-03-25 08:40:18,656 - log
+        - model_card : gpt2.sm - 2025-03-25 08:40:18,657 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:40:18,657 - log
+        - lora_dim : 4 - 2025-03-25 08:40:18,657 - log
+        - lora_alpha : 32 - 2025-03-25 08:40:18,657 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:40:18,657 - log
+        - beam : 10 - 2025-03-25 08:40:18,657 - log
+        - length_penalty : 0.8 - 2025-03-25 08:40:18,657 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:40:18,657 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:40:18,657 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:40:18,657 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:40:18,657 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:40:18,657 - log
+==================================================================================================== - 2025-03-25 08:40:18,657 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:40:18,657 - log
+loading model pretrained weight. - 2025-03-25 08:40:19,704 - log
+model sampling ... - 2025-03-25 08:40:20,373 - log
+==================================================================================================== - 2025-03-25 08:40:51,747 - log
+        - platform : local - 2025-03-25 08:40:51,747 - log
+        - local_rank : 0 - 2025-03-25 08:40:51,747 - log
+        - rank : 0 - 2025-03-25 08:40:51,747 - log
+        - device : cuda:0 - 2025-03-25 08:40:51,747 - log
+        - world_size : 1 - 2025-03-25 08:40:51,747 - log
+        - random_seed : 10 - 2025-03-25 08:40:51,747 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:40:51,747 - log
+        - batch_size : 1 - 2025-03-25 08:40:51,747 - log
+        - seq_len : 64 - 2025-03-25 08:40:51,747 - log
+        - eval_len : 32 - 2025-03-25 08:40:51,747 - log
+        - min_length : 0 - 2025-03-25 08:40:51,747 - log
+        - model_card : gpt2.sm - 2025-03-25 08:40:51,747 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:40:51,747 - log
+        - lora_dim : 4 - 2025-03-25 08:40:51,747 - log
+        - lora_alpha : 32 - 2025-03-25 08:40:51,747 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:40:51,747 - log
+        - beam : 10 - 2025-03-25 08:40:51,747 - log
+        - length_penalty : 0.8 - 2025-03-25 08:40:51,747 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:40:51,747 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:40:51,747 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:40:51,747 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:40:51,747 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:40:51,747 - log
+==================================================================================================== - 2025-03-25 08:40:51,747 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:40:51,747 - log
+loading model pretrained weight. - 2025-03-25 08:40:52,803 - log
+model sampling ... - 2025-03-25 08:40:53,497 - log
+inference samples: 0 - 2025-03-25 08:40:54,090 - log
+inference samples: 10 - 2025-03-25 08:40:56,962 - log
+==================================================================================================== - 2025-03-25 08:52:04,493 - log
+        - platform : local - 2025-03-25 08:52:04,493 - log
+        - local_rank : 0 - 2025-03-25 08:52:04,493 - log
+        - rank : 0 - 2025-03-25 08:52:04,493 - log
+        - device : cuda:0 - 2025-03-25 08:52:04,493 - log
+        - world_size : 1 - 2025-03-25 08:52:04,493 - log
+        - random_seed : 10 - 2025-03-25 08:52:04,493 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:52:04,493 - log
+        - batch_size : 1 - 2025-03-25 08:52:04,493 - log
+        - seq_len : 64 - 2025-03-25 08:52:04,493 - log
+        - eval_len : 32 - 2025-03-25 08:52:04,493 - log
+        - min_length : 0 - 2025-03-25 08:52:04,493 - log
+        - model_card : gpt2.sm - 2025-03-25 08:52:04,493 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:52:04,493 - log
+        - lora_dim : 4 - 2025-03-25 08:52:04,493 - log
+        - lora_alpha : 32 - 2025-03-25 08:52:04,493 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:52:04,493 - log
+        - beam : 10 - 2025-03-25 08:52:04,493 - log
+        - length_penalty : 0.8 - 2025-03-25 08:52:04,493 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:52:04,493 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:52:04,493 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:52:04,493 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:52:04,493 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:52:04,493 - log
+==================================================================================================== - 2025-03-25 08:52:04,493 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:52:04,493 - log
+loading model pretrained weight. - 2025-03-25 08:52:05,540 - log
+model sampling ... - 2025-03-25 08:52:06,237 - log
+inference samples: 0 - 2025-03-25 08:52:06,852 - log
+==================================================================================================== - 2025-03-25 08:56:21,664 - log
+        - platform : local - 2025-03-25 08:56:21,664 - log
+        - local_rank : 0 - 2025-03-25 08:56:21,664 - log
+        - rank : 0 - 2025-03-25 08:56:21,664 - log
+        - device : cuda:0 - 2025-03-25 08:56:21,664 - log
+        - world_size : 1 - 2025-03-25 08:56:21,664 - log
+        - random_seed : 10 - 2025-03-25 08:56:21,664 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:56:21,664 - log
+        - batch_size : 1 - 2025-03-25 08:56:21,664 - log
+        - seq_len : 64 - 2025-03-25 08:56:21,664 - log
+        - eval_len : 32 - 2025-03-25 08:56:21,664 - log
+        - min_length : 0 - 2025-03-25 08:56:21,664 - log
+        - model_card : gpt2.sm - 2025-03-25 08:56:21,664 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:56:21,664 - log
+        - lora_dim : 4 - 2025-03-25 08:56:21,664 - log
+        - lora_alpha : 32 - 2025-03-25 08:56:21,664 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:56:21,664 - log
+        - beam : 10 - 2025-03-25 08:56:21,664 - log
+        - length_penalty : 0.8 - 2025-03-25 08:56:21,664 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:56:21,664 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:56:21,664 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:56:21,664 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:56:21,664 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:56:21,664 - log
+==================================================================================================== - 2025-03-25 08:56:21,664 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:56:21,664 - log
+loading model pretrained weight. - 2025-03-25 08:56:22,724 - log
+model sampling ... - 2025-03-25 08:56:23,421 - log
+inference samples: 0 - 2025-03-25 08:56:24,027 - log
+==================================================================================================== - 2025-03-25 08:57:13,389 - log
+        - platform : local - 2025-03-25 08:57:13,389 - log
+        - local_rank : 0 - 2025-03-25 08:57:13,389 - log
+        - rank : 0 - 2025-03-25 08:57:13,389 - log
+        - device : cuda:0 - 2025-03-25 08:57:13,389 - log
+        - world_size : 1 - 2025-03-25 08:57:13,389 - log
+        - random_seed : 10 - 2025-03-25 08:57:13,389 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:57:13,389 - log
+        - batch_size : 1 - 2025-03-25 08:57:13,389 - log
+        - seq_len : 64 - 2025-03-25 08:57:13,389 - log
+        - eval_len : 32 - 2025-03-25 08:57:13,389 - log
+        - min_length : 0 - 2025-03-25 08:57:13,389 - log
+        - model_card : gpt2.sm - 2025-03-25 08:57:13,389 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:57:13,389 - log
+        - lora_dim : 4 - 2025-03-25 08:57:13,389 - log
+        - lora_alpha : 32 - 2025-03-25 08:57:13,389 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:57:13,389 - log
+        - beam : 10 - 2025-03-25 08:57:13,389 - log
+        - length_penalty : 0.8 - 2025-03-25 08:57:13,389 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:57:13,389 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:57:13,389 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:57:13,389 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:57:13,389 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:57:13,389 - log
+==================================================================================================== - 2025-03-25 08:57:13,389 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:57:13,389 - log
+loading model pretrained weight. - 2025-03-25 08:57:14,411 - log
+model sampling ... - 2025-03-25 08:57:15,106 - log
+inference samples: 0 - 2025-03-25 08:57:16,926 - log
+==================================================================================================== - 2025-03-25 08:57:29,720 - log
+        - platform : local - 2025-03-25 08:57:29,720 - log
+        - local_rank : 0 - 2025-03-25 08:57:29,720 - log
+        - rank : 0 - 2025-03-25 08:57:29,720 - log
+        - device : cuda:0 - 2025-03-25 08:57:29,720 - log
+        - world_size : 1 - 2025-03-25 08:57:29,720 - log
+        - random_seed : 10 - 2025-03-25 08:57:29,720 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 08:57:29,720 - log
+        - batch_size : 1 - 2025-03-25 08:57:29,720 - log
+        - seq_len : 64 - 2025-03-25 08:57:29,720 - log
+        - eval_len : 32 - 2025-03-25 08:57:29,720 - log
+        - min_length : 0 - 2025-03-25 08:57:29,720 - log
+        - model_card : gpt2.sm - 2025-03-25 08:57:29,720 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 08:57:29,720 - log
+        - lora_dim : 4 - 2025-03-25 08:57:29,720 - log
+        - lora_alpha : 32 - 2025-03-25 08:57:29,720 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 08:57:29,720 - log
+        - beam : 10 - 2025-03-25 08:57:29,720 - log
+        - length_penalty : 0.8 - 2025-03-25 08:57:29,720 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 08:57:29,720 - log
+        - repetition_penalty : 1.0 - 2025-03-25 08:57:29,720 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 08:57:29,720 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 08:57:29,720 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 08:57:29,720 - log
+==================================================================================================== - 2025-03-25 08:57:29,720 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 08:57:29,720 - log
+loading model pretrained weight. - 2025-03-25 08:57:30,788 - log
+model sampling ... - 2025-03-25 08:57:31,500 - log
+inference samples: 0 - 2025-03-25 08:57:32,106 - log
+==================================================================================================== - 2025-03-25 09:31:50,770 - log
+        - platform : local - 2025-03-25 09:31:50,770 - log
+        - local_rank : 0 - 2025-03-25 09:31:50,770 - log
+        - rank : 0 - 2025-03-25 09:31:50,770 - log
+        - device : cuda:0 - 2025-03-25 09:31:50,770 - log
+        - world_size : 1 - 2025-03-25 09:31:50,770 - log
+        - random_seed : 10 - 2025-03-25 09:31:50,770 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 09:31:50,770 - log
+        - batch_size : 1 - 2025-03-25 09:31:50,770 - log
+        - seq_len : 64 - 2025-03-25 09:31:50,770 - log
+        - eval_len : 32 - 2025-03-25 09:31:50,770 - log
+        - min_length : 0 - 2025-03-25 09:31:50,770 - log
+        - model_card : gpt2.sm - 2025-03-25 09:31:50,770 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 09:31:50,770 - log
+        - lora_dim : 4 - 2025-03-25 09:31:50,770 - log
+        - lora_alpha : 32 - 2025-03-25 09:31:50,770 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 09:31:50,770 - log
+        - beam : 10 - 2025-03-25 09:31:50,770 - log
+        - length_penalty : 0.8 - 2025-03-25 09:31:50,770 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 09:31:50,770 - log
+        - repetition_penalty : 1.0 - 2025-03-25 09:31:50,770 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 09:31:50,770 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 09:31:50,770 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 09:31:50,770 - log
+==================================================================================================== - 2025-03-25 09:31:50,770 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 09:31:50,770 - log
+loading model pretrained weight. - 2025-03-25 09:31:51,816 - log
+model sampling ... - 2025-03-25 09:31:52,533 - log
+inference samples: 0 - 2025-03-25 09:31:53,140 - log
+==================================================================================================== - 2025-03-25 09:32:46,899 - log
+        - platform : local - 2025-03-25 09:32:46,899 - log
+        - local_rank : 0 - 2025-03-25 09:32:46,899 - log
+        - rank : 0 - 2025-03-25 09:32:46,899 - log
+        - device : cuda:0 - 2025-03-25 09:32:46,899 - log
+        - world_size : 1 - 2025-03-25 09:32:46,899 - log
+        - random_seed : 10 - 2025-03-25 09:32:46,899 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 09:32:46,899 - log
+        - batch_size : 1 - 2025-03-25 09:32:46,899 - log
+        - seq_len : 64 - 2025-03-25 09:32:46,899 - log
+        - eval_len : 32 - 2025-03-25 09:32:46,899 - log
+        - min_length : 0 - 2025-03-25 09:32:46,899 - log
+        - model_card : gpt2.sm - 2025-03-25 09:32:46,899 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 09:32:46,899 - log
+        - lora_dim : 4 - 2025-03-25 09:32:46,899 - log
+        - lora_alpha : 32 - 2025-03-25 09:32:46,899 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 09:32:46,899 - log
+        - beam : 10 - 2025-03-25 09:32:46,899 - log
+        - length_penalty : 0.8 - 2025-03-25 09:32:46,899 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 09:32:46,899 - log
+        - repetition_penalty : 1.0 - 2025-03-25 09:32:46,899 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 09:32:46,899 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 09:32:46,899 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 09:32:46,900 - log
+==================================================================================================== - 2025-03-25 09:32:46,900 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 09:32:46,900 - log
+loading model pretrained weight. - 2025-03-25 09:32:47,966 - log
+model sampling ... - 2025-03-25 09:32:48,678 - log
+inference samples: 0 - 2025-03-25 09:32:49,286 - log
+inference samples: 10 - 2025-03-25 09:32:52,260 - log
+inference samples: 20 - 2025-03-25 09:32:55,228 - log
+inference samples: 30 - 2025-03-25 09:32:58,151 - log
+==================================================================================================== - 2025-03-25 11:42:42,847 - log
+        - platform : local - 2025-03-25 11:42:42,847 - log
+        - local_rank : 0 - 2025-03-25 11:42:42,847 - log
+        - rank : 0 - 2025-03-25 11:42:42,847 - log
+        - device : cuda:0 - 2025-03-25 11:42:42,847 - log
+        - world_size : 1 - 2025-03-25 11:42:42,847 - log
+        - random_seed : 10 - 2025-03-25 11:42:42,847 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 11:42:42,847 - log
+        - batch_size : 1 - 2025-03-25 11:42:42,847 - log
+        - seq_len : 64 - 2025-03-25 11:42:42,847 - log
+        - eval_len : 32 - 2025-03-25 11:42:42,847 - log
+        - min_length : 0 - 2025-03-25 11:42:42,847 - log
+        - model_card : gpt2.sm - 2025-03-25 11:42:42,847 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 11:42:42,847 - log
+        - lora_dim : 4 - 2025-03-25 11:42:42,847 - log
+        - lora_alpha : 32 - 2025-03-25 11:42:42,847 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 11:42:42,847 - log
+        - beam : 10 - 2025-03-25 11:42:42,847 - log
+        - length_penalty : 0.8 - 2025-03-25 11:42:42,847 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 11:42:42,847 - log
+        - repetition_penalty : 1.0 - 2025-03-25 11:42:42,847 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 11:42:42,847 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 11:42:42,847 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 11:42:42,847 - log
+==================================================================================================== - 2025-03-25 11:42:42,847 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 11:42:42,848 - log
+loading model pretrained weight. - 2025-03-25 11:42:43,918 - log
+model sampling ... - 2025-03-25 11:42:45,102 - log
+inference samples: 0 - 2025-03-25 11:42:45,845 - log
+inference samples: 10 - 2025-03-25 11:42:48,774 - log
+inference samples: 20 - 2025-03-25 11:42:51,717 - log
+==================================================================================================== - 2025-03-25 11:43:53,222 - log
+        - platform : local - 2025-03-25 11:43:53,222 - log
+        - local_rank : 0 - 2025-03-25 11:43:53,222 - log
+        - rank : 0 - 2025-03-25 11:43:53,222 - log
+        - device : cuda:0 - 2025-03-25 11:43:53,222 - log
+        - world_size : 1 - 2025-03-25 11:43:53,222 - log
+        - random_seed : 10 - 2025-03-25 11:43:53,222 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 11:43:53,222 - log
+        - batch_size : 1 - 2025-03-25 11:43:53,222 - log
+        - seq_len : 64 - 2025-03-25 11:43:53,222 - log
+        - eval_len : 32 - 2025-03-25 11:43:53,222 - log
+        - min_length : 0 - 2025-03-25 11:43:53,222 - log
+        - model_card : gpt2.sm - 2025-03-25 11:43:53,222 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 11:43:53,222 - log
+        - lora_dim : 4 - 2025-03-25 11:43:53,222 - log
+        - lora_alpha : 32 - 2025-03-25 11:43:53,222 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 11:43:53,222 - log
+        - beam : 10 - 2025-03-25 11:43:53,222 - log
+        - length_penalty : 0.8 - 2025-03-25 11:43:53,222 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 11:43:53,222 - log
+        - repetition_penalty : 1.0 - 2025-03-25 11:43:53,222 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 11:43:53,222 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 11:43:53,222 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 11:43:53,222 - log
+==================================================================================================== - 2025-03-25 11:43:53,222 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 11:43:53,222 - log
+loading model pretrained weight. - 2025-03-25 11:43:54,285 - log
+model sampling ... - 2025-03-25 11:43:54,984 - log
+inference samples: 0 - 2025-03-25 11:43:55,592 - log
+inference samples: 10 - 2025-03-25 11:43:58,525 - log
+==================================================================================================== - 2025-03-25 11:44:30,797 - log
+        - platform : local - 2025-03-25 11:44:30,797 - log
+        - local_rank : 0 - 2025-03-25 11:44:30,797 - log
+        - rank : 0 - 2025-03-25 11:44:30,797 - log
+        - device : cuda:0 - 2025-03-25 11:44:30,797 - log
+        - world_size : 1 - 2025-03-25 11:44:30,797 - log
+        - random_seed : 10 - 2025-03-25 11:44:30,797 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 11:44:30,797 - log
+        - batch_size : 1 - 2025-03-25 11:44:30,797 - log
+        - seq_len : 64 - 2025-03-25 11:44:30,797 - log
+        - eval_len : 32 - 2025-03-25 11:44:30,797 - log
+        - min_length : 0 - 2025-03-25 11:44:30,797 - log
+        - model_card : gpt2.sm - 2025-03-25 11:44:30,797 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 11:44:30,797 - log
+        - lora_dim : 4 - 2025-03-25 11:44:30,797 - log
+        - lora_alpha : 32 - 2025-03-25 11:44:30,797 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 11:44:30,797 - log
+        - beam : 10 - 2025-03-25 11:44:30,797 - log
+        - length_penalty : 0.8 - 2025-03-25 11:44:30,797 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 11:44:30,797 - log
+        - repetition_penalty : 1.0 - 2025-03-25 11:44:30,797 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 11:44:30,797 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 11:44:30,797 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 11:44:30,797 - log
+==================================================================================================== - 2025-03-25 11:44:30,797 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 11:44:30,797 - log
+loading model pretrained weight. - 2025-03-25 11:44:31,873 - log
+model sampling ... - 2025-03-25 11:44:32,582 - log
+inference samples: 0 - 2025-03-25 11:44:33,190 - log
+inference samples: 10 - 2025-03-25 11:44:36,116 - log
+inference samples: 20 - 2025-03-25 11:44:39,053 - log
+inference samples: 30 - 2025-03-25 11:44:41,986 - log
+inference samples: 40 - 2025-03-25 11:44:44,938 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 11:44:46,410 - log
+cleanup dist ... - 2025-03-25 11:44:46,411 - log
+==================================================================================================== - 2025-03-25 11:45:59,616 - log
+        - platform : local - 2025-03-25 11:45:59,616 - log
+        - local_rank : 0 - 2025-03-25 11:45:59,616 - log
+        - rank : 0 - 2025-03-25 11:45:59,616 - log
+        - device : cuda:0 - 2025-03-25 11:45:59,616 - log
+        - world_size : 1 - 2025-03-25 11:45:59,616 - log
+        - random_seed : 10 - 2025-03-25 11:45:59,616 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 11:45:59,616 - log
+        - batch_size : 1 - 2025-03-25 11:45:59,616 - log
+        - seq_len : 64 - 2025-03-25 11:45:59,616 - log
+        - eval_len : 32 - 2025-03-25 11:45:59,616 - log
+        - min_length : 0 - 2025-03-25 11:45:59,616 - log
+        - model_card : gpt2.sm - 2025-03-25 11:45:59,616 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 11:45:59,616 - log
+        - lora_dim : 4 - 2025-03-25 11:45:59,616 - log
+        - lora_alpha : 32 - 2025-03-25 11:45:59,616 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 11:45:59,616 - log
+        - beam : 10 - 2025-03-25 11:45:59,616 - log
+        - length_penalty : 0.8 - 2025-03-25 11:45:59,616 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 11:45:59,616 - log
+        - repetition_penalty : 1.0 - 2025-03-25 11:45:59,616 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 11:45:59,616 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 11:45:59,616 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 11:45:59,616 - log
+==================================================================================================== - 2025-03-25 11:45:59,616 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 11:45:59,616 - log
+loading model pretrained weight. - 2025-03-25 11:46:00,686 - log
+model sampling ... - 2025-03-25 11:46:01,366 - log
+inference samples: 0 - 2025-03-25 11:46:01,977 - log
+inference samples: 10 - 2025-03-25 11:46:04,921 - log
+inference samples: 20 - 2025-03-25 11:46:07,812 - log
+inference samples: 30 - 2025-03-25 11:46:10,680 - log
+inference samples: 40 - 2025-03-25 11:46:13,579 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 11:46:15,098 - log
+cleanup dist ... - 2025-03-25 11:46:15,098 - log
+==================================================================================================== - 2025-03-25 11:47:51,311 - log
+        - platform : local - 2025-03-25 11:47:51,311 - log
+        - local_rank : 0 - 2025-03-25 11:47:51,311 - log
+        - rank : 0 - 2025-03-25 11:47:51,311 - log
+        - device : cuda:0 - 2025-03-25 11:47:51,311 - log
+        - world_size : 1 - 2025-03-25 11:47:51,311 - log
+        - random_seed : 10 - 2025-03-25 11:47:51,311 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 11:47:51,312 - log
+        - batch_size : 1 - 2025-03-25 11:47:51,312 - log
+        - seq_len : 64 - 2025-03-25 11:47:51,312 - log
+        - eval_len : 32 - 2025-03-25 11:47:51,312 - log
+        - min_length : 0 - 2025-03-25 11:47:51,312 - log
+        - model_card : gpt2.sm - 2025-03-25 11:47:51,312 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 11:47:51,312 - log
+        - lora_dim : 4 - 2025-03-25 11:47:51,312 - log
+        - lora_alpha : 32 - 2025-03-25 11:47:51,312 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 11:47:51,312 - log
+        - beam : 10 - 2025-03-25 11:47:51,312 - log
+        - length_penalty : 0.8 - 2025-03-25 11:47:51,312 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 11:47:51,312 - log
+        - repetition_penalty : 1.0 - 2025-03-25 11:47:51,312 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 11:47:51,312 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 11:47:51,312 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 11:47:51,312 - log
+==================================================================================================== - 2025-03-25 11:47:51,312 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 11:47:51,312 - log
+loading model pretrained weight. - 2025-03-25 11:47:52,469 - log
+model sampling ... - 2025-03-25 11:47:53,322 - log
+inference samples: 0 - 2025-03-25 11:47:54,246 - log
+inference samples: 10 - 2025-03-25 11:47:59,981 - log
+inference samples: 20 - 2025-03-25 11:48:05,695 - log
+inference samples: 30 - 2025-03-25 11:48:09,619 - log
+inference samples: 40 - 2025-03-25 11:48:12,645 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 11:48:14,143 - log
+cleanup dist ... - 2025-03-25 11:48:14,144 - log
+==================================================================================================== - 2025-03-25 11:50:04,225 - log
+        - platform : local - 2025-03-25 11:50:04,226 - log
+        - local_rank : 0 - 2025-03-25 11:50:04,226 - log
+        - rank : 0 - 2025-03-25 11:50:04,226 - log
+        - device : cuda:0 - 2025-03-25 11:50:04,226 - log
+        - world_size : 1 - 2025-03-25 11:50:04,226 - log
+        - random_seed : 10 - 2025-03-25 11:50:04,226 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 11:50:04,226 - log
+        - batch_size : 1 - 2025-03-25 11:50:04,226 - log
+        - seq_len : 64 - 2025-03-25 11:50:04,226 - log
+        - eval_len : 32 - 2025-03-25 11:50:04,226 - log
+        - min_length : 0 - 2025-03-25 11:50:04,226 - log
+        - model_card : gpt2.sm - 2025-03-25 11:50:04,226 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 11:50:04,226 - log
+        - lora_dim : 4 - 2025-03-25 11:50:04,226 - log
+        - lora_alpha : 32 - 2025-03-25 11:50:04,226 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 11:50:04,226 - log
+        - beam : 10 - 2025-03-25 11:50:04,226 - log
+        - length_penalty : 0.8 - 2025-03-25 11:50:04,226 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 11:50:04,226 - log
+        - repetition_penalty : 1.0 - 2025-03-25 11:50:04,226 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 11:50:04,226 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 11:50:04,226 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 11:50:04,226 - log
+==================================================================================================== - 2025-03-25 11:50:04,226 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 11:50:04,226 - log
+loading model pretrained weight. - 2025-03-25 11:50:05,302 - log
+model sampling ... - 2025-03-25 11:50:06,050 - log
+inference samples: 0 - 2025-03-25 11:50:06,712 - log
+inference samples: 10 - 2025-03-25 11:50:09,649 - log
+inference samples: 20 - 2025-03-25 11:50:12,584 - log
+inference samples: 30 - 2025-03-25 11:50:15,546 - log
+inference samples: 40 - 2025-03-25 11:50:18,446 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 11:50:20,495 - log
+cleanup dist ... - 2025-03-25 11:50:20,496 - log
+==================================================================================================== - 2025-03-25 11:59:00,745 - log
+        - platform : local - 2025-03-25 11:59:00,745 - log
+        - local_rank : 0 - 2025-03-25 11:59:00,745 - log
+        - rank : 0 - 2025-03-25 11:59:00,745 - log
+        - device : cuda:0 - 2025-03-25 11:59:00,745 - log
+        - world_size : 1 - 2025-03-25 11:59:00,745 - log
+        - random_seed : 10 - 2025-03-25 11:59:00,745 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 11:59:00,745 - log
+        - batch_size : 1 - 2025-03-25 11:59:00,745 - log
+        - seq_len : 64 - 2025-03-25 11:59:00,745 - log
+        - eval_len : 32 - 2025-03-25 11:59:00,745 - log
+        - min_length : 0 - 2025-03-25 11:59:00,745 - log
+        - model_card : gpt2.sm - 2025-03-25 11:59:00,745 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 11:59:00,745 - log
+        - lora_dim : 4 - 2025-03-25 11:59:00,745 - log
+        - lora_alpha : 32 - 2025-03-25 11:59:00,745 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 11:59:00,745 - log
+        - beam : 10 - 2025-03-25 11:59:00,745 - log
+        - length_penalty : 0.8 - 2025-03-25 11:59:00,745 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 11:59:00,745 - log
+        - repetition_penalty : 1.0 - 2025-03-25 11:59:00,745 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 11:59:00,745 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 11:59:00,745 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 11:59:00,745 - log
+==================================================================================================== - 2025-03-25 11:59:00,745 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 11:59:00,745 - log
+loading model pretrained weight. - 2025-03-25 11:59:01,838 - log
+model sampling ... - 2025-03-25 11:59:02,528 - log
+inference samples: 0 - 2025-03-25 11:59:03,130 - log
+inference samples: 10 - 2025-03-25 11:59:06,083 - log
+inference samples: 20 - 2025-03-25 11:59:09,051 - log
+inference samples: 30 - 2025-03-25 11:59:12,089 - log
+inference samples: 40 - 2025-03-25 11:59:15,054 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 11:59:16,546 - log
+cleanup dist ... - 2025-03-25 11:59:16,546 - log
+==================================================================================================== - 2025-03-25 12:26:57,332 - log
+        - platform : local - 2025-03-25 12:26:57,332 - log
+        - local_rank : 0 - 2025-03-25 12:26:57,332 - log
+        - rank : 0 - 2025-03-25 12:26:57,332 - log
+        - device : cuda:0 - 2025-03-25 12:26:57,333 - log
+        - world_size : 1 - 2025-03-25 12:26:57,333 - log
+        - random_seed : 10 - 2025-03-25 12:26:57,333 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 12:26:57,333 - log
+        - batch_size : 1 - 2025-03-25 12:26:57,333 - log
+        - seq_len : 64 - 2025-03-25 12:26:57,333 - log
+        - eval_len : 32 - 2025-03-25 12:26:57,333 - log
+        - min_length : 0 - 2025-03-25 12:26:57,333 - log
+        - model_card : gpt2.sm - 2025-03-25 12:26:57,333 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 12:26:57,333 - log
+        - lora_dim : 4 - 2025-03-25 12:26:57,333 - log
+        - lora_alpha : 32 - 2025-03-25 12:26:57,333 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 12:26:57,333 - log
+        - beam : 10 - 2025-03-25 12:26:57,333 - log
+        - length_penalty : 0.8 - 2025-03-25 12:26:57,333 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 12:26:57,333 - log
+        - repetition_penalty : 1.0 - 2025-03-25 12:26:57,333 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 12:26:57,333 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 12:26:57,333 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 12:26:57,333 - log
+==================================================================================================== - 2025-03-25 12:26:57,333 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 12:26:57,333 - log
+loading model pretrained weight. - 2025-03-25 12:26:58,367 - log
+model sampling ... - 2025-03-25 12:26:59,053 - log
+inference samples: 0 - 2025-03-25 12:26:59,671 - log
+inference samples: 10 - 2025-03-25 12:27:02,553 - log
+==================================================================================================== - 2025-03-25 21:53:52,344 - log
+        - platform : local - 2025-03-25 21:53:52,348 - log
+        - local_rank : 0 - 2025-03-25 21:53:52,348 - log
+        - rank : 0 - 2025-03-25 21:53:52,348 - log
+        - device : cuda:0 - 2025-03-25 21:53:52,348 - log
+        - world_size : 1 - 2025-03-25 21:53:52,348 - log
+        - random_seed : 10 - 2025-03-25 21:53:52,348 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 21:53:52,348 - log
+        - batch_size : 1 - 2025-03-25 21:53:52,348 - log
+        - seq_len : 64 - 2025-03-25 21:53:52,348 - log
+        - eval_len : 32 - 2025-03-25 21:53:52,348 - log
+        - min_length : 0 - 2025-03-25 21:53:52,348 - log
+        - model_card : gpt2.sm - 2025-03-25 21:53:52,348 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 21:53:52,348 - log
+        - lora_dim : 4 - 2025-03-25 21:53:52,348 - log
+        - lora_alpha : 32 - 2025-03-25 21:53:52,348 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 21:53:52,348 - log
+        - beam : 10 - 2025-03-25 21:53:52,348 - log
+        - length_penalty : 0.8 - 2025-03-25 21:53:52,348 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 21:53:52,348 - log
+        - repetition_penalty : 1.0 - 2025-03-25 21:53:52,348 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 21:53:52,348 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 21:53:52,348 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 21:53:52,348 - log
+==================================================================================================== - 2025-03-25 21:53:52,348 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 21:53:52,348 - log
+loading model pretrained weight. - 2025-03-25 21:53:53,460 - log
+model sampling ... - 2025-03-25 21:53:54,189 - log
+inference samples: 0 - 2025-03-25 21:53:54,836 - log
+inference samples: 10 - 2025-03-25 21:53:57,780 - log
+inference samples: 20 - 2025-03-25 21:54:00,725 - log
+inference samples: 30 - 2025-03-25 21:54:03,680 - log
+inference samples: 40 - 2025-03-25 21:54:06,636 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 21:54:08,115 - log
+cleanup dist ... - 2025-03-25 21:54:08,115 - log
+SCORES:
+============== - 2025-03-25 21:54:17,587 - log
+BLEU: 0.2093 - 2025-03-25 21:54:17,587 - log
+NIST: 2.9530 - 2025-03-25 21:54:17,587 - log
+METEOR: 0.2708 - 2025-03-25 21:54:17,587 - log
+ROUGE_L: 0.4022 - 2025-03-25 21:54:17,587 - log
+CIDEr: 1.2690 - 2025-03-25 21:54:17,587 - log
+
+ - 2025-03-25 21:54:17,587 - log
+==================================================================================================== - 2025-03-25 22:11:06,040 - log
+        - platform : local - 2025-03-25 22:11:06,044 - log
+        - local_rank : 0 - 2025-03-25 22:11:06,044 - log
+        - rank : 0 - 2025-03-25 22:11:06,044 - log
+        - device : cuda:0 - 2025-03-25 22:11:06,044 - log
+        - world_size : 1 - 2025-03-25 22:11:06,044 - log
+        - random_seed : 10 - 2025-03-25 22:11:06,044 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 22:11:06,044 - log
+        - batch_size : 1 - 2025-03-25 22:11:06,044 - log
+        - seq_len : 64 - 2025-03-25 22:11:06,044 - log
+        - eval_len : 32 - 2025-03-25 22:11:06,044 - log
+        - min_length : 0 - 2025-03-25 22:11:06,044 - log
+        - model_card : gpt2.sm - 2025-03-25 22:11:06,044 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 22:11:06,044 - log
+        - lora_dim : 4 - 2025-03-25 22:11:06,044 - log
+        - lora_alpha : 32 - 2025-03-25 22:11:06,044 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 22:11:06,044 - log
+        - beam : 10 - 2025-03-25 22:11:06,044 - log
+        - length_penalty : 0.8 - 2025-03-25 22:11:06,044 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 22:11:06,044 - log
+        - repetition_penalty : 1.0 - 2025-03-25 22:11:06,044 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 22:11:06,044 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 22:11:06,044 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 22:11:06,044 - log
+==================================================================================================== - 2025-03-25 22:11:06,044 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 22:11:06,044 - log
+loading model pretrained weight. - 2025-03-25 22:11:07,230 - log
+model sampling ... - 2025-03-25 22:11:08,044 - log
+inference samples: 0 - 2025-03-25 22:11:08,705 - log
+inference samples: 10 - 2025-03-25 22:11:12,156 - log
+inference samples: 20 - 2025-03-25 22:11:15,572 - log
+inference samples: 30 - 2025-03-25 22:11:19,046 - log
+inference samples: 40 - 2025-03-25 22:11:22,526 - log
+==================================================================================================== - 2025-03-25 22:12:37,768 - log
+        - platform : local - 2025-03-25 22:12:37,768 - log
+        - local_rank : 0 - 2025-03-25 22:12:37,768 - log
+        - rank : 0 - 2025-03-25 22:12:37,768 - log
+        - device : cuda:0 - 2025-03-25 22:12:37,768 - log
+        - world_size : 1 - 2025-03-25 22:12:37,768 - log
+        - random_seed : 10 - 2025-03-25 22:12:37,768 - log
+        - data : ./data/e2e/test.jsonl - 2025-03-25 22:12:37,768 - log
+        - batch_size : 1 - 2025-03-25 22:12:37,768 - log
+        - seq_len : 64 - 2025-03-25 22:12:37,768 - log
+        - eval_len : 32 - 2025-03-25 22:12:37,768 - log
+        - min_length : 0 - 2025-03-25 22:12:37,768 - log
+        - model_card : gpt2.sm - 2025-03-25 22:12:37,768 - log
+        - init_checkpoint : ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-25 22:12:37,768 - log
+        - lora_dim : 4 - 2025-03-25 22:12:37,768 - log
+        - lora_alpha : 32 - 2025-03-25 22:12:37,768 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-25 22:12:37,768 - log
+        - beam : 10 - 2025-03-25 22:12:37,768 - log
+        - length_penalty : 0.8 - 2025-03-25 22:12:37,768 - log
+        - no_repeat_ngram_size : 4 - 2025-03-25 22:12:37,768 - log
+        - repetition_penalty : 1.0 - 2025-03-25 22:12:37,768 - log
+        - eos_token_id : [50256, 628] - 2025-03-25 22:12:37,768 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-25 22:12:37,768 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-25 22:12:37,768 - log
+==================================================================================================== - 2025-03-25 22:12:37,768 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-25 22:12:37,768 - log
+loading model pretrained weight. - 2025-03-25 22:12:38,894 - log
+model sampling ... - 2025-03-25 22:12:39,702 - log
+inference samples: 0 - 2025-03-25 22:12:40,359 - log
+inference samples: 10 - 2025-03-25 22:12:43,809 - log
+inference samples: 20 - 2025-03-25 22:12:47,276 - log
+inference samples: 30 - 2025-03-25 22:12:50,755 - log
+inference samples: 40 - 2025-03-25 22:12:54,236 - log
+saving prediction file: ./trained_models/GPT2_M/e2e/predict.1050.b10p08r4.jsonl - 2025-03-25 22:12:55,974 - log
+cleanup dist ... - 2025-03-25 22:12:55,975 - log
+SCORES:
+============== - 2025-03-25 22:13:03,077 - log
+BLEU: 0.2093 - 2025-03-25 22:13:03,077 - log
+NIST: 2.9530 - 2025-03-25 22:13:03,077 - log
+METEOR: 0.2708 - 2025-03-25 22:13:03,077 - log
+ROUGE_L: 0.4022 - 2025-03-25 22:13:03,077 - log
+CIDEr: 1.2690 - 2025-03-25 22:13:03,077 - log
+
+ - 2025-03-25 22:13:03,077 - log
