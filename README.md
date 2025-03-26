@@ -1,6 +1,6 @@
 # LoRA+GPT2+jittor
 
-本项目利用jittor框架在loRA原论文（https://github.com/microsoft/LoRA）的基础之上，实现了其中的GPT2+LoRA的实验，并与pytorch版进行了对齐。
+本项目利用jittor框架在loRA原论文（https://github.com/microsoft/LoRA） 的基础之上，实现了其中的GPT2+LoRA的实验，并与pytorch版进行了对齐。
 
 ## 环境配置
 
