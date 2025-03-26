@@ -101,6 +101,7 @@ def read_and_check_tsv(sys_file, src_file):
     """Read system outputs from a TSV file, check that MRs correspond to a source file."""
     # read
     src_data = read_lines(src_file)
+    print(len(src_data),'我在这里')
     sys_srcs, sys_outs = read_tsv(sys_file, HEADER_SRC, HEADER_SYS)
     # check integrity
     if len(sys_outs) != len(src_data):
@@ -223,6 +224,7 @@ def load_data(ref_file, sys_file, src_file=None):
             data_ref = [[inst] for inst in data_ref[0]]
 
     # sanity check
+    print(len(data_ref),len(data_sys),len(data_src))
     assert(len(data_ref) == len(data_sys) == len(data_src))
     return data_src, data_ref, data_sys
 
@@ -355,6 +357,8 @@ def sent_level_scores(data_src, data_ref, data_sys, out_fname):
 
 logger=Logger()
 if __name__ == '__main__':
+    logger.register("performance")
+    logger.log('-' * 50 + 'measure_score' + '-' * 50)
     ap = ArgumentParser(description='E2E Challenge evaluation -- MS-COCO & MTEval wrapper')
     ap.add_argument('-l', '--sent-level', '--seg-level', '--sentence-level', '--segment-level',
                     type=str, help='Output segment-level scores in a TSV format to the given file?',

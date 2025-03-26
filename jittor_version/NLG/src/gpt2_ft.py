@@ -13,7 +13,6 @@ import jittor as jt
 import jittor.nn as nn
 import random
 
-from scipy.cluster.hierarchy import weighted
 
 # from torch.utils.data import DataLoader
 
@@ -232,7 +231,7 @@ def train_validate(
             avg_lm_loss.reset()
         
         if train_step % args.save_interval == 0:
-            model_path = os.path.join(args.work_dir, f'model.{train_step}.pt')
+            model_path = os.path.join(args.work_dir, f'model.{train_step}.ckpt')
             logger.log(f'saving checkpoint, {model_path}')
             jt.save({'model_state_dict': lora.lora_state_dict(model)}, model_path)
             # distributed_sync(args)
@@ -260,8 +259,9 @@ def train_validate(
         if train_step == args.max_step:
             break
 
-    model_path = os.path.join(args.work_dir, f'model.{train_step}.pt')
+    model_path = os.path.join(args.work_dir, f'model.{train_step}.pkl')
     logger.log(f'saving checkpoint, {model_path}')
+    # print(model_path)
     jt.save({'model_state_dict': model.state_dict()}, model_path)
     # distributed_sync(args)
     return train_step

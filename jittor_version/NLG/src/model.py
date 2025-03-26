@@ -10,7 +10,6 @@ import copy
 import math
 import jittor as jt
 import jittor.nn as nn
-from tensorboard.compat.tensorflow_stub.dtypes import float32
 
 import loralib as lora
 
@@ -389,8 +388,8 @@ class GPT2LMModel(nn.Module):
                 _pred_token = jt.argmax(lm_logits, dim=-1)
                 _hit = (_pred_token == lm_labels) * lm_mask
 
-                _t1_acc = jt.zeros(_batch, dtype=float32)
-                _all_acc = jt.zeros(_batch, dtype=float32)
+                _t1_acc = jt.zeros(_batch)
+                _all_acc = jt.zeros(_batch)
                 
                 for _b in range(0, _batch):
                     for _i in range(0, _len):

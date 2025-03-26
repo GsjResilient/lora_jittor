@@ -354,7 +354,7 @@ def sent_level_scores(data_src, data_ref, data_sys, out_fname):
         res_data.append(res_line)
     # write the output file
     write_tsv(out_fname, headers, res_data)
-from log import Logger
+
 logger=Logger()
 if __name__ == '__main__':
     logger.register("performance")

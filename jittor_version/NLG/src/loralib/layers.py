@@ -2,9 +2,6 @@ import math
 from typing import  List
 import jittor as jt
 import jittor.nn as nn
-from tensorboard.compat.tensorflow_stub.dtypes import float32
-
-
 def _calculate_fan_in_and_fan_out(w):
     dimensions = w.dim()
     if dimensions < 2:

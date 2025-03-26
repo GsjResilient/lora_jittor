@@ -1,6 +1,6 @@
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==2.2.2+cu121
-transformers
+transformers==4.50.0
 spacy
 tqdm
 tensorboard

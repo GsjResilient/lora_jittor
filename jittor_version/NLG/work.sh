@@ -38,7 +38,7 @@ python src/gpt2_beam.py \
     --seq_len 64 \
     --eval_len 32 \
     --model_card gpt2.sm \
-    --init_checkpoint ./trained_models/GPT2_M/e2e/model.1050.pt \
+    --init_checkpoint ./trained_models/GPT2_M/e2e/model.1050.pkl \
     --lora_dim 4 \
     --lora_alpha 32 \
     --beam 10 \

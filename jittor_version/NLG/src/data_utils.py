@@ -7,7 +7,6 @@ import numpy as np
 import json
 import jittor as jt
 import jittor.nn as nn
-from sympy.codegen.ast import float32
 
 
 class LMOrderedIterator(object):
@@ -48,8 +47,8 @@ class LMOrderedIterator(object):
 
         _msk = jt.concat(
             [
-                jt.zeros(bptt-eval_len, dtype=float32),
-                jt.ones(eval_len, dtype=float32)
+                jt.zeros(bptt-eval_len),
+                jt.ones(eval_len)
             ]
         )
         _msk = _msk.unsqueeze(0).expand_as(_input) # .unsqueeze(-1) # length, 1; 
@@ -119,8 +118,8 @@ class BinLMOrderedIterator(object):
 
         _msk = jt.concat(
             [
-                jt.zeros(bptt-eval_len, dtype=float32),
-                jt.ones(eval_len, dtype=float32)
+                jt.zeros(bptt-eval_len),
+                jt.ones(eval_len)
             ]
         )
         _msk = _msk.unsqueeze(0).expand_as(_input) # .unsqueeze(-1) # length, 1; 
