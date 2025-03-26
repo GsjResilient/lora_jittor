@@ -1,0 +1,46 @@
+Wildwood is a French restaurant located near Raja Indian Cuisine .
+Green Man is an Italian restaurant located near Express by Holiday Inn .
+The Waterman is a high priced Indian restaurant in the riverside area near Raja Indian Cuisine .
+The Cricketers is a cheap English restaurant located near Café Rouge .
+The Wrestlers is an Italian restaurant near Raja Indian Cuisine . It has a price range of more than £ 30 .
+Blue Spice is a coffee shop located in the riverside area .
+The Punter is an Indian restaurant near Express by Holiday Inn in the city centre . It is moderately priced and
+The Punter is an Indian restaurant in the riverside area near Express by Holiday Inn .
+Zizzi is a coffee shop near Burger King .
+The Mill is an English restaurant near Café Rouge . It has a low customer rating .
+Green Man is a coffee shop near All Bar One . It has a customer rating of 3 out of 5 .
+The Punter is a cheap Italian restaurant located near the Rainbow Vegetarian Café .
+The Vaults is a pub serving French food near Raja Indian Cuisine . It has a price range of more than £ 30 .
+Strada is a pub near Rainbow Vegetarian Café with a customer rating of 1 out of 5 .
+Giraffe is a fast food pub near the Rainbow Vegetarian Café . It is located in the riverside area .
+The Cricketers is a low rated coffee shop near Ranch .
+The Mill is a fast food pub near Café Sicilia . It is located in the riverside area .
+The Cricketers is a coffee shop with a customer rating of 1 out of 5 .
+The Vaults is a pub near the Rainbow Vegetarian Café with a price range of less than £ 20 .
+Giraffe is a pub near Raja Indian Cuisine that serves French food .
+Clowns is a coffee shop near All Bar One . It has a customer rating of 3 out of 5 .
+Wildwood is a pub serving Indian food in the riverside area near Raja Indian Cuisine .
+The Wrestlers is a Japanese pub near Raja Indian Cuisine in the city centre .
+Green Man is a pub near All Bar One . It has a customer rating of 3 out of 5 .
+The Mill is a fast food pub near Raja Indian Cuisine . It has a price range of £ 20 - 25 .
+The Mill is a pub located near Raja Indian Cuisine . It has a moderate price range .
+Located near Rainbow Vegetarian Café , Blue Spice is a restaurant that serves English food .
+The Mill is a restaurant located near Raja Indian Cuisine . It has a price range of less than £ 20 .
+The Vaults is a pub serving French food near Raja Indian Cuisine . It is located in the riverside area .
+The Waterman is a pub near Raja Indian Cuisine in the riverside area .
+The Punter is an English restaurant located near Raja Indian Cuisine .
+The Wrestlers is a pub located near Raja Indian Cuisine in the riverside area
+Clowns is a pub near All Bar One . It has a customer rating of 3 out of 5 .
+The Cricketers is a coffee shop near Café Sicilia .
+Wildwood is a pub near Raja Indian Cuisine that serves French food .
+The Mill is a fast food pub near Café Sicilia in the riverside area .
+The Mill is a fast food pub near Café Sicilia . It is located in the riverside area .
+The Cricketers is a restaurant with a customer rating of 1 out of 5 .
+The Mill is an English restaurant near Raja Indian Cuisine . It has a price range of more than £ 30 .
+Cocum is a coffee shop near Burger King .
+The Cricketers is a low rated coffee shop near Express by Holiday Inn .
+The Cricketers is a restaurant located near Express by Holiday Inn .
+The Punter is a moderately priced Indian restaurant located near Express by Holiday Inn . It has a customer rating of the family , 1 of the family of the the
+Green Man is a Japanese restaurant located near Express by Holiday Inn .
+The Phoenix is a cheap French pub near Crowne Plaza Hotel . It is located in the riverside area .
+The Vaults is a Japanese pub near Raja Indian Cuisine . It has a low customer rating .
