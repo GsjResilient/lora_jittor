@@ -259,6 +259,7 @@ def train_validate(
         if train_step == args.max_step:
             break
 
+    os.makedirs(args.work_dir, exist_ok=True)
     model_path = os.path.join(args.work_dir, f'model.{train_step}.pkl')
     logger.log(f'saving checkpoint, {model_path}')
     # print(model_path)
