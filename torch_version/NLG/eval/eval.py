@@ -9,7 +9,7 @@ Description:
     METEOR, chrF++, TER and BERT-Score.
     
     ARGS:
-        usage: eval.py [-h] -R REFERENCE -H HYPOTHESIS [-lng LANGUAGE] [-nr NUM_REFS]
+        usage: eval_m.py [-h] -R REFERENCE -H HYPOTHESIS [-lng LANGUAGE] [-nr NUM_REFS]
                [-m METRICS] [-nc NCORDER] [-nw NWORDER] [-b BETA]
 
         optional arguments:
@@ -32,9 +32,9 @@ Description:
 
     EXAMPLE:
         ENGLISH: 
-            python3 eval.py -R data/en/references/reference -H data/en/hypothesis -nr 4 -m bleu,meteor,chrf++,ter,bert,bleurt
+            python3 eval_m.py -R data/en/references/reference -H data/en/hypothesis -nr 4 -m bleu,meteor,chrf++,ter,bert,bleurt
         RUSSIAN:
-            python3 eval.py -R data/ru/reference -H data/ru/hypothesis -lng ru -nr 1 -m bleu,meteor,chrf++,ter,bert
+            python3 eval_m.py -R data/ru/reference -H data/ru/hypothesis -lng ru -nr 1 -m bleu,meteor,chrf++,ter,bert
 """
 
 import sys

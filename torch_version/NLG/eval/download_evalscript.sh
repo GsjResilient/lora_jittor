@@ -13,6 +13,6 @@ pip install -r e2e/requirements.txt
 #rm -r data/en
 #rm -r data/ru
 #cd ..
-#mv eval.py GenerationEval/
+#mv eval_m.py GenerationEval/
 
 echo "script complete!"

@@ -5,7 +5,7 @@
 import sys
 import io
 import json
-
+import random
 
 with open(sys.argv[1], 'r', encoding='utf8') as reader, \
      open(sys.argv[2], 'w', encoding='utf8') as writer :
@@ -35,9 +35,19 @@ with open(sys.argv[1], 'r', encoding='utf8') as reader, \
             full_rela_lst.append(rela_lst)
 
     print('unique source is', unique_src)
+    lst=zip(full_src_lst, full_tgt_lst)
+    num=0
+    S=dict()
+    MAXN=len(full_src_lst)/100
+    random.seed(2025)
 
-    for src, tgt in zip(full_src_lst, full_tgt_lst):
+    while num<MAXN:
+        idx = random.choice(range(0, len(full_src_lst)))
+        src, tgt=full_src_lst[idx],full_tgt_lst[idx]
+        if src in S.keys():continue
+        S[src]=1
         x = {}
-        x['context'] =  src # context #+ '||'
-        x['completion'] = tgt #completion
-        writer.write(json.dumps(x)+'\n')
+        x['context'] = src  # context #+ '||'
+        x['completion'] = tgt  # completion
+        writer.write(json.dumps(x) + '\n')
+        num+=1

@@ -204,7 +204,7 @@ def _add_beam_candidate(
 
             beam_scores.view(-1)[_i] = -float("inf")
 
-
+warmup = 10
 def beam(model, data_iter, args):
     model.eval()
     total_loss = 0.
@@ -212,7 +212,12 @@ def beam(model, data_iter, args):
 
     all_predictions = {}
     with torch.no_grad():
+        rerun = 0
         for idx, data in enumerate(data_iter):
+            if idx>=warmup:
+                if rerun==0:
+                    start = time.time()
+                rerun+=1
             data = {key: value for key, value in data.items()}
 
             _id = data['id'].to(args.device)
@@ -347,6 +352,8 @@ def beam(model, data_iter, args):
                     logger.log(f'inference samples: {idx}')
 
     if args.rank == 0:
+        end = time.time()
+        logger.log(f"Jittor FPS: {(rerun * batch_size) / (end - start)}")
         pred_file = os.path.join(args.work_dir, args.output_file) 
         logger.log(f'saving prediction file: {pred_file}')
         with open(pred_file, 'w') as writer:

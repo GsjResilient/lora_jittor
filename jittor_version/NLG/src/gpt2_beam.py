@@ -192,15 +192,22 @@ def _add_beam_candidate(
 
             beam_scores.view(-1)[_i] = -float("inf")
 
-
+jt.flags.use_cuda = 1
+warmup = 10
 def beam(model, data_iter, args):
     model.eval()
+    jt.sync_all(True)
     total_loss = 0.
     start_time = time.time()
 
     all_predictions = {}
     with jt.no_grad():
+        rerun=0
         for idx, data in enumerate(data_iter):
+            if idx>=warmup:
+                if rerun==0:
+                    start = time.time()
+                rerun+=1
             data = {key: value for key, value in data.items()}
 
             _id = data['id'].to(args.device)
@@ -245,6 +252,7 @@ def beam(model, data_iter, args):
                     if i == 0:
                         # print(_query.shape, '_query')
                         logits, past = model(_query)
+                        logits.sync()
                         # print(len(past))
                         # for _ in past:
                         #     print(type(_),_.shape)
@@ -255,7 +263,8 @@ def beam(model, data_iter, args):
                         # print('len_past.shape', len_past.shape, len_past)
 
                         # print(token_id.shape, type(token_id))
-                        logits, past = model(token_id, past=past, len_past=len_past) 
+                        logits, past = model(token_id, past=past, len_past=len_past)
+                        logits.sync()
                         logits = logits[:, -1, :]    # batch_size * beam, vocab
 
                     logits = _postprocess_next_token_scores(           
@@ -329,7 +338,9 @@ def beam(model, data_iter, args):
 
             if idx % 10 == 0:
                 logger.log(f'inference samples: {idx}')
-
+        jt.sync_all(True)
+        end=time.time()
+        logger.log(f"Jittor FPS: {(rerun * batch_size) / (end - start)}")
     pred_file = os.path.join(args.work_dir, args.output_file)
     logger.log(f'saving prediction file: {pred_file}')
     with open(pred_file, 'w') as writer:

@@ -57,7 +57,7 @@ def post_process(sent, is_tokenize, is_lower):
 logger = Logger()
 if __name__ == "__main__":
     enc = encoder.get_encoder(args.vocab)
-    logger.register("performance")
+    logger.register(f"performance_{os.path.normpath(args.sample_file).split(os.sep)[-2]}")
     logger.log('-' * 50 + 'decode' + '-' * 50)
     ref_unique = None
 

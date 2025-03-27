@@ -177,7 +177,7 @@ def evaluate(model, valid_loader, args):
         logger.log(f'average loss: +{avg_lm_loss.avg}')
     return avg_lm_loss.avg, math.exp(avg_lm_loss.avg)
 
-
+Ave_time_lm=AverageMeter()
 def train_validate(
     model, 
     optimizer, 
@@ -193,7 +193,7 @@ def train_validate(
     logger.log(f'start to train the model................ {epoch}')
     log_start_time = time.time()
     best_val_ppl = None
-
+    avg_time = AverageMeter()
     train_loader.sampler.set_epoch(epoch)
 
     for idx, data in enumerate(train_loader):
@@ -222,17 +222,18 @@ def train_validate(
         
         if train_step % args.log_interval == 0: 
             elapsed = time.time() - log_start_time
+            avg_time.update(elapsed * 1000 / args.log_interval)
             lr = optimizer.param_groups[0]['lr']
             log_str = f'| epoch {epoch:3d} step {train_step:>8d} | { idx + 1:>6d} batches | ' \
                       f'lr {lr:.3g} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | ' \
                       f'loss {avg_lm_loss.val:5.2f} | avg loss {avg_lm_loss.avg:5.2f} | ' \
                       f'ppl {math.exp(avg_lm_loss.avg):5.2f}'
-            train_loss_list.append(avg_lm_loss.val)
+            train_loss_list.append(avg_lm_loss.avg)
             if args.rank == 0: 
                 logger.log(log_str)
             log_start_time = time.time()
             avg_lm_loss.reset()
-        
+
         if train_step % args.save_interval == 0: 
             if args.rank == 0:
                 model_path = os.path.join(args.work_dir, f'model.{train_step}.pt')
@@ -265,6 +266,7 @@ def train_validate(
             break
 
     if args.rank == 0:
+        Ave_time_lm.update(avg_time.avg)
         model_path = os.path.join(args.work_dir, f'model.{train_step}.pt')
         logger.log(f'saving checkpoint, {model_path}')
         torch.save({'model_state_dict': model.state_dict()}, model_path) 
@@ -368,6 +370,7 @@ if __name__ == '__main__':
                 if args.rank == 0:
                     logger.log('-' * 100)
                     logger.log('End of training')
+                    logger.log(f'ms/batch {Ave_time_lm.avg:5.2f}')
                 break
     except KeyboardInterrupt:
         if args.rank == 0:

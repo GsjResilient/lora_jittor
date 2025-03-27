@@ -49,7 +49,7 @@ echo "script complete!"
 work.sh脚本包含了本次实验的主要内容，分为四个步骤：训练（微调）、测试（推理）、解码、计算指标。请运行：
 
 ```sh
-bash work.sh
+bash work_e2e.sh
 ```
 
 脚本内容：
@@ -136,7 +136,7 @@ python eval/e2e/measure_scores.py e2e_ref.txt e2e_pred.txt -p
 
 
 ##### pytorch版loss曲线：
-
+![Test_and_Report_information](./torch_version/NLG/loss/e2e_loss.png)
 
 
 ## 复现步骤

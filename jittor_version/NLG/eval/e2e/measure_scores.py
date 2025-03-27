@@ -357,7 +357,7 @@ def sent_level_scores(data_src, data_ref, data_sys, out_fname):
 
 logger=Logger()
 if __name__ == '__main__':
-    logger.register("performance")
+    logger.register("performance_e2e")
     logger.log('-' * 50 + 'measure_score' + '-' * 50)
     ap = ArgumentParser(description='E2E Challenge evaluation -- MS-COCO & MTEval wrapper')
     ap.add_argument('-l', '--sent-level', '--seg-level', '--sentence-level', '--segment-level',

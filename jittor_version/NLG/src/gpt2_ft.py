@@ -174,7 +174,7 @@ def evaluate(model, valid_loader, args):
         logger.log(f'average loss: +{avg_lm_loss.avg}')
     return avg_lm_loss.avg, math.exp(avg_lm_loss.avg)
 
-
+Ave_time_lm=AverageMeter()
 def train_validate(
     model, 
     optimizer, 
@@ -190,8 +190,8 @@ def train_validate(
     logger.log(f'start to train the model................ {epoch}')
     log_start_time = time.time()
     best_val_ppl = None
-
-
+    avg_time = AverageMeter()
+    jt.sync_all(True)
     for idx, data in enumerate(train_loader):
         # print("here",'='*100)
         data = {key: value for key, value in data.items()}
@@ -203,6 +203,7 @@ def train_validate(
         _target = data['target'].to(args.device)
         _msk = data['mask'].to(args.device)
         # print(_input.shape,'阿？')
+
         _lm_logits, _lm_loss = model(
             _input, lm_labels=_target, lm_mask=_msk, label_smooth=args.label_smooth
         )
@@ -217,16 +218,20 @@ def train_validate(
         optimizer_step(
             _lm_loss/(args.grad_acc), optimizer, model, scheduler, args, is_update=is_update
         )
-        
-        if train_step % args.log_interval == 0: 
+        # print(train_step,epoch,args.log_interval)
+        if train_step % args.log_interval == 0:
+            jt.sync_all(True)
             elapsed = time.time() - log_start_time
+            avg_time.update(elapsed * 1000 / args.log_interval)
+
             lr = optimizer.param_groups[0]['lr']
             log_str = f'| epoch {epoch:3d} step {train_step:>8d} | { idx + 1:>6d} batches | ' \
                       f'lr {lr:.3g} | ms/batch {elapsed * 1000 / args.log_interval:5.2f} | ' \
                       f'loss {avg_lm_loss.val:5.2f} | avg loss {avg_lm_loss.avg:5.2f} | ' \
                       f'ppl {math.exp(avg_lm_loss.avg):5.2f}'
-            train_loss_list.append(avg_lm_loss.val)
+            train_loss_list.append(avg_lm_loss.avg)
             logger.log(log_str)
+            jt.sync_all(True)
             log_start_time = time.time()
             avg_lm_loss.reset()
         
@@ -259,6 +264,7 @@ def train_validate(
         if train_step == args.max_step:
             break
 
+    Ave_time_lm.update(avg_time.avg)
     os.makedirs(args.work_dir, exist_ok=True)
     model_path = os.path.join(args.work_dir, f'model.{train_step}.pkl')
     logger.log(f'saving checkpoint, {model_path}')
@@ -359,6 +365,7 @@ if __name__ == '__main__':
             if train_step >= args.max_step or (args.max_epoch is not None and epoch >= args.max_epoch):
                 logger.log('-' * 100)
                 logger.log('End of training')
+                logger.log(f'ms/batch {Ave_time_lm.avg:5.2f}')
                 break
     except KeyboardInterrupt:
             logger.log('-' * 100)

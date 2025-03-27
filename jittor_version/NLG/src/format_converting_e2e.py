@@ -11,7 +11,7 @@ with open(sys.argv[1], 'r', encoding='utf8') as reader, \
 	print(MAXV)
 	S=dict()
 	while num < MAXV:
-		line=random.choice(lines)
+		line = random.choice(lines)
 		items = line.strip().split('||')
 		context = items[0]
 		completion = items[1].strip('\n')

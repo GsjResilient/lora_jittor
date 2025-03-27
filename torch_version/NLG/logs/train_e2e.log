@@ -6653,3 +6653,293 @@ saving checkpoint, ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-26 15:27:
 ---------------------------------------------------------------------------------------------------- - 2025-03-26 15:27:35,269 - log
 End of training - 2025-03-26 15:27:35,270 - log
 cleanup dist ... - 2025-03-26 15:27:35,456 - log
+==================================================================================================== - 2025-03-26 15:56:19,526 - log
+        - platform : local - 2025-03-26 15:56:19,530 - log
+        - local_rank : 0 - 2025-03-26 15:56:19,530 - log
+        - rank : 0 - 2025-03-26 15:56:19,530 - log
+        - device : cuda:0 - 2025-03-26 15:56:19,530 - log
+        - world_size : 1 - 2025-03-26 15:56:19,530 - log
+        - random_seed : 2025 - 2025-03-26 15:56:19,530 - log
+        - lr : 0.0002 - 2025-03-26 15:56:19,530 - log
+        - weight_decay : 0.01 - 2025-03-26 15:56:19,530 - log
+        - correct_bias : True - 2025-03-26 15:56:19,530 - log
+        - adam_epislon : 1e-06 - 2025-03-26 15:56:19,530 - log
+        - no_decay_bias : False - 2025-03-26 15:56:19,530 - log
+        - adam_beta1 : 0.9 - 2025-03-26 15:56:19,530 - log
+        - adam_beta2 : 0.999 - 2025-03-26 15:56:19,530 - log
+        - scheduler : linear - 2025-03-26 15:56:19,530 - log
+        - max_step : None - 2025-03-26 15:56:19,530 - log
+        - max_epoch : 5 - 2025-03-26 15:56:19,530 - log
+        - warmup_step : 500 - 2025-03-26 15:56:19,530 - log
+        - i_steps : 0 - 2025-03-26 15:56:19,530 - log
+        - i_lrs : 0.00025 - 2025-03-26 15:56:19,530 - log
+        - train_data : ./data/e2e/train.jsonl - 2025-03-26 15:56:19,530 - log
+        - valid_data : ./data/e2e/valid.jsonl - 2025-03-26 15:56:19,530 - log
+        - train_batch_size : 2 - 2025-03-26 15:56:19,530 - log
+        - valid_batch_size : 1 - 2025-03-26 15:56:19,530 - log
+        - grad_acc : 2 - 2025-03-26 15:56:19,530 - log
+        - clip : 0.0 - 2025-03-26 15:56:19,530 - log
+        - seq_len : 64 - 2025-03-26 15:56:19,530 - log
+        - model_card : gpt2.sm - 2025-03-26 15:56:19,530 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-26 15:56:19,530 - log
+        - fp16 : False - 2025-03-26 15:56:19,530 - log
+        - log_interval : 100 - 2025-03-26 15:56:19,530 - log
+        - eval_interval : 2000 - 2025-03-26 15:56:19,530 - log
+        - save_interval : 1000 - 2025-03-26 15:56:19,530 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-26 15:56:19,530 - log
+        - lora_dim : 4 - 2025-03-26 15:56:19,530 - log
+        - lora_alpha : 32 - 2025-03-26 15:56:19,530 - log
+        - obj : clm - 2025-03-26 15:56:19,530 - log
+        - lora_dropout : 0.1 - 2025-03-26 15:56:19,530 - log
+        - label_smooth : 0.1 - 2025-03-26 15:56:19,530 - log
+        - roll_interval : -1 - 2025-03-26 15:56:19,530 - log
+        - roll_lr : 1e-05 - 2025-03-26 15:56:19,530 - log
+        - roll_step : 100 - 2025-03-26 15:56:19,530 - log
+        - eval_epoch : 1 - 2025-03-26 15:56:19,530 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-26 15:56:19,530 - log
+==================================================================================================== - 2025-03-26 15:56:19,530 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-26 15:56:19,530 - log
+loading model pretrained weight. - 2025-03-26 15:56:20,599 - log
+set max_step: 1050 - 2025-03-26 15:56:22,372 - log
+start to train the model................ 1 - 2025-03-26 15:56:22,490 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 26.42 | loss  5.28 | avg loss  6.00 | ppl 403.55 - 2025-03-26 15:56:25,132 - log
+| epoch   1 step      200 |    200 batches | lr 8e-05 | ms/batch 24.65 | loss  4.30 | avg loss  5.33 | ppl 206.28 - 2025-03-26 15:56:27,597 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.210.pt - 2025-03-26 15:56:27,845 - log
+start to train the model................ 2 - 2025-03-26 15:56:28,626 - log
+| epoch   2 step      300 |     90 batches | lr 0.00012 | ms/batch 21.96 | loss  3.37 | avg loss  3.79 | ppl 44.31 - 2025-03-26 15:56:30,822 - log
+| epoch   2 step      400 |    190 batches | lr 0.00016 | ms/batch 24.48 | loss  3.43 | avg loss  3.47 | ppl 32.21 - 2025-03-26 15:56:33,270 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.420.pt - 2025-03-26 15:56:33,759 - log
+start to train the model................ 3 - 2025-03-26 15:56:34,414 - log
+| epoch   3 step      500 |     80 batches | lr 0.0002 | ms/batch 19.28 | loss  2.82 | avg loss  3.25 | ppl 25.73 - 2025-03-26 15:56:36,342 - log
+| epoch   3 step      600 |    180 batches | lr 0.000164 | ms/batch 24.52 | loss  3.75 | avg loss  3.27 | ppl 26.34 - 2025-03-26 15:56:38,794 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.630.pt - 2025-03-26 15:56:39,526 - log
+start to train the model................ 4 - 2025-03-26 15:56:40,196 - log
+| epoch   4 step      700 |     70 batches | lr 0.000127 | ms/batch 17.03 | loss  3.87 | avg loss  3.14 | ppl 23.02 - 2025-03-26 15:56:41,899 - log
+| epoch   4 step      800 |    170 batches | lr 9.09e-05 | ms/batch 24.57 | loss  2.79 | avg loss  3.12 | ppl 22.70 - 2025-03-26 15:56:44,356 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.840.pt - 2025-03-26 15:56:45,338 - log
+start to train the model................ 5 - 2025-03-26 15:56:46,083 - log
+| epoch   5 step      900 |     60 batches | lr 5.45e-05 | ms/batch 14.37 | loss  2.92 | avg loss  3.08 | ppl 21.78 - 2025-03-26 15:56:47,520 - log
+| epoch   5 step     1000 |    160 batches | lr 1.82e-05 | ms/batch 24.54 | loss  2.68 | avg loss  3.04 | ppl 20.97 - 2025-03-26 15:56:49,975 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1000.pt - 2025-03-26 15:56:49,975 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-26 15:56:51,209 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-26 15:56:51,905 - log
+End of training - 2025-03-26 15:56:51,905 - log
+cleanup dist ... - 2025-03-26 15:56:52,098 - log
+==================================================================================================== - 2025-03-26 21:32:53,694 - log
+        - platform : local - 2025-03-26 21:32:53,694 - log
+        - local_rank : 0 - 2025-03-26 21:32:53,694 - log
+        - rank : 0 - 2025-03-26 21:32:53,694 - log
+        - device : cuda:0 - 2025-03-26 21:32:53,694 - log
+        - world_size : 1 - 2025-03-26 21:32:53,694 - log
+        - random_seed : 2025 - 2025-03-26 21:32:53,694 - log
+        - lr : 0.0002 - 2025-03-26 21:32:53,694 - log
+        - weight_decay : 0.01 - 2025-03-26 21:32:53,694 - log
+        - correct_bias : True - 2025-03-26 21:32:53,694 - log
+        - adam_epislon : 1e-06 - 2025-03-26 21:32:53,694 - log
+        - no_decay_bias : False - 2025-03-26 21:32:53,694 - log
+        - adam_beta1 : 0.9 - 2025-03-26 21:32:53,694 - log
+        - adam_beta2 : 0.999 - 2025-03-26 21:32:53,694 - log
+        - scheduler : linear - 2025-03-26 21:32:53,694 - log
+        - max_step : None - 2025-03-26 21:32:53,694 - log
+        - max_epoch : 5 - 2025-03-26 21:32:53,694 - log
+        - warmup_step : 500 - 2025-03-26 21:32:53,694 - log
+        - i_steps : 0 - 2025-03-26 21:32:53,694 - log
+        - i_lrs : 0.00025 - 2025-03-26 21:32:53,694 - log
+        - train_data : ./data/e2e/train.jsonl - 2025-03-26 21:32:53,694 - log
+        - valid_data : ./data/e2e/valid.jsonl - 2025-03-26 21:32:53,694 - log
+        - train_batch_size : 2 - 2025-03-26 21:32:53,694 - log
+        - valid_batch_size : 1 - 2025-03-26 21:32:53,694 - log
+        - grad_acc : 2 - 2025-03-26 21:32:53,694 - log
+        - clip : 0.0 - 2025-03-26 21:32:53,694 - log
+        - seq_len : 64 - 2025-03-26 21:32:53,694 - log
+        - model_card : gpt2.sm - 2025-03-26 21:32:53,694 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-26 21:32:53,694 - log
+        - fp16 : False - 2025-03-26 21:32:53,694 - log
+        - log_interval : 100 - 2025-03-26 21:32:53,694 - log
+        - eval_interval : 2000 - 2025-03-26 21:32:53,694 - log
+        - save_interval : 1000 - 2025-03-26 21:32:53,694 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-26 21:32:53,694 - log
+        - lora_dim : 4 - 2025-03-26 21:32:53,694 - log
+        - lora_alpha : 32 - 2025-03-26 21:32:53,694 - log
+        - obj : clm - 2025-03-26 21:32:53,694 - log
+        - lora_dropout : 0.1 - 2025-03-26 21:32:53,694 - log
+        - label_smooth : 0.1 - 2025-03-26 21:32:53,694 - log
+        - roll_interval : -1 - 2025-03-26 21:32:53,694 - log
+        - roll_lr : 1e-05 - 2025-03-26 21:32:53,694 - log
+        - roll_step : 100 - 2025-03-26 21:32:53,694 - log
+        - eval_epoch : 1 - 2025-03-26 21:32:53,694 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-26 21:32:53,694 - log
+==================================================================================================== - 2025-03-26 21:32:53,694 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-26 21:32:53,694 - log
+loading model pretrained weight. - 2025-03-26 21:32:54,783 - log
+set max_step: 1050 - 2025-03-26 21:32:56,373 - log
+start to train the model................ 1 - 2025-03-26 21:32:56,515 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 28.59 | loss  5.28 | avg loss  6.00 | ppl 403.55 - 2025-03-26 21:32:59,374 - log
+| epoch   1 step      200 |    200 batches | lr 8e-05 | ms/batch 24.57 | loss  4.30 | avg loss  5.33 | ppl 206.28 - 2025-03-26 21:33:01,832 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.210.pt - 2025-03-26 21:33:02,080 - log
+start to train the model................ 2 - 2025-03-26 21:33:02,745 - log
+| epoch   2 step      300 |     90 batches | lr 0.00012 | ms/batch 22.04 | loss  3.37 | avg loss  3.79 | ppl 44.31 - 2025-03-26 21:33:04,949 - log
+| epoch   2 step      400 |    190 batches | lr 0.00016 | ms/batch 24.71 | loss  3.43 | avg loss  3.47 | ppl 32.21 - 2025-03-26 21:33:07,421 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.420.pt - 2025-03-26 21:33:07,911 - log
+start to train the model................ 3 - 2025-03-26 21:33:08,567 - log
+| epoch   3 step      500 |     80 batches | lr 0.0002 | ms/batch 19.64 | loss  2.82 | avg loss  3.25 | ppl 25.73 - 2025-03-26 21:33:10,531 - log
+| epoch   3 step      600 |    180 batches | lr 0.000164 | ms/batch 24.82 | loss  3.75 | avg loss  3.27 | ppl 26.34 - 2025-03-26 21:33:13,014 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.630.pt - 2025-03-26 21:33:13,757 - log
+start to train the model................ 4 - 2025-03-26 21:33:14,402 - log
+| epoch   4 step      700 |     70 batches | lr 0.000127 | ms/batch 16.93 | loss  3.87 | avg loss  3.14 | ppl 23.02 - 2025-03-26 21:33:16,095 - log
+| epoch   4 step      800 |    170 batches | lr 9.09e-05 | ms/batch 24.72 | loss  2.79 | avg loss  3.12 | ppl 22.70 - 2025-03-26 21:33:18,567 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.840.pt - 2025-03-26 21:33:19,557 - log
+start to train the model................ 5 - 2025-03-26 21:33:20,227 - log
+| epoch   5 step      900 |     60 batches | lr 5.45e-05 | ms/batch 14.43 | loss  2.92 | avg loss  3.08 | ppl 21.78 - 2025-03-26 21:33:21,671 - log
+| epoch   5 step     1000 |    160 batches | lr 1.82e-05 | ms/batch 24.69 | loss  2.68 | avg loss  3.04 | ppl 20.97 - 2025-03-26 21:33:24,140 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1000.pt - 2025-03-26 21:33:24,140 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-26 21:33:25,392 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-26 21:33:26,050 - log
+End of training - 2025-03-26 21:33:26,050 - log
+cleanup dist ... - 2025-03-26 21:33:26,251 - log
+==================================================================================================== - 2025-03-26 22:18:38,062 - log
+        - platform : local - 2025-03-26 22:18:38,062 - log
+        - local_rank : 0 - 2025-03-26 22:18:38,062 - log
+        - rank : 0 - 2025-03-26 22:18:38,062 - log
+        - device : cuda:0 - 2025-03-26 22:18:38,063 - log
+        - world_size : 1 - 2025-03-26 22:18:38,063 - log
+        - random_seed : 2025 - 2025-03-26 22:18:38,063 - log
+        - lr : 0.0002 - 2025-03-26 22:18:38,063 - log
+        - weight_decay : 0.01 - 2025-03-26 22:18:38,063 - log
+        - correct_bias : True - 2025-03-26 22:18:38,063 - log
+        - adam_epislon : 1e-06 - 2025-03-26 22:18:38,063 - log
+        - no_decay_bias : False - 2025-03-26 22:18:38,063 - log
+        - adam_beta1 : 0.9 - 2025-03-26 22:18:38,063 - log
+        - adam_beta2 : 0.999 - 2025-03-26 22:18:38,063 - log
+        - scheduler : linear - 2025-03-26 22:18:38,063 - log
+        - max_step : None - 2025-03-26 22:18:38,063 - log
+        - max_epoch : 5 - 2025-03-26 22:18:38,063 - log
+        - warmup_step : 500 - 2025-03-26 22:18:38,063 - log
+        - i_steps : 0 - 2025-03-26 22:18:38,063 - log
+        - i_lrs : 0.00025 - 2025-03-26 22:18:38,063 - log
+        - train_data : ./data/e2e/train.jsonl - 2025-03-26 22:18:38,063 - log
+        - valid_data : ./data/e2e/valid.jsonl - 2025-03-26 22:18:38,063 - log
+        - train_batch_size : 2 - 2025-03-26 22:18:38,063 - log
+        - valid_batch_size : 1 - 2025-03-26 22:18:38,063 - log
+        - grad_acc : 2 - 2025-03-26 22:18:38,063 - log
+        - clip : 0.0 - 2025-03-26 22:18:38,063 - log
+        - seq_len : 64 - 2025-03-26 22:18:38,063 - log
+        - model_card : gpt2.sm - 2025-03-26 22:18:38,063 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-26 22:18:38,063 - log
+        - fp16 : False - 2025-03-26 22:18:38,063 - log
+        - log_interval : 100 - 2025-03-26 22:18:38,063 - log
+        - eval_interval : 2000 - 2025-03-26 22:18:38,063 - log
+        - save_interval : 1000 - 2025-03-26 22:18:38,063 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-26 22:18:38,063 - log
+        - lora_dim : 4 - 2025-03-26 22:18:38,063 - log
+        - lora_alpha : 32 - 2025-03-26 22:18:38,063 - log
+        - obj : clm - 2025-03-26 22:18:38,063 - log
+        - lora_dropout : 0.1 - 2025-03-26 22:18:38,063 - log
+        - label_smooth : 0.1 - 2025-03-26 22:18:38,063 - log
+        - roll_interval : -1 - 2025-03-26 22:18:38,063 - log
+        - roll_lr : 1e-05 - 2025-03-26 22:18:38,063 - log
+        - roll_step : 100 - 2025-03-26 22:18:38,063 - log
+        - eval_epoch : 1 - 2025-03-26 22:18:38,063 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-26 22:18:38,063 - log
+==================================================================================================== - 2025-03-26 22:18:38,063 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-26 22:18:38,063 - log
+loading model pretrained weight. - 2025-03-26 22:18:39,169 - log
+set max_step: 1050 - 2025-03-26 22:18:40,848 - log
+start to train the model................ 1 - 2025-03-26 22:18:40,971 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 33.63 | loss  5.28 | avg loss  6.00 | ppl 403.55 - 2025-03-26 22:18:44,335 - log
+| epoch   1 step      200 |    200 batches | lr 8e-05 | ms/batch 31.20 | loss  4.30 | avg loss  5.33 | ppl 206.28 - 2025-03-26 22:18:47,456 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.210.pt - 2025-03-26 22:18:47,767 - log
+start to train the model................ 2 - 2025-03-26 22:18:48,497 - log
+| epoch   2 step      300 |     90 batches | lr 0.00012 | ms/batch 27.92 | loss  3.37 | avg loss  3.79 | ppl 44.31 - 2025-03-26 22:18:51,289 - log
+| epoch   2 step      400 |    190 batches | lr 0.00016 | ms/batch 38.30 | loss  3.43 | avg loss  3.47 | ppl 32.21 - 2025-03-26 22:18:55,119 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.420.pt - 2025-03-26 22:18:55,741 - log
+start to train the model................ 3 - 2025-03-26 22:18:56,490 - log
+| epoch   3 step      500 |     80 batches | lr 0.0002 | ms/batch 25.33 | loss  2.82 | avg loss  3.25 | ppl 25.73 - 2025-03-26 22:18:59,023 - log
+| epoch   3 step      600 |    180 batches | lr 0.000164 | ms/batch 31.25 | loss  3.75 | avg loss  3.27 | ppl 26.34 - 2025-03-26 22:19:02,148 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.630.pt - 2025-03-26 22:19:03,087 - log
+start to train the model................ 4 - 2025-03-26 22:19:03,822 - log
+| epoch   4 step      700 |     70 batches | lr 0.000127 | ms/batch 22.16 | loss  3.87 | avg loss  3.14 | ppl 23.02 - 2025-03-26 22:19:06,038 - log
+| epoch   4 step      800 |    170 batches | lr 9.09e-05 | ms/batch 31.30 | loss  2.79 | avg loss  3.12 | ppl 22.70 - 2025-03-26 22:19:09,169 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.840.pt - 2025-03-26 22:19:10,421 - log
+start to train the model................ 5 - 2025-03-26 22:19:11,131 - log
+| epoch   5 step      900 |     60 batches | lr 5.45e-05 | ms/batch 18.64 | loss  2.92 | avg loss  3.08 | ppl 21.78 - 2025-03-26 22:19:12,995 - log
+| epoch   5 step     1000 |    160 batches | lr 1.82e-05 | ms/batch 31.41 | loss  2.68 | avg loss  3.04 | ppl 20.97 - 2025-03-26 22:19:16,137 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1000.pt - 2025-03-26 22:19:16,137 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-26 22:19:17,703 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-26 22:19:18,445 - log
+End of training - 2025-03-26 22:19:18,445 - log
+ms/batch 29.11 - 2025-03-26 22:19:18,445 - log
+cleanup dist ... - 2025-03-26 22:19:18,635 - log
+==================================================================================================== - 2025-03-27 07:35:09,000 - log
+        - platform : local - 2025-03-27 07:35:09,000 - log
+        - local_rank : 0 - 2025-03-27 07:35:09,000 - log
+        - rank : 0 - 2025-03-27 07:35:09,001 - log
+        - device : cuda:0 - 2025-03-27 07:35:09,001 - log
+        - world_size : 1 - 2025-03-27 07:35:09,001 - log
+        - random_seed : 2025 - 2025-03-27 07:35:09,001 - log
+        - lr : 0.0002 - 2025-03-27 07:35:09,001 - log
+        - weight_decay : 0.01 - 2025-03-27 07:35:09,001 - log
+        - correct_bias : True - 2025-03-27 07:35:09,001 - log
+        - adam_epislon : 1e-06 - 2025-03-27 07:35:09,001 - log
+        - no_decay_bias : False - 2025-03-27 07:35:09,001 - log
+        - adam_beta1 : 0.9 - 2025-03-27 07:35:09,001 - log
+        - adam_beta2 : 0.999 - 2025-03-27 07:35:09,001 - log
+        - scheduler : linear - 2025-03-27 07:35:09,001 - log
+        - max_step : None - 2025-03-27 07:35:09,001 - log
+        - max_epoch : 5 - 2025-03-27 07:35:09,001 - log
+        - warmup_step : 500 - 2025-03-27 07:35:09,001 - log
+        - i_steps : 0 - 2025-03-27 07:35:09,001 - log
+        - i_lrs : 0.00025 - 2025-03-27 07:35:09,001 - log
+        - train_data : ./data/e2e/train.jsonl - 2025-03-27 07:35:09,001 - log
+        - valid_data : ./data/e2e/valid.jsonl - 2025-03-27 07:35:09,001 - log
+        - train_batch_size : 2 - 2025-03-27 07:35:09,001 - log
+        - valid_batch_size : 1 - 2025-03-27 07:35:09,001 - log
+        - grad_acc : 2 - 2025-03-27 07:35:09,001 - log
+        - clip : 0.0 - 2025-03-27 07:35:09,001 - log
+        - seq_len : 64 - 2025-03-27 07:35:09,001 - log
+        - model_card : gpt2.sm - 2025-03-27 07:35:09,001 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 07:35:09,001 - log
+        - fp16 : False - 2025-03-27 07:35:09,001 - log
+        - log_interval : 100 - 2025-03-27 07:35:09,001 - log
+        - eval_interval : 2000 - 2025-03-27 07:35:09,001 - log
+        - save_interval : 1000 - 2025-03-27 07:35:09,001 - log
+        - work_dir : ./trained_models/GPT2_M/e2e - 2025-03-27 07:35:09,001 - log
+        - lora_dim : 4 - 2025-03-27 07:35:09,001 - log
+        - lora_alpha : 32 - 2025-03-27 07:35:09,001 - log
+        - obj : clm - 2025-03-27 07:35:09,001 - log
+        - lora_dropout : 0.1 - 2025-03-27 07:35:09,001 - log
+        - label_smooth : 0.1 - 2025-03-27 07:35:09,001 - log
+        - roll_interval : -1 - 2025-03-27 07:35:09,001 - log
+        - roll_lr : 1e-05 - 2025-03-27 07:35:09,001 - log
+        - roll_step : 100 - 2025-03-27 07:35:09,001 - log
+        - eval_epoch : 1 - 2025-03-27 07:35:09,001 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-27 07:35:09,001 - log
+==================================================================================================== - 2025-03-27 07:35:09,001 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 07:35:09,001 - log
+loading model pretrained weight. - 2025-03-27 07:35:10,076 - log
+set max_step: 1050 - 2025-03-27 07:35:11,639 - log
+start to train the model................ 1 - 2025-03-27 07:35:11,782 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 28.59 | loss  5.28 | avg loss  6.00 | ppl 403.55 - 2025-03-27 07:35:14,641 - log
+| epoch   1 step      200 |    200 batches | lr 8e-05 | ms/batch 24.43 | loss  4.30 | avg loss  5.33 | ppl 206.28 - 2025-03-27 07:35:17,084 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.210.pt - 2025-03-27 07:35:17,328 - log
+start to train the model................ 2 - 2025-03-27 07:35:18,022 - log
+| epoch   2 step      300 |     90 batches | lr 0.00012 | ms/batch 21.93 | loss  3.37 | avg loss  3.79 | ppl 44.31 - 2025-03-27 07:35:20,215 - log
+| epoch   2 step      400 |    190 batches | lr 0.00016 | ms/batch 24.58 | loss  3.43 | avg loss  3.47 | ppl 32.21 - 2025-03-27 07:35:22,673 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.420.pt - 2025-03-27 07:35:23,163 - log
+start to train the model................ 3 - 2025-03-27 07:35:23,806 - log
+| epoch   3 step      500 |     80 batches | lr 0.0002 | ms/batch 19.49 | loss  2.82 | avg loss  3.25 | ppl 25.73 - 2025-03-27 07:35:25,755 - log
+| epoch   3 step      600 |    180 batches | lr 0.000164 | ms/batch 24.57 | loss  3.75 | avg loss  3.27 | ppl 26.34 - 2025-03-27 07:35:28,212 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.630.pt - 2025-03-27 07:35:28,950 - log
+start to train the model................ 4 - 2025-03-27 07:35:29,626 - log
+| epoch   4 step      700 |     70 batches | lr 0.000127 | ms/batch 17.12 | loss  3.87 | avg loss  3.14 | ppl 23.02 - 2025-03-27 07:35:31,338 - log
+| epoch   4 step      800 |    170 batches | lr 9.09e-05 | ms/batch 24.72 | loss  2.79 | avg loss  3.12 | ppl 22.70 - 2025-03-27 07:35:33,809 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.840.pt - 2025-03-27 07:35:34,797 - log
+start to train the model................ 5 - 2025-03-27 07:35:35,500 - log
+| epoch   5 step      900 |     60 batches | lr 5.45e-05 | ms/batch 14.67 | loss  2.92 | avg loss  3.08 | ppl 21.78 - 2025-03-27 07:35:36,968 - log
+| epoch   5 step     1000 |    160 batches | lr 1.82e-05 | ms/batch 24.73 | loss  2.68 | avg loss  3.04 | ppl 20.97 - 2025-03-27 07:35:39,441 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1000.pt - 2025-03-27 07:35:39,441 - log
+saving checkpoint, ./trained_models/GPT2_M/e2e/model.1050.pt - 2025-03-27 07:35:40,683 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-27 07:35:41,319 - log
+End of training - 2025-03-27 07:35:41,320 - log
+ms/batch 22.48 - 2025-03-27 07:35:41,320 - log
+cleanup dist ... - 2025-03-27 07:35:41,511 - log
