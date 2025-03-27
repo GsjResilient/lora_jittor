@@ -2,6 +2,7 @@
 #  Copyright (c) Microsoft Corporation. All rights reserved.
 #  Licensed under the MIT License (MIT). See LICENSE in the repo root for license information.
 #  ------------------------------------------------------------------------------------------
+import random
 import sys
 import io
 import json
@@ -17,15 +18,15 @@ with open(sys.argv[1], 'r', encoding='utf8') as reader, \
     full_cate_lst = []
 
     seen = [
-        'Airport', 
-        'Astronaut', 
-        'Building', 
-        'City', 
-        'ComicsCharacter', 
-        'Food', 
-        'Monument', 
-        'SportsTeam', 
-        'University', 
+        'Airport',
+        'Astronaut',
+        'Building',
+        'City',
+        'ComicsCharacter',
+        'Food',
+        'Monument',
+        'SportsTeam',
+        'University',
         'WrittenWork'
     ]
 
@@ -59,10 +60,21 @@ with open(sys.argv[1], 'r', encoding='utf8') as reader, \
         print('cate', cate, cate_dict[cate])
 
     #edited_sents = []
-    for src, tgt, cate in zip(full_src_lst, full_tgt_lst, full_cate_lst):
+    MAXN=len(full_src_lst)/100
+    random.seed(2025)
+    lst=zip(full_src_lst, full_tgt_lst, full_cate_lst)
+    num=0
+    S=dict()
+    while num<MAXN:
+        idx=random.choice(range(0,len(full_src_lst)))
+
+        src, tgt, cate=full_src_lst[idx],full_tgt_lst[idx],full_cate_lst[idx]
+        if src in S.keys():continue
+        S[src]=1
         x = {}
         x['context'] =  src # context #+ '||'
         x['completion'] = tgt #completion
         x['cate'] = cate in seen
         writer.write(json.dumps(x)+'\n')
+        num+=1
 
