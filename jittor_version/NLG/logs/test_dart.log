@@ -1,0 +1,139 @@
+==================================================================================================== - 2025-03-27 09:35:52,626 - log
+        - random_seed : 2025 - 2025-03-27 09:35:52,626 - log
+        - data : ./data/dart/test.jsonl - 2025-03-27 09:35:52,626 - log
+        - batch_size : 1 - 2025-03-27 09:35:52,626 - log
+        - seq_len : 64 - 2025-03-27 09:35:52,626 - log
+        - eval_len : 32 - 2025-03-27 09:35:52,626 - log
+        - min_length : 0 - 2025-03-27 09:35:52,626 - log
+        - model_card : gpt2.sm - 2025-03-27 09:35:52,626 - log
+        - init_checkpoint : ./trained_models/GPT2_M/dart/model.1579.pkl - 2025-03-27 09:35:52,626 - log
+        - lora_dim : 4 - 2025-03-27 09:35:52,626 - log
+        - lora_alpha : 32 - 2025-03-27 09:35:52,626 - log
+        - work_dir : ./trained_models/GPT2_M/dart - 2025-03-27 09:35:52,626 - log
+        - beam : 10 - 2025-03-27 09:35:52,626 - log
+        - length_penalty : 0.8 - 2025-03-27 09:35:52,626 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 09:35:52,626 - log
+        - repetition_penalty : 1.0 - 2025-03-27 09:35:52,626 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 09:35:52,626 - log
+        - output_file : predict.1579.b10p08r4.jsonl - 2025-03-27 09:35:52,626 - log
+        - device : cuda - 2025-03-27 09:35:52,626 - log
+==================================================================================================== - 2025-03-27 09:35:52,626 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 09:35:52,626 - log
+loading model pretrained weight. - 2025-03-27 09:35:52,731 - log
+==================================================================================================== - 2025-03-27 09:36:26,171 - log
+        - random_seed : 2025 - 2025-03-27 09:36:26,171 - log
+        - data : ./data/dart/test.jsonl - 2025-03-27 09:36:26,171 - log
+        - batch_size : 1 - 2025-03-27 09:36:26,171 - log
+        - seq_len : 64 - 2025-03-27 09:36:26,171 - log
+        - eval_len : 32 - 2025-03-27 09:36:26,171 - log
+        - min_length : 0 - 2025-03-27 09:36:26,171 - log
+        - model_card : gpt2.sm - 2025-03-27 09:36:26,171 - log
+        - init_checkpoint : ./trained_models/GPT2_M/dart/model.1570.pkl - 2025-03-27 09:36:26,171 - log
+        - lora_dim : 4 - 2025-03-27 09:36:26,171 - log
+        - lora_alpha : 32 - 2025-03-27 09:36:26,171 - log
+        - work_dir : ./trained_models/GPT2_M/dart - 2025-03-27 09:36:26,171 - log
+        - beam : 10 - 2025-03-27 09:36:26,171 - log
+        - length_penalty : 0.8 - 2025-03-27 09:36:26,171 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 09:36:26,171 - log
+        - repetition_penalty : 1.0 - 2025-03-27 09:36:26,171 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 09:36:26,171 - log
+        - output_file : predict.1570.b10p08r4.jsonl - 2025-03-27 09:36:26,171 - log
+        - device : cuda - 2025-03-27 09:36:26,171 - log
+==================================================================================================== - 2025-03-27 09:36:26,171 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 09:36:26,171 - log
+loading model pretrained weight. - 2025-03-27 09:36:26,276 - log
+model sampling ... - 2025-03-27 09:36:27,563 - log
+inference samples: 0 - 2025-03-27 09:36:28,294 - log
+inference samples: 10 - 2025-03-27 09:36:34,093 - log
+inference samples: 20 - 2025-03-27 09:36:39,822 - log
+inference samples: 30 - 2025-03-27 09:36:45,567 - log
+inference samples: 40 - 2025-03-27 09:36:51,320 - log
+inference samples: 50 - 2025-03-27 09:36:57,077 - log
+inference samples: 60 - 2025-03-27 09:37:02,832 - log
+inference samples: 70 - 2025-03-27 09:37:08,601 - log
+inference samples: 80 - 2025-03-27 09:37:14,372 - log
+inference samples: 90 - 2025-03-27 09:37:20,126 - log
+inference samples: 100 - 2025-03-27 09:37:25,891 - log
+inference samples: 110 - 2025-03-27 09:37:31,697 - log
+inference samples: 120 - 2025-03-27 09:37:37,500 - log
+Jittor FPS: 1.7341818920747194 - 2025-03-27 09:37:40,409 - log
+saving prediction file: ./trained_models/GPT2_M/dart/predict.1570.b10p08r4.jsonl - 2025-03-27 09:37:40,409 - log
+finish inference - 2025-03-27 09:37:40,410 - log
+==================================================================================================== - 2025-03-27 11:25:39,681 - log
+        - random_seed : 2025 - 2025-03-27 11:25:39,681 - log
+        - data : ./data/dart/test.jsonl - 2025-03-27 11:25:39,681 - log
+        - batch_size : 1 - 2025-03-27 11:25:39,681 - log
+        - seq_len : 64 - 2025-03-27 11:25:39,681 - log
+        - eval_len : 32 - 2025-03-27 11:25:39,681 - log
+        - min_length : 0 - 2025-03-27 11:25:39,681 - log
+        - model_card : gpt2.sm - 2025-03-27 11:25:39,681 - log
+        - init_checkpoint : ./trained_models/GPT2_M/dart/model.1570.pkl - 2025-03-27 11:25:39,681 - log
+        - lora_dim : 4 - 2025-03-27 11:25:39,681 - log
+        - lora_alpha : 32 - 2025-03-27 11:25:39,681 - log
+        - work_dir : ./trained_models/GPT2_M/dart - 2025-03-27 11:25:39,681 - log
+        - beam : 10 - 2025-03-27 11:25:39,681 - log
+        - length_penalty : 0.8 - 2025-03-27 11:25:39,681 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 11:25:39,681 - log
+        - repetition_penalty : 1.0 - 2025-03-27 11:25:39,681 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 11:25:39,681 - log
+        - output_file : predict.1570.b10p08r4.jsonl - 2025-03-27 11:25:39,681 - log
+        - device : cuda - 2025-03-27 11:25:39,681 - log
+==================================================================================================== - 2025-03-27 11:25:39,681 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 11:25:39,681 - log
+loading model pretrained weight. - 2025-03-27 11:25:39,789 - log
+model sampling ... - 2025-03-27 11:25:41,143 - log
+inference samples: 0 - 2025-03-27 11:25:41,890 - log
+inference samples: 10 - 2025-03-27 11:25:47,801 - log
+inference samples: 20 - 2025-03-27 11:25:53,664 - log
+inference samples: 30 - 2025-03-27 11:25:59,546 - log
+inference samples: 40 - 2025-03-27 11:26:05,477 - log
+inference samples: 50 - 2025-03-27 11:26:11,424 - log
+inference samples: 60 - 2025-03-27 11:26:17,391 - log
+inference samples: 70 - 2025-03-27 11:26:23,342 - log
+inference samples: 80 - 2025-03-27 11:26:29,283 - log
+inference samples: 90 - 2025-03-27 11:26:35,177 - log
+inference samples: 100 - 2025-03-27 11:26:41,051 - log
+inference samples: 110 - 2025-03-27 11:26:46,914 - log
+inference samples: 120 - 2025-03-27 11:26:52,754 - log
+Jittor FPS: 1.694455068325328 - 2025-03-27 11:26:55,669 - log
+saving prediction file: ./trained_models/GPT2_M/dart/predict.1570.b10p08r4.jsonl - 2025-03-27 11:26:55,669 - log
+finish inference - 2025-03-27 11:26:55,670 - log
+==================================================================================================== - 2025-03-27 11:52:55,894 - log
+        - random_seed : 2025 - 2025-03-27 11:52:55,894 - log
+        - data : ./data/dart/test.jsonl - 2025-03-27 11:52:55,894 - log
+        - batch_size : 1 - 2025-03-27 11:52:55,894 - log
+        - seq_len : 64 - 2025-03-27 11:52:55,894 - log
+        - eval_len : 32 - 2025-03-27 11:52:55,894 - log
+        - min_length : 0 - 2025-03-27 11:52:55,895 - log
+        - model_card : gpt2.sm - 2025-03-27 11:52:55,895 - log
+        - init_checkpoint : ./trained_models/GPT2_M/dart/model.1570.pkl - 2025-03-27 11:52:55,895 - log
+        - lora_dim : 4 - 2025-03-27 11:52:55,895 - log
+        - lora_alpha : 32 - 2025-03-27 11:52:55,895 - log
+        - work_dir : ./trained_models/GPT2_M/dart - 2025-03-27 11:52:55,895 - log
+        - beam : 10 - 2025-03-27 11:52:55,895 - log
+        - length_penalty : 0.8 - 2025-03-27 11:52:55,895 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 11:52:55,895 - log
+        - repetition_penalty : 1.0 - 2025-03-27 11:52:55,895 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 11:52:55,895 - log
+        - output_file : predict.1570.b10p08r4.jsonl - 2025-03-27 11:52:55,895 - log
+        - device : cuda - 2025-03-27 11:52:55,895 - log
+==================================================================================================== - 2025-03-27 11:52:55,895 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 11:52:55,895 - log
+loading model pretrained weight. - 2025-03-27 11:52:56,002 - log
+model sampling ... - 2025-03-27 11:52:57,316 - log
+inference samples: 0 - 2025-03-27 11:52:58,061 - log
+inference samples: 10 - 2025-03-27 11:53:03,960 - log
+inference samples: 20 - 2025-03-27 11:53:09,747 - log
+inference samples: 30 - 2025-03-27 11:53:15,590 - log
+inference samples: 40 - 2025-03-27 11:53:21,465 - log
+inference samples: 50 - 2025-03-27 11:53:27,347 - log
+inference samples: 60 - 2025-03-27 11:53:33,226 - log
+inference samples: 70 - 2025-03-27 11:53:39,110 - log
+inference samples: 80 - 2025-03-27 11:53:44,988 - log
+inference samples: 90 - 2025-03-27 11:53:50,863 - log
+inference samples: 100 - 2025-03-27 11:53:56,738 - log
+inference samples: 110 - 2025-03-27 11:54:02,621 - log
+inference samples: 120 - 2025-03-27 11:54:08,557 - log
+Jittor FPS: 1.7025677703062605 - 2025-03-27 11:54:11,502 - log
+saving prediction file: ./trained_models/GPT2_M/dart/predict.1570.b10p08r4.jsonl - 2025-03-27 11:54:11,502 - log
+finish inference - 2025-03-27 11:54:11,503 - log

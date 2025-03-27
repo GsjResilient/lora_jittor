@@ -1,0 +1,199 @@
+==================================================================================================== - 2025-03-27 08:13:09,527 - log
+        - random_seed : 2025 - 2025-03-27 08:13:09,527 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-27 08:13:09,527 - log
+        - batch_size : 1 - 2025-03-27 08:13:09,527 - log
+        - seq_len : 64 - 2025-03-27 08:13:09,527 - log
+        - eval_len : 32 - 2025-03-27 08:13:09,527 - log
+        - min_length : 0 - 2025-03-27 08:13:09,527 - log
+        - model_card : gpt2.sm - 2025-03-27 08:13:09,527 - log
+        - init_checkpoint : ./trained_models/GPT2_M/2017/model.1050.pkl - 2025-03-27 08:13:09,527 - log
+        - lora_dim : 4 - 2025-03-27 08:13:09,527 - log
+        - lora_alpha : 32 - 2025-03-27 08:13:09,527 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 08:13:09,527 - log
+        - beam : 10 - 2025-03-27 08:13:09,527 - log
+        - length_penalty : 0.8 - 2025-03-27 08:13:09,527 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 08:13:09,527 - log
+        - repetition_penalty : 1.0 - 2025-03-27 08:13:09,527 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 08:13:09,527 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-27 08:13:09,527 - log
+        - device : cuda - 2025-03-27 08:13:09,527 - log
+==================================================================================================== - 2025-03-27 08:13:09,527 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 08:13:09,527 - log
+loading model pretrained weight. - 2025-03-27 08:13:09,631 - log
+==================================================================================================== - 2025-03-27 08:13:50,483 - log
+        - random_seed : 2025 - 2025-03-27 08:13:50,483 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-27 08:13:50,483 - log
+        - batch_size : 1 - 2025-03-27 08:13:50,483 - log
+        - seq_len : 64 - 2025-03-27 08:13:50,483 - log
+        - eval_len : 32 - 2025-03-27 08:13:50,483 - log
+        - min_length : 0 - 2025-03-27 08:13:50,483 - log
+        - model_card : gpt2.sm - 2025-03-27 08:13:50,483 - log
+        - init_checkpoint : ./trained_models/GPT2_M/2017/model.455.pkl - 2025-03-27 08:13:50,483 - log
+        - lora_dim : 4 - 2025-03-27 08:13:50,483 - log
+        - lora_alpha : 32 - 2025-03-27 08:13:50,483 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 08:13:50,483 - log
+        - beam : 10 - 2025-03-27 08:13:50,483 - log
+        - length_penalty : 0.8 - 2025-03-27 08:13:50,483 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 08:13:50,483 - log
+        - repetition_penalty : 1.0 - 2025-03-27 08:13:50,483 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 08:13:50,483 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-27 08:13:50,483 - log
+        - device : cuda - 2025-03-27 08:13:50,483 - log
+==================================================================================================== - 2025-03-27 08:13:50,483 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 08:13:50,483 - log
+loading model pretrained weight. - 2025-03-27 08:13:50,588 - log
+==================================================================================================== - 2025-03-27 08:14:24,878 - log
+        - random_seed : 2025 - 2025-03-27 08:14:24,879 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-27 08:14:24,879 - log
+        - batch_size : 1 - 2025-03-27 08:14:24,879 - log
+        - seq_len : 64 - 2025-03-27 08:14:24,879 - log
+        - eval_len : 32 - 2025-03-27 08:14:24,879 - log
+        - min_length : 0 - 2025-03-27 08:14:24,879 - log
+        - model_card : gpt2.sm - 2025-03-27 08:14:24,879 - log
+        - init_checkpoint : ./trained_models/GPT2_M/webnlg/model.455.pkl - 2025-03-27 08:14:24,879 - log
+        - lora_dim : 4 - 2025-03-27 08:14:24,879 - log
+        - lora_alpha : 32 - 2025-03-27 08:14:24,879 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 08:14:24,879 - log
+        - beam : 10 - 2025-03-27 08:14:24,879 - log
+        - length_penalty : 0.8 - 2025-03-27 08:14:24,879 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 08:14:24,879 - log
+        - repetition_penalty : 1.0 - 2025-03-27 08:14:24,879 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 08:14:24,879 - log
+        - output_file : predict.1050.b10p08r4.jsonl - 2025-03-27 08:14:24,879 - log
+        - device : cuda - 2025-03-27 08:14:24,879 - log
+==================================================================================================== - 2025-03-27 08:14:24,879 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 08:14:24,879 - log
+loading model pretrained weight. - 2025-03-27 08:14:24,983 - log
+model sampling ... - 2025-03-27 08:14:26,383 - log
+inference samples: 0 - 2025-03-27 08:14:27,197 - log
+inference samples: 10 - 2025-03-27 08:14:34,387 - log
+inference samples: 20 - 2025-03-27 08:14:40,115 - log
+inference samples: 30 - 2025-03-27 08:14:45,829 - log
+inference samples: 40 - 2025-03-27 08:14:51,603 - log
+Jittor FPS: 1.7429092286650223 - 2025-03-27 08:14:56,763 - log
+saving prediction file: ./trained_models/GPT2_M/webnlg/predict.1050.b10p08r4.jsonl - 2025-03-27 08:14:56,763 - log
+finish inference - 2025-03-27 08:14:56,764 - log
+==================================================================================================== - 2025-03-27 08:17:28,872 - log
+        - random_seed : 2025 - 2025-03-27 08:17:28,872 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-27 08:17:28,872 - log
+        - batch_size : 1 - 2025-03-27 08:17:28,872 - log
+        - seq_len : 64 - 2025-03-27 08:17:28,872 - log
+        - eval_len : 32 - 2025-03-27 08:17:28,872 - log
+        - min_length : 0 - 2025-03-27 08:17:28,872 - log
+        - model_card : gpt2.sm - 2025-03-27 08:17:28,872 - log
+        - init_checkpoint : ./trained_models/GPT2_M/webnlg/model.455.pkl - 2025-03-27 08:17:28,872 - log
+        - lora_dim : 4 - 2025-03-27 08:17:28,872 - log
+        - lora_alpha : 32 - 2025-03-27 08:17:28,872 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 08:17:28,872 - log
+        - beam : 10 - 2025-03-27 08:17:28,872 - log
+        - length_penalty : 0.8 - 2025-03-27 08:17:28,872 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 08:17:28,872 - log
+        - repetition_penalty : 1.0 - 2025-03-27 08:17:28,872 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 08:17:28,872 - log
+        - output_file : predict.455.b10p08r4.jsonl - 2025-03-27 08:17:28,872 - log
+        - device : cuda - 2025-03-27 08:17:28,872 - log
+==================================================================================================== - 2025-03-27 08:17:28,872 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 08:17:28,872 - log
+loading model pretrained weight. - 2025-03-27 08:17:28,977 - log
+model sampling ... - 2025-03-27 08:17:30,374 - log
+inference samples: 0 - 2025-03-27 08:17:31,125 - log
+inference samples: 10 - 2025-03-27 08:17:36,892 - log
+inference samples: 20 - 2025-03-27 08:17:42,616 - log
+inference samples: 30 - 2025-03-27 08:17:48,338 - log
+inference samples: 40 - 2025-03-27 08:17:54,055 - log
+Jittor FPS: 1.7471177458266218 - 2025-03-27 08:17:59,219 - log
+saving prediction file: ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl - 2025-03-27 08:17:59,219 - log
+finish inference - 2025-03-27 08:17:59,220 - log
+==================================================================================================== - 2025-03-27 09:04:15,515 - log
+        - random_seed : 2025 - 2025-03-27 09:04:15,516 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-27 09:04:15,516 - log
+        - batch_size : 1 - 2025-03-27 09:04:15,516 - log
+        - seq_len : 64 - 2025-03-27 09:04:15,516 - log
+        - eval_len : 32 - 2025-03-27 09:04:15,516 - log
+        - min_length : 0 - 2025-03-27 09:04:15,516 - log
+        - model_card : gpt2.sm - 2025-03-27 09:04:15,516 - log
+        - init_checkpoint : ./trained_models/GPT2_M/webnlg/model.455.pkl - 2025-03-27 09:04:15,516 - log
+        - lora_dim : 4 - 2025-03-27 09:04:15,516 - log
+        - lora_alpha : 32 - 2025-03-27 09:04:15,516 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 09:04:15,516 - log
+        - beam : 10 - 2025-03-27 09:04:15,516 - log
+        - length_penalty : 0.8 - 2025-03-27 09:04:15,516 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 09:04:15,516 - log
+        - repetition_penalty : 1.0 - 2025-03-27 09:04:15,516 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 09:04:15,516 - log
+        - output_file : predict.455.b10p08r4.jsonl - 2025-03-27 09:04:15,516 - log
+        - device : cuda - 2025-03-27 09:04:15,516 - log
+==================================================================================================== - 2025-03-27 09:04:15,516 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 09:04:15,516 - log
+loading model pretrained weight. - 2025-03-27 09:04:15,620 - log
+model sampling ... - 2025-03-27 09:04:16,981 - log
+inference samples: 0 - 2025-03-27 09:04:17,796 - log
+inference samples: 10 - 2025-03-27 09:04:23,581 - log
+inference samples: 20 - 2025-03-27 09:04:29,280 - log
+inference samples: 30 - 2025-03-27 09:04:34,986 - log
+inference samples: 40 - 2025-03-27 09:04:40,749 - log
+Jittor FPS: 1.7443531698992045 - 2025-03-27 09:04:45,941 - log
+saving prediction file: ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl - 2025-03-27 09:04:45,941 - log
+finish inference - 2025-03-27 09:04:45,941 - log
+==================================================================================================== - 2025-03-27 09:25:09,561 - log
+        - random_seed : 2025 - 2025-03-27 09:25:09,561 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-27 09:25:09,561 - log
+        - batch_size : 1 - 2025-03-27 09:25:09,561 - log
+        - seq_len : 64 - 2025-03-27 09:25:09,561 - log
+        - eval_len : 32 - 2025-03-27 09:25:09,561 - log
+        - min_length : 0 - 2025-03-27 09:25:09,561 - log
+        - model_card : gpt2.sm - 2025-03-27 09:25:09,561 - log
+        - init_checkpoint : ./trained_models/GPT2_M/webnlg/model.455.pkl - 2025-03-27 09:25:09,561 - log
+        - lora_dim : 4 - 2025-03-27 09:25:09,561 - log
+        - lora_alpha : 32 - 2025-03-27 09:25:09,561 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 09:25:09,561 - log
+        - beam : 10 - 2025-03-27 09:25:09,561 - log
+        - length_penalty : 0.8 - 2025-03-27 09:25:09,561 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 09:25:09,561 - log
+        - repetition_penalty : 1.0 - 2025-03-27 09:25:09,561 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 09:25:09,561 - log
+        - output_file : predict.455.b10p08r4.jsonl - 2025-03-27 09:25:09,561 - log
+        - device : cuda - 2025-03-27 09:25:09,561 - log
+==================================================================================================== - 2025-03-27 09:25:09,561 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 09:25:09,561 - log
+loading model pretrained weight. - 2025-03-27 09:25:09,671 - log
+model sampling ... - 2025-03-27 09:25:10,975 - log
+inference samples: 0 - 2025-03-27 09:25:11,740 - log
+inference samples: 10 - 2025-03-27 09:25:17,653 - log
+inference samples: 20 - 2025-03-27 09:25:23,509 - log
+inference samples: 30 - 2025-03-27 09:25:29,371 - log
+inference samples: 40 - 2025-03-27 09:25:35,254 - log
+Jittor FPS: 1.706234432413021 - 2025-03-27 09:25:40,508 - log
+saving prediction file: ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl - 2025-03-27 09:25:40,508 - log
+finish inference - 2025-03-27 09:25:40,509 - log
+==================================================================================================== - 2025-03-27 11:34:46,098 - log
+        - random_seed : 2025 - 2025-03-27 11:34:46,098 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-27 11:34:46,098 - log
+        - batch_size : 1 - 2025-03-27 11:34:46,098 - log
+        - seq_len : 64 - 2025-03-27 11:34:46,098 - log
+        - eval_len : 32 - 2025-03-27 11:34:46,098 - log
+        - min_length : 0 - 2025-03-27 11:34:46,098 - log
+        - model_card : gpt2.sm - 2025-03-27 11:34:46,098 - log
+        - init_checkpoint : ./trained_models/GPT2_M/webnlg/model.455.pkl - 2025-03-27 11:34:46,098 - log
+        - lora_dim : 4 - 2025-03-27 11:34:46,098 - log
+        - lora_alpha : 32 - 2025-03-27 11:34:46,098 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 11:34:46,098 - log
+        - beam : 10 - 2025-03-27 11:34:46,098 - log
+        - length_penalty : 0.8 - 2025-03-27 11:34:46,098 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 11:34:46,098 - log
+        - repetition_penalty : 1.0 - 2025-03-27 11:34:46,098 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 11:34:46,098 - log
+        - output_file : predict.455.b10p08r4.jsonl - 2025-03-27 11:34:46,098 - log
+        - device : cuda - 2025-03-27 11:34:46,098 - log
+==================================================================================================== - 2025-03-27 11:34:46,098 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 11:34:46,098 - log
+loading model pretrained weight. - 2025-03-27 11:34:46,204 - log
+model sampling ... - 2025-03-27 11:34:47,574 - log
+inference samples: 0 - 2025-03-27 11:34:48,321 - log
+inference samples: 10 - 2025-03-27 11:34:54,146 - log
+inference samples: 20 - 2025-03-27 11:34:59,923 - log
+inference samples: 30 - 2025-03-27 11:35:05,715 - log
+inference samples: 40 - 2025-03-27 11:35:11,506 - log
+Jittor FPS: 1.7278506955186657 - 2025-03-27 11:35:16,716 - log
+saving prediction file: ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl - 2025-03-27 11:35:16,716 - log
+finish inference - 2025-03-27 11:35:16,717 - log
