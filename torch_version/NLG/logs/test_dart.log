@@ -1,0 +1,44 @@
+==================================================================================================== - 2025-03-27 13:42:53,638 - log
+        - platform : local - 2025-03-27 13:42:53,638 - log
+        - local_rank : 0 - 2025-03-27 13:42:53,638 - log
+        - rank : 0 - 2025-03-27 13:42:53,638 - log
+        - device : cuda:0 - 2025-03-27 13:42:53,638 - log
+        - world_size : 1 - 2025-03-27 13:42:53,638 - log
+        - random_seed : 10 - 2025-03-27 13:42:53,638 - log
+        - data : ./data/dart/test.jsonl - 2025-03-27 13:42:53,638 - log
+        - batch_size : 1 - 2025-03-27 13:42:53,638 - log
+        - seq_len : 64 - 2025-03-27 13:42:53,638 - log
+        - eval_len : 32 - 2025-03-27 13:42:53,638 - log
+        - min_length : 0 - 2025-03-27 13:42:53,638 - log
+        - model_card : gpt2.sm - 2025-03-27 13:42:53,638 - log
+        - init_checkpoint : ./trained_models/GPT2_M/dart/model.1570.pt - 2025-03-27 13:42:53,638 - log
+        - lora_dim : 4 - 2025-03-27 13:42:53,638 - log
+        - lora_alpha : 32 - 2025-03-27 13:42:53,638 - log
+        - work_dir : ./trained_models/GPT2_M/dart - 2025-03-27 13:42:53,638 - log
+        - beam : 10 - 2025-03-27 13:42:53,638 - log
+        - length_penalty : 0.8 - 2025-03-27 13:42:53,638 - log
+        - no_repeat_ngram_size : 4 - 2025-03-27 13:42:53,638 - log
+        - repetition_penalty : 1.0 - 2025-03-27 13:42:53,638 - log
+        - eos_token_id : [50256, 628] - 2025-03-27 13:42:53,638 - log
+        - output_file : predict.1570.b10p08r4.jsonl - 2025-03-27 13:42:53,638 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-27 13:42:53,638 - log
+==================================================================================================== - 2025-03-27 13:42:53,638 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-27 13:42:53,638 - log
+loading model pretrained weight. - 2025-03-27 13:42:54,710 - log
+model sampling ... - 2025-03-27 13:42:55,416 - log
+inference samples: 0 - 2025-03-27 13:42:56,070 - log
+inference samples: 10 - 2025-03-27 13:42:59,106 - log
+inference samples: 20 - 2025-03-27 13:43:02,192 - log
+inference samples: 30 - 2025-03-27 13:43:05,260 - log
+inference samples: 40 - 2025-03-27 13:43:08,340 - log
+inference samples: 50 - 2025-03-27 13:43:11,441 - log
+inference samples: 60 - 2025-03-27 13:43:14,556 - log
+inference samples: 70 - 2025-03-27 13:43:17,656 - log
+inference samples: 80 - 2025-03-27 13:43:20,783 - log
+inference samples: 90 - 2025-03-27 13:43:23,904 - log
+inference samples: 100 - 2025-03-27 13:43:27,012 - log
+inference samples: 110 - 2025-03-27 13:43:30,094 - log
+inference samples: 120 - 2025-03-27 13:43:33,189 - log
+Jittor FPS: 3.226013299345147 - 2025-03-27 13:43:34,759 - log
+saving prediction file: ./trained_models/GPT2_M/dart/predict.1570.b10p08r4.jsonl - 2025-03-27 13:43:34,759 - log
+cleanup dist ... - 2025-03-27 13:43:34,760 - log

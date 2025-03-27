@@ -1,0 +1,224 @@
+==================================================================================================== - 2025-03-27 13:22:45,942 - log
+        - platform : local - 2025-03-27 13:22:45,942 - log
+        - local_rank : 0 - 2025-03-27 13:22:45,942 - log
+        - rank : 0 - 2025-03-27 13:22:45,942 - log
+        - device : cuda:0 - 2025-03-27 13:22:45,942 - log
+        - world_size : 1 - 2025-03-27 13:22:45,942 - log
+        - random_seed : 2025 - 2025-03-27 13:22:45,942 - log
+        - lr : 0.0002 - 2025-03-27 13:22:45,942 - log
+        - weight_decay : 0.01 - 2025-03-27 13:22:45,942 - log
+        - correct_bias : True - 2025-03-27 13:22:45,942 - log
+        - adam_epislon : 1e-06 - 2025-03-27 13:22:45,942 - log
+        - no_decay_bias : False - 2025-03-27 13:22:45,943 - log
+        - adam_beta1 : 0.9 - 2025-03-27 13:22:45,943 - log
+        - adam_beta2 : 0.999 - 2025-03-27 13:22:45,943 - log
+        - scheduler : linear - 2025-03-27 13:22:45,943 - log
+        - max_step : None - 2025-03-27 13:22:45,943 - log
+        - max_epoch : 5 - 2025-03-27 13:22:45,943 - log
+        - warmup_step : 500 - 2025-03-27 13:22:45,943 - log
+        - i_steps : 0 - 2025-03-27 13:22:45,943 - log
+        - i_lrs : 0.00025 - 2025-03-27 13:22:45,943 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-27 13:22:45,943 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-27 13:22:45,943 - log
+        - train_batch_size : 2 - 2025-03-27 13:22:45,943 - log
+        - valid_batch_size : 1 - 2025-03-27 13:22:45,943 - log
+        - grad_acc : 2 - 2025-03-27 13:22:45,943 - log
+        - clip : 0.0 - 2025-03-27 13:22:45,943 - log
+        - seq_len : 64 - 2025-03-27 13:22:45,943 - log
+        - model_card : gpt2.sm - 2025-03-27 13:22:45,943 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 13:22:45,943 - log
+        - fp16 : False - 2025-03-27 13:22:45,943 - log
+        - log_interval : 100 - 2025-03-27 13:22:45,943 - log
+        - eval_interval : 2000 - 2025-03-27 13:22:45,943 - log
+        - save_interval : 1000 - 2025-03-27 13:22:45,943 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 13:22:45,943 - log
+        - lora_dim : 4 - 2025-03-27 13:22:45,943 - log
+        - lora_alpha : 32 - 2025-03-27 13:22:45,943 - log
+        - obj : clm - 2025-03-27 13:22:45,943 - log
+        - lora_dropout : 0.1 - 2025-03-27 13:22:45,943 - log
+        - label_smooth : 0.1 - 2025-03-27 13:22:45,943 - log
+        - roll_interval : -1 - 2025-03-27 13:22:45,943 - log
+        - roll_lr : 1e-05 - 2025-03-27 13:22:45,943 - log
+        - roll_step : 100 - 2025-03-27 13:22:45,943 - log
+        - eval_epoch : 1 - 2025-03-27 13:22:45,943 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-27 13:22:45,943 - log
+==================================================================================================== - 2025-03-27 13:22:45,943 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 13:22:45,943 - log
+==================================================================================================== - 2025-03-27 13:23:18,367 - log
+        - platform : local - 2025-03-27 13:23:18,367 - log
+        - local_rank : 0 - 2025-03-27 13:23:18,367 - log
+        - rank : 0 - 2025-03-27 13:23:18,367 - log
+        - device : cuda:0 - 2025-03-27 13:23:18,367 - log
+        - world_size : 1 - 2025-03-27 13:23:18,367 - log
+        - random_seed : 2025 - 2025-03-27 13:23:18,367 - log
+        - lr : 0.0002 - 2025-03-27 13:23:18,367 - log
+        - weight_decay : 0.01 - 2025-03-27 13:23:18,367 - log
+        - correct_bias : True - 2025-03-27 13:23:18,367 - log
+        - adam_epislon : 1e-06 - 2025-03-27 13:23:18,367 - log
+        - no_decay_bias : False - 2025-03-27 13:23:18,367 - log
+        - adam_beta1 : 0.9 - 2025-03-27 13:23:18,367 - log
+        - adam_beta2 : 0.999 - 2025-03-27 13:23:18,367 - log
+        - scheduler : linear - 2025-03-27 13:23:18,367 - log
+        - max_step : None - 2025-03-27 13:23:18,367 - log
+        - max_epoch : 5 - 2025-03-27 13:23:18,367 - log
+        - warmup_step : 500 - 2025-03-27 13:23:18,367 - log
+        - i_steps : 0 - 2025-03-27 13:23:18,367 - log
+        - i_lrs : 0.00025 - 2025-03-27 13:23:18,367 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-27 13:23:18,367 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-27 13:23:18,367 - log
+        - train_batch_size : 2 - 2025-03-27 13:23:18,367 - log
+        - valid_batch_size : 1 - 2025-03-27 13:23:18,367 - log
+        - grad_acc : 2 - 2025-03-27 13:23:18,367 - log
+        - clip : 0.0 - 2025-03-27 13:23:18,367 - log
+        - seq_len : 64 - 2025-03-27 13:23:18,367 - log
+        - model_card : gpt2.sm - 2025-03-27 13:23:18,367 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 13:23:18,367 - log
+        - fp16 : False - 2025-03-27 13:23:18,367 - log
+        - log_interval : 100 - 2025-03-27 13:23:18,367 - log
+        - eval_interval : 2000 - 2025-03-27 13:23:18,367 - log
+        - save_interval : 1000 - 2025-03-27 13:23:18,367 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 13:23:18,368 - log
+        - lora_dim : 4 - 2025-03-27 13:23:18,368 - log
+        - lora_alpha : 32 - 2025-03-27 13:23:18,368 - log
+        - obj : clm - 2025-03-27 13:23:18,368 - log
+        - lora_dropout : 0.1 - 2025-03-27 13:23:18,368 - log
+        - label_smooth : 0.1 - 2025-03-27 13:23:18,368 - log
+        - roll_interval : -1 - 2025-03-27 13:23:18,368 - log
+        - roll_lr : 1e-05 - 2025-03-27 13:23:18,368 - log
+        - roll_step : 100 - 2025-03-27 13:23:18,368 - log
+        - eval_epoch : 1 - 2025-03-27 13:23:18,368 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-27 13:23:18,368 - log
+==================================================================================================== - 2025-03-27 13:23:18,368 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 13:23:18,368 - log
+==================================================================================================== - 2025-03-27 13:25:04,415 - log
+        - platform : local - 2025-03-27 13:25:04,415 - log
+        - local_rank : 0 - 2025-03-27 13:25:04,415 - log
+        - rank : 0 - 2025-03-27 13:25:04,415 - log
+        - device : cuda:0 - 2025-03-27 13:25:04,415 - log
+        - world_size : 1 - 2025-03-27 13:25:04,415 - log
+        - random_seed : 2025 - 2025-03-27 13:25:04,415 - log
+        - lr : 0.0002 - 2025-03-27 13:25:04,415 - log
+        - weight_decay : 0.01 - 2025-03-27 13:25:04,415 - log
+        - correct_bias : True - 2025-03-27 13:25:04,415 - log
+        - adam_epislon : 1e-06 - 2025-03-27 13:25:04,415 - log
+        - no_decay_bias : False - 2025-03-27 13:25:04,415 - log
+        - adam_beta1 : 0.9 - 2025-03-27 13:25:04,415 - log
+        - adam_beta2 : 0.999 - 2025-03-27 13:25:04,415 - log
+        - scheduler : linear - 2025-03-27 13:25:04,415 - log
+        - max_step : None - 2025-03-27 13:25:04,415 - log
+        - max_epoch : 5 - 2025-03-27 13:25:04,415 - log
+        - warmup_step : 500 - 2025-03-27 13:25:04,415 - log
+        - i_steps : 0 - 2025-03-27 13:25:04,415 - log
+        - i_lrs : 0.00025 - 2025-03-27 13:25:04,415 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-27 13:25:04,415 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-27 13:25:04,415 - log
+        - train_batch_size : 2 - 2025-03-27 13:25:04,415 - log
+        - valid_batch_size : 1 - 2025-03-27 13:25:04,415 - log
+        - grad_acc : 2 - 2025-03-27 13:25:04,415 - log
+        - clip : 0.0 - 2025-03-27 13:25:04,415 - log
+        - seq_len : 64 - 2025-03-27 13:25:04,415 - log
+        - model_card : gpt2.sm - 2025-03-27 13:25:04,415 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 13:25:04,415 - log
+        - fp16 : False - 2025-03-27 13:25:04,415 - log
+        - log_interval : 100 - 2025-03-27 13:25:04,415 - log
+        - eval_interval : 2000 - 2025-03-27 13:25:04,415 - log
+        - save_interval : 1000 - 2025-03-27 13:25:04,415 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 13:25:04,415 - log
+        - lora_dim : 4 - 2025-03-27 13:25:04,415 - log
+        - lora_alpha : 32 - 2025-03-27 13:25:04,415 - log
+        - obj : clm - 2025-03-27 13:25:04,415 - log
+        - lora_dropout : 0.1 - 2025-03-27 13:25:04,415 - log
+        - label_smooth : 0.1 - 2025-03-27 13:25:04,415 - log
+        - roll_interval : -1 - 2025-03-27 13:25:04,415 - log
+        - roll_lr : 1e-05 - 2025-03-27 13:25:04,415 - log
+        - roll_step : 100 - 2025-03-27 13:25:04,415 - log
+        - eval_epoch : 1 - 2025-03-27 13:25:04,415 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-27 13:25:04,415 - log
+==================================================================================================== - 2025-03-27 13:25:04,415 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 13:25:04,415 - log
+loading model pretrained weight. - 2025-03-27 13:25:05,541 - log
+set max_step: 455 - 2025-03-27 13:25:07,685 - log
+start to train the model................ 1 - 2025-03-27 13:25:07,835 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.91.pt - 2025-03-27 13:25:10,513 - log
+start to train the model................ 2 - 2025-03-27 13:25:10,990 - log
+| epoch   2 step      100 |      9 batches | lr 4e-05 | ms/batch  2.07 | loss  5.82 | avg loss  3.72 | ppl 41.14 - 2025-03-27 13:25:11,198 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.182.pt - 2025-03-27 13:25:13,168 - log
+start to train the model................ 3 - 2025-03-27 13:25:13,660 - log
+| epoch   3 step      200 |     18 batches | lr 8e-05 | ms/batch  4.19 | loss  4.62 | avg loss  4.37 | ppl 79.35 - 2025-03-27 13:25:14,079 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.273.pt - 2025-03-27 13:25:15,842 - log
+start to train the model................ 4 - 2025-03-27 13:25:16,378 - log
+| epoch   4 step      300 |     27 batches | lr 0.00012 | ms/batch  6.31 | loss  3.50 | avg loss  3.27 | ppl 26.42 - 2025-03-27 13:25:17,010 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.364.pt - 2025-03-27 13:25:18,560 - log
+start to train the model................ 5 - 2025-03-27 13:25:19,048 - log
+| epoch   5 step      400 |     36 batches | lr 0.00016 | ms/batch  8.55 | loss  2.57 | avg loss  3.05 | ppl 21.13 - 2025-03-27 13:25:19,904 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.455.pt - 2025-03-27 13:25:21,252 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-27 13:25:21,737 - log
+End of training - 2025-03-27 13:25:21,737 - log
+ms/batch  4.23 - 2025-03-27 13:25:21,737 - log
+cleanup dist ... - 2025-03-27 13:25:21,937 - log
+==================================================================================================== - 2025-03-27 13:47:11,549 - log
+        - platform : local - 2025-03-27 13:47:11,553 - log
+        - local_rank : 0 - 2025-03-27 13:47:11,553 - log
+        - rank : 0 - 2025-03-27 13:47:11,553 - log
+        - device : cuda:0 - 2025-03-27 13:47:11,553 - log
+        - world_size : 1 - 2025-03-27 13:47:11,553 - log
+        - random_seed : 2025 - 2025-03-27 13:47:11,553 - log
+        - lr : 0.0002 - 2025-03-27 13:47:11,553 - log
+        - weight_decay : 0.01 - 2025-03-27 13:47:11,553 - log
+        - correct_bias : True - 2025-03-27 13:47:11,553 - log
+        - adam_epislon : 1e-06 - 2025-03-27 13:47:11,553 - log
+        - no_decay_bias : False - 2025-03-27 13:47:11,553 - log
+        - adam_beta1 : 0.9 - 2025-03-27 13:47:11,553 - log
+        - adam_beta2 : 0.999 - 2025-03-27 13:47:11,553 - log
+        - scheduler : linear - 2025-03-27 13:47:11,553 - log
+        - max_step : None - 2025-03-27 13:47:11,553 - log
+        - max_epoch : 5 - 2025-03-27 13:47:11,553 - log
+        - warmup_step : 500 - 2025-03-27 13:47:11,553 - log
+        - i_steps : 0 - 2025-03-27 13:47:11,554 - log
+        - i_lrs : 0.00025 - 2025-03-27 13:47:11,554 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-27 13:47:11,554 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-27 13:47:11,554 - log
+        - train_batch_size : 2 - 2025-03-27 13:47:11,554 - log
+        - valid_batch_size : 1 - 2025-03-27 13:47:11,554 - log
+        - grad_acc : 2 - 2025-03-27 13:47:11,554 - log
+        - clip : 0.0 - 2025-03-27 13:47:11,554 - log
+        - seq_len : 64 - 2025-03-27 13:47:11,554 - log
+        - model_card : gpt2.sm - 2025-03-27 13:47:11,554 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 13:47:11,554 - log
+        - fp16 : False - 2025-03-27 13:47:11,554 - log
+        - log_interval : 100 - 2025-03-27 13:47:11,554 - log
+        - eval_interval : 2000 - 2025-03-27 13:47:11,554 - log
+        - save_interval : 1000 - 2025-03-27 13:47:11,554 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 13:47:11,554 - log
+        - lora_dim : 4 - 2025-03-27 13:47:11,554 - log
+        - lora_alpha : 32 - 2025-03-27 13:47:11,554 - log
+        - obj : clm - 2025-03-27 13:47:11,554 - log
+        - lora_dropout : 0.1 - 2025-03-27 13:47:11,554 - log
+        - label_smooth : 0.1 - 2025-03-27 13:47:11,554 - log
+        - roll_interval : -1 - 2025-03-27 13:47:11,554 - log
+        - roll_lr : 1e-05 - 2025-03-27 13:47:11,554 - log
+        - roll_step : 100 - 2025-03-27 13:47:11,554 - log
+        - eval_epoch : 1 - 2025-03-27 13:47:11,554 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-27 13:47:11,554 - log
+==================================================================================================== - 2025-03-27 13:47:11,554 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 13:47:11,554 - log
+loading model pretrained weight. - 2025-03-27 13:47:12,584 - log
+set max_step: 455 - 2025-03-27 13:47:14,299 - log
+start to train the model................ 1 - 2025-03-27 13:47:14,436 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.91.pt - 2025-03-27 13:47:16,923 - log
+start to train the model................ 2 - 2025-03-27 13:47:17,635 - log
+| epoch   2 step      100 |      9 batches | lr 4e-05 | ms/batch  2.10 | loss  5.82 | avg loss  3.72 | ppl 41.14 - 2025-03-27 13:47:17,845 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.182.pt - 2025-03-27 13:47:19,827 - log
+start to train the model................ 3 - 2025-03-27 13:47:20,556 - log
+| epoch   3 step      200 |     18 batches | lr 8e-05 | ms/batch  4.28 | loss  4.62 | avg loss  4.37 | ppl 79.35 - 2025-03-27 13:47:20,985 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.273.pt - 2025-03-27 13:47:22,756 - log
+start to train the model................ 4 - 2025-03-27 13:47:23,475 - log
+| epoch   4 step      300 |     27 batches | lr 0.00012 | ms/batch  6.40 | loss  3.50 | avg loss  3.27 | ppl 26.42 - 2025-03-27 13:47:24,115 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.364.pt - 2025-03-27 13:47:25,672 - log
+start to train the model................ 5 - 2025-03-27 13:47:26,461 - log
+| epoch   5 step      400 |     36 batches | lr 0.00016 | ms/batch  8.59 | loss  2.57 | avg loss  3.05 | ppl 21.13 - 2025-03-27 13:47:27,320 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.455.pt - 2025-03-27 13:47:28,668 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-27 13:47:29,421 - log
+End of training - 2025-03-27 13:47:29,421 - log
+ms/batch  4.27 - 2025-03-27 13:47:29,421 - log
+cleanup dist ... - 2025-03-27 13:47:29,619 - log

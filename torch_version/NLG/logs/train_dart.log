@@ -1,0 +1,78 @@
+==================================================================================================== - 2025-03-27 13:42:06,563 - log
+        - platform : local - 2025-03-27 13:42:06,563 - log
+        - local_rank : 0 - 2025-03-27 13:42:06,564 - log
+        - rank : 0 - 2025-03-27 13:42:06,564 - log
+        - device : cuda:0 - 2025-03-27 13:42:06,564 - log
+        - world_size : 1 - 2025-03-27 13:42:06,564 - log
+        - random_seed : 2025 - 2025-03-27 13:42:06,564 - log
+        - lr : 0.0002 - 2025-03-27 13:42:06,564 - log
+        - weight_decay : 0.01 - 2025-03-27 13:42:06,564 - log
+        - correct_bias : True - 2025-03-27 13:42:06,564 - log
+        - adam_epislon : 1e-06 - 2025-03-27 13:42:06,564 - log
+        - no_decay_bias : False - 2025-03-27 13:42:06,564 - log
+        - adam_beta1 : 0.9 - 2025-03-27 13:42:06,564 - log
+        - adam_beta2 : 0.999 - 2025-03-27 13:42:06,564 - log
+        - scheduler : linear - 2025-03-27 13:42:06,564 - log
+        - max_step : None - 2025-03-27 13:42:06,564 - log
+        - max_epoch : 5 - 2025-03-27 13:42:06,564 - log
+        - warmup_step : 500 - 2025-03-27 13:42:06,564 - log
+        - i_steps : 0 - 2025-03-27 13:42:06,564 - log
+        - i_lrs : 0.00025 - 2025-03-27 13:42:06,564 - log
+        - train_data : ./data/dart/train.jsonl - 2025-03-27 13:42:06,564 - log
+        - valid_data : ./data/dart/valid.jsonl - 2025-03-27 13:42:06,564 - log
+        - train_batch_size : 2 - 2025-03-27 13:42:06,564 - log
+        - valid_batch_size : 1 - 2025-03-27 13:42:06,564 - log
+        - grad_acc : 2 - 2025-03-27 13:42:06,564 - log
+        - clip : 0.0 - 2025-03-27 13:42:06,564 - log
+        - seq_len : 64 - 2025-03-27 13:42:06,564 - log
+        - model_card : gpt2.sm - 2025-03-27 13:42:06,564 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 13:42:06,564 - log
+        - fp16 : False - 2025-03-27 13:42:06,564 - log
+        - log_interval : 100 - 2025-03-27 13:42:06,564 - log
+        - eval_interval : 2000 - 2025-03-27 13:42:06,564 - log
+        - save_interval : 1000 - 2025-03-27 13:42:06,564 - log
+        - work_dir : ./trained_models/GPT2_M/dart - 2025-03-27 13:42:06,564 - log
+        - lora_dim : 4 - 2025-03-27 13:42:06,564 - log
+        - lora_alpha : 32 - 2025-03-27 13:42:06,564 - log
+        - obj : clm - 2025-03-27 13:42:06,564 - log
+        - lora_dropout : 0.1 - 2025-03-27 13:42:06,564 - log
+        - label_smooth : 0.1 - 2025-03-27 13:42:06,564 - log
+        - roll_interval : -1 - 2025-03-27 13:42:06,564 - log
+        - roll_lr : 1e-05 - 2025-03-27 13:42:06,564 - log
+        - roll_step : 100 - 2025-03-27 13:42:06,564 - log
+        - eval_epoch : 1 - 2025-03-27 13:42:06,564 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-27 13:42:06,564 - log
+==================================================================================================== - 2025-03-27 13:42:06,564 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 13:42:06,564 - log
+loading model pretrained weight. - 2025-03-27 13:42:07,601 - log
+set max_step: 1570 - 2025-03-27 13:42:09,498 - log
+start to train the model................ 1 - 2025-03-27 13:42:09,647 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 28.45 | loss  5.81 | avg loss  5.86 | ppl 349.74 - 2025-03-27 13:42:12,492 - log
+| epoch   1 step      200 |    200 batches | lr 8e-05 | ms/batch 24.17 | loss  5.61 | avg loss  5.43 | ppl 228.77 - 2025-03-27 13:42:14,910 - log
+| epoch   1 step      300 |    300 batches | lr 0.00012 | ms/batch 24.24 | loss  3.57 | avg loss  4.05 | ppl 57.42 - 2025-03-27 13:42:17,334 - log
+saving checkpoint, ./trained_models/GPT2_M/dart/model.314.pt - 2025-03-27 13:42:17,677 - log
+start to train the model................ 2 - 2025-03-27 13:42:18,152 - log
+| epoch   2 step      400 |     86 batches | lr 0.00016 | ms/batch 20.70 | loss  3.49 | avg loss  3.53 | ppl 34.29 - 2025-03-27 13:42:20,222 - log
+| epoch   2 step      500 |    186 batches | lr 0.0002 | ms/batch 24.35 | loss  3.69 | avg loss  3.35 | ppl 28.40 - 2025-03-27 13:42:22,657 - log
+| epoch   2 step      600 |    286 batches | lr 0.000181 | ms/batch 24.40 | loss  3.77 | avg loss  3.43 | ppl 30.87 - 2025-03-27 13:42:25,097 - log
+saving checkpoint, ./trained_models/GPT2_M/dart/model.628.pt - 2025-03-27 13:42:25,782 - log
+start to train the model................ 3 - 2025-03-27 13:42:26,267 - log
+| epoch   3 step      700 |     72 batches | lr 0.000163 | ms/batch 17.40 | loss  3.33 | avg loss  3.26 | ppl 26.15 - 2025-03-27 13:42:28,007 - log
+| epoch   3 step      800 |    172 batches | lr 0.000144 | ms/batch 24.49 | loss  3.84 | avg loss  3.30 | ppl 27.20 - 2025-03-27 13:42:30,456 - log
+| epoch   3 step      900 |    272 batches | lr 0.000125 | ms/batch 24.49 | loss  2.83 | avg loss  3.19 | ppl 24.23 - 2025-03-27 13:42:32,905 - log
+saving checkpoint, ./trained_models/GPT2_M/dart/model.942.pt - 2025-03-27 13:42:33,925 - log
+start to train the model................ 4 - 2025-03-27 13:42:34,404 - log
+| epoch   4 step     1000 |     58 batches | lr 0.000107 | ms/batch 14.09 | loss  2.55 | avg loss  3.12 | ppl 22.72 - 2025-03-27 13:42:35,812 - log
+saving checkpoint, ./trained_models/GPT2_M/dart/model.1000.pt - 2025-03-27 13:42:35,813 - log
+| epoch   4 step     1100 |    158 batches | lr 8.79e-05 | ms/batch 24.55 | loss  2.81 | avg loss  3.21 | ppl 24.76 - 2025-03-27 13:42:38,267 - log
+| epoch   4 step     1200 |    258 batches | lr 6.92e-05 | ms/batch 24.61 | loss  2.67 | avg loss  3.03 | ppl 20.70 - 2025-03-27 13:42:40,729 - log
+saving checkpoint, ./trained_models/GPT2_M/dart/model.1256.pt - 2025-03-27 13:42:42,101 - log
+start to train the model................ 5 - 2025-03-27 13:42:42,575 - log
+| epoch   5 step     1300 |     44 batches | lr 5.05e-05 | ms/batch 10.66 | loss  3.48 | avg loss  3.10 | ppl 22.30 - 2025-03-27 13:42:43,641 - log
+| epoch   5 step     1400 |    144 batches | lr 3.18e-05 | ms/batch 24.68 | loss  3.46 | avg loss  3.08 | ppl 21.78 - 2025-03-27 13:42:46,109 - log
+| epoch   5 step     1500 |    244 batches | lr 1.31e-05 | ms/batch 24.65 | loss  2.68 | avg loss  3.07 | ppl 21.61 - 2025-03-27 13:42:48,575 - log
+saving checkpoint, ./trained_models/GPT2_M/dart/model.1570.pt - 2025-03-27 13:42:50,303 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-27 13:42:50,782 - log
+End of training - 2025-03-27 13:42:50,783 - log
+ms/batch 22.39 - 2025-03-27 13:42:50,783 - log
+cleanup dist ... - 2025-03-27 13:42:51,000 - log
