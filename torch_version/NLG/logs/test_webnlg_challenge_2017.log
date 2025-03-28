@@ -96,3 +96,75 @@ inference samples: 40 - 2025-03-27 13:47:46,573 - log
 Jittor FPS: 3.3132480582684942 - 2025-03-27 13:47:49,322 - log
 saving prediction file: ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl - 2025-03-27 13:47:49,322 - log
 cleanup dist ... - 2025-03-27 13:47:49,327 - log
+==================================================================================================== - 2025-03-28 08:35:52,314 - log
+        - platform : local - 2025-03-28 08:35:52,322 - log
+        - local_rank : 0 - 2025-03-28 08:35:52,322 - log
+        - rank : 0 - 2025-03-28 08:35:52,322 - log
+        - device : cuda:0 - 2025-03-28 08:35:52,322 - log
+        - world_size : 1 - 2025-03-28 08:35:52,322 - log
+        - random_seed : 10 - 2025-03-28 08:35:52,322 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-28 08:35:52,322 - log
+        - batch_size : 1 - 2025-03-28 08:35:52,322 - log
+        - seq_len : 64 - 2025-03-28 08:35:52,322 - log
+        - eval_len : 32 - 2025-03-28 08:35:52,322 - log
+        - min_length : 0 - 2025-03-28 08:35:52,322 - log
+        - model_card : gpt2.sm - 2025-03-28 08:35:52,322 - log
+        - init_checkpoint : ./trained_models/GPT2_M/webnlg/model.455.pt - 2025-03-28 08:35:52,322 - log
+        - lora_dim : 4 - 2025-03-28 08:35:52,322 - log
+        - lora_alpha : 32 - 2025-03-28 08:35:52,322 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-28 08:35:52,322 - log
+        - beam : 10 - 2025-03-28 08:35:52,323 - log
+        - length_penalty : 0.8 - 2025-03-28 08:35:52,323 - log
+        - no_repeat_ngram_size : 4 - 2025-03-28 08:35:52,323 - log
+        - repetition_penalty : 1.0 - 2025-03-28 08:35:52,323 - log
+        - eos_token_id : [50256, 628] - 2025-03-28 08:35:52,323 - log
+        - output_file : predict.455.b10p08r4.jsonl - 2025-03-28 08:35:52,323 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_jittor_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-28 08:35:52,323 - log
+==================================================================================================== - 2025-03-28 08:35:52,323 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-28 08:35:52,323 - log
+loading model pretrained weight. - 2025-03-28 08:35:53,392 - log
+model sampling ... - 2025-03-28 08:35:54,061 - log
+inference samples: 0 - 2025-03-28 08:35:54,661 - log
+inference samples: 10 - 2025-03-28 08:35:57,713 - log
+inference samples: 20 - 2025-03-28 08:36:00,777 - log
+inference samples: 30 - 2025-03-28 08:36:03,839 - log
+inference samples: 40 - 2025-03-28 08:36:06,930 - log
+Jittor FPS: 3.266031663961069 - 2025-03-28 08:36:09,648 - log
+saving prediction file: ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl - 2025-03-28 08:36:09,648 - log
+cleanup dist ... - 2025-03-28 08:36:09,649 - log
+==================================================================================================== - 2025-03-28 08:50:29,485 - log
+        - platform : local - 2025-03-28 08:50:29,485 - log
+        - local_rank : 0 - 2025-03-28 08:50:29,485 - log
+        - rank : 0 - 2025-03-28 08:50:29,485 - log
+        - device : cuda:0 - 2025-03-28 08:50:29,485 - log
+        - world_size : 1 - 2025-03-28 08:50:29,485 - log
+        - random_seed : 10 - 2025-03-28 08:50:29,485 - log
+        - data : ./data/webnlg_challenge_2017/test.jsonl - 2025-03-28 08:50:29,485 - log
+        - batch_size : 1 - 2025-03-28 08:50:29,485 - log
+        - seq_len : 64 - 2025-03-28 08:50:29,485 - log
+        - eval_len : 32 - 2025-03-28 08:50:29,485 - log
+        - min_length : 0 - 2025-03-28 08:50:29,485 - log
+        - model_card : gpt2.sm - 2025-03-28 08:50:29,485 - log
+        - init_checkpoint : ./trained_models/GPT2_M/webnlg/model.455.pt - 2025-03-28 08:50:29,485 - log
+        - lora_dim : 4 - 2025-03-28 08:50:29,485 - log
+        - lora_alpha : 32 - 2025-03-28 08:50:29,485 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-28 08:50:29,485 - log
+        - beam : 10 - 2025-03-28 08:50:29,485 - log
+        - length_penalty : 0.8 - 2025-03-28 08:50:29,485 - log
+        - no_repeat_ngram_size : 4 - 2025-03-28 08:50:29,485 - log
+        - repetition_penalty : 1.0 - 2025-03-28 08:50:29,485 - log
+        - eos_token_id : [50256, 628] - 2025-03-28 08:50:29,485 - log
+        - output_file : predict.455.b10p08r4.jsonl - 2025-03-28 08:50:29,485 - log
+        - dist : <module 'torch.distributed' from '/home/gunsj/miniconda3/envs/lora_torch_env/lib/python3.9/site-packages/torch/distributed/__init__.py'> - 2025-03-28 08:50:29,485 - log
+==================================================================================================== - 2025-03-28 08:50:29,485 - log
+--------------------------------------------------test-------------------------------------------------- - 2025-03-28 08:50:29,485 - log
+loading model pretrained weight. - 2025-03-28 08:50:30,537 - log
+model sampling ... - 2025-03-28 08:50:31,245 - log
+inference samples: 0 - 2025-03-28 08:50:31,894 - log
+inference samples: 10 - 2025-03-28 08:50:34,814 - log
+inference samples: 20 - 2025-03-28 08:50:37,741 - log
+inference samples: 30 - 2025-03-28 08:50:40,656 - log
+inference samples: 40 - 2025-03-28 08:50:43,568 - log
+Jittor FPS: 3.4220570305987765 - 2025-03-28 08:50:46,212 - log
+saving prediction file: ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl - 2025-03-28 08:50:46,212 - log
+cleanup dist ... - 2025-03-28 08:50:46,217 - log

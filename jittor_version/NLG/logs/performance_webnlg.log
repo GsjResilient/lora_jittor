@@ -241,3 +241,56 @@ PRINTING RESULTS... - 2025-03-27 11:50:18,559 - log
   BLEU    BLEU NLTK    METEOR    TER
 ------  -----------  --------  -----
   5.12         0.05      0.13   0.75 - 2025-03-27 11:50:18,560 - log
+--------------------------------------------------decode-------------------------------------------------- - 2025-03-27 16:01:52,436 - log
+--------------------------------------------------decode-------------------------------------------------- - 2025-03-27 16:16:31,210 - log
+--------------------------------------------------decode-------------------------------------------------- - 2025-03-27 16:44:14,573 - log
+READING INPUTS... - 2025-03-27 16:44:18,807 - log
+FINISHING TO READ INPUTS... - 2025-03-27 16:44:18,807 - log
+STARTING TO PARSE INPUTS... - 2025-03-27 16:44:18,807 - log
+FINISHING TO PARSE INPUTS... - 2025-03-27 16:44:18,866 - log
+STARTING EVALUATION... - 2025-03-27 16:44:18,866 - log
+STARTING TO COMPUTE BLEU... - 2025-03-27 16:44:18,866 - log
+FINISHING TO COMPUTE BLEU... - 2025-03-27 16:44:18,934 - log
+STARTING TO COMPUTE METEOR... - 2025-03-27 16:44:18,948 - log
+FINISHING TO COMPUTE METEOR... - 2025-03-27 16:44:22,768 - log
+STARTING TO COMPUTE TER... - 2025-03-27 16:44:22,768 - log
+FINISHING TO COMPUTE TER... - 2025-03-27 16:44:24,253 - log
+FINISHING EVALUATION... - 2025-03-27 16:44:24,253 - log
+PRINTING RESULTS... - 2025-03-27 16:44:24,254 - log
+  BLEU    BLEU NLTK    METEOR    TER
+------  -----------  --------  -----
+  7.28         0.07      0.13   0.76 - 2025-03-27 16:44:24,254 - log
+--------------------------------------------------decode-------------------------------------------------- - 2025-03-28 08:56:54,767 - log
+READING INPUTS... - 2025-03-28 08:56:59,828 - log
+FINISHING TO READ INPUTS... - 2025-03-28 08:56:59,828 - log
+STARTING TO PARSE INPUTS... - 2025-03-28 08:56:59,828 - log
+FINISHING TO PARSE INPUTS... - 2025-03-28 08:56:59,883 - log
+STARTING EVALUATION... - 2025-03-28 08:56:59,883 - log
+STARTING TO COMPUTE BLEU... - 2025-03-28 08:56:59,883 - log
+FINISHING TO COMPUTE BLEU... - 2025-03-28 08:56:59,946 - log
+STARTING TO COMPUTE METEOR... - 2025-03-28 08:56:59,959 - log
+FINISHING TO COMPUTE METEOR... - 2025-03-28 08:57:03,962 - log
+STARTING TO COMPUTE TER... - 2025-03-28 08:57:03,962 - log
+FINISHING TO COMPUTE TER... - 2025-03-28 08:57:05,023 - log
+FINISHING EVALUATION... - 2025-03-28 08:57:05,023 - log
+PRINTING RESULTS... - 2025-03-28 08:57:05,023 - log
+  BLEU    BLEU NLTK    METEOR    TER
+------  -----------  --------  -----
+  8.38         0.08      0.15   0.71 - 2025-03-28 08:57:05,024 - log
+--------------------------------------------------decode-------------------------------------------------- - 2025-03-28 09:00:41,575 - log
+READING INPUTS... - 2025-03-28 09:00:45,173 - log
+FINISHING TO READ INPUTS... - 2025-03-28 09:00:45,173 - log
+STARTING TO PARSE INPUTS... - 2025-03-28 09:00:45,173 - log
+FINISHING TO PARSE INPUTS... - 2025-03-28 09:00:45,202 - log
+STARTING EVALUATION... - 2025-03-28 09:00:45,202 - log
+STARTING TO COMPUTE BLEU... - 2025-03-28 09:00:45,202 - log
+FINISHING TO COMPUTE BLEU... - 2025-03-28 09:00:45,253 - log
+STARTING TO COMPUTE METEOR... - 2025-03-28 09:00:45,260 - log
+FINISHING TO COMPUTE METEOR... - 2025-03-28 09:00:49,121 - log
+STARTING TO COMPUTE TER... - 2025-03-28 09:00:49,121 - log
+FINISHING TO COMPUTE TER... - 2025-03-28 09:00:49,495 - log
+FINISHING EVALUATION... - 2025-03-28 09:00:49,495 - log
+PRINTING RESULTS... - 2025-03-28 09:00:49,495 - log
+  BLEU    BLEU NLTK    METEOR    TER
+------  -----------  --------  -----
+  8.51         0.08      0.16    0.7 - 2025-03-28 09:00:49,496 - log

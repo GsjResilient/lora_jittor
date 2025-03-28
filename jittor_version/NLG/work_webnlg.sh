@@ -38,7 +38,7 @@ python src/gpt2_beam.py \
     --seq_len 64 \
     --eval_len 32 \
     --model_card gpt2.sm \
-    --init_checkpoint ./trained_models/GPT2_M/webnlg/model.455.pkl \
+    --init_checkpoint ./trained_models/GPT2_M/webnlg/model.905.pkl \
     --lora_dim 4 \
     --lora_alpha 32 \
     --beam 10 \
@@ -47,13 +47,13 @@ python src/gpt2_beam.py \
     --repetition_penalty 1.0 \
     --eos_token_id 628 \
     --work_dir ./trained_models/GPT2_M/webnlg \
-    --output_file predict.455.b10p08r4.jsonl
+    --output_file predict.905.b10p08r4.jsonl
 
 
 #解码
 python src/gpt2_decode.py \
     --vocab ./vocab \
-    --sample_file ./trained_models/GPT2_M/webnlg/predict.455.b10p08r4.jsonl \
+    --sample_file ./trained_models/GPT2_M/webnlg/predict.905.b10p08r4.jsonl \
     --input_file ./data/webnlg_challenge_2017/test_formatted.jsonl \
     --ref_type webnlg \
     --ref_num 6 \

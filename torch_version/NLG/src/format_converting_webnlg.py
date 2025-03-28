@@ -61,7 +61,7 @@ with open(sys.argv[1], 'r', encoding='utf8') as reader, \
 
     #edited_sents = []
     MAXN=len(full_src_lst)/100
-    random.seed(2025)
+    random.seed(123)
     lst=zip(full_src_lst, full_tgt_lst, full_cate_lst)
     num=0
     S=dict()

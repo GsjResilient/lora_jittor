@@ -57,6 +57,7 @@ from razdel import tokenize
 from tabulate import tabulate
 nltk.download('punkt')
 
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 BLEU_PATH = 'eval/GenerationEval/metrics/multi-bleu-detok.perl'
 METEOR_PATH = 'eval/GenerationEval/metrics/meteor-1.5/meteor-1.5.jar'
 

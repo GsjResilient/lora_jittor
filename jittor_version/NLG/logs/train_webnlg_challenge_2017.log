@@ -238,3 +238,323 @@ saving checkpoint, ./trained_models/GPT2_M/webnlg/model.455.pkl - 2025-03-27 11:
 ---------------------------------------------------------------------------------------------------- - 2025-03-27 11:34:43,997 - log
 End of training - 2025-03-27 11:34:43,997 - log
 ms/batch  6.01 - 2025-03-27 11:34:43,997 - log
+==================================================================================================== - 2025-03-27 15:58:49,257 - log
+        - random_seed : 2025 - 2025-03-27 15:58:49,258 - log
+        - lr : 0.0002 - 2025-03-27 15:58:49,258 - log
+        - weight_decay : 0.01 - 2025-03-27 15:58:49,258 - log
+        - correct_bias : False - 2025-03-27 15:58:49,258 - log
+        - adam_epislon : 1e-06 - 2025-03-27 15:58:49,258 - log
+        - no_decay_bias : False - 2025-03-27 15:58:49,258 - log
+        - adam_beta1 : 0.9 - 2025-03-27 15:58:49,258 - log
+        - adam_beta2 : 0.999 - 2025-03-27 15:58:49,258 - log
+        - scheduler : linear - 2025-03-27 15:58:49,258 - log
+        - max_step : None - 2025-03-27 15:58:49,258 - log
+        - max_epoch : 5 - 2025-03-27 15:58:49,258 - log
+        - warmup_step : 500 - 2025-03-27 15:58:49,258 - log
+        - i_steps : 0 - 2025-03-27 15:58:49,258 - log
+        - i_lrs : 0.00025 - 2025-03-27 15:58:49,258 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-27 15:58:49,258 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-27 15:58:49,258 - log
+        - train_batch_size : 2 - 2025-03-27 15:58:49,258 - log
+        - valid_batch_size : 1 - 2025-03-27 15:58:49,258 - log
+        - grad_acc : 2 - 2025-03-27 15:58:49,258 - log
+        - clip : 0.0 - 2025-03-27 15:58:49,258 - log
+        - seq_len : 64 - 2025-03-27 15:58:49,258 - log
+        - model_card : gpt2.sm - 2025-03-27 15:58:49,258 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 15:58:49,258 - log
+        - fp16 : False - 2025-03-27 15:58:49,258 - log
+        - log_interval : 100 - 2025-03-27 15:58:49,258 - log
+        - eval_interval : 2000 - 2025-03-27 15:58:49,258 - log
+        - save_interval : 1000 - 2025-03-27 15:58:49,258 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 15:58:49,258 - log
+        - lora_dim : 4 - 2025-03-27 15:58:49,258 - log
+        - lora_alpha : 32 - 2025-03-27 15:58:49,258 - log
+        - obj : clm - 2025-03-27 15:58:49,258 - log
+        - lora_dropout : 0.1 - 2025-03-27 15:58:49,258 - log
+        - label_smooth : 0.1 - 2025-03-27 15:58:49,258 - log
+        - roll_interval : -1 - 2025-03-27 15:58:49,258 - log
+        - roll_lr : 1e-05 - 2025-03-27 15:58:49,258 - log
+        - roll_step : 100 - 2025-03-27 15:58:49,258 - log
+        - eval_epoch : 1 - 2025-03-27 15:58:49,258 - log
+        - device : cuda - 2025-03-27 15:58:49,258 - log
+==================================================================================================== - 2025-03-27 15:58:49,258 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 15:58:49,258 - log
+loading model pretrained weight. - 2025-03-27 15:58:49,384 - log
+set max_step: 905 - 2025-03-27 15:58:50,936 - log
+start to train the model................ 1 - 2025-03-27 15:58:50,936 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 36.34 | loss  6.20 | avg loss  5.43 | ppl 228.85 - 2025-03-27 15:58:54,570 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.181.pkl - 2025-03-27 15:58:57,119 - log
+start to train the model................ 2 - 2025-03-27 15:58:58,525 - log
+| epoch   2 step      200 |     19 batches | lr 8e-05 | ms/batch  6.48 | loss  4.09 | avg loss  3.93 | ppl 50.81 - 2025-03-27 15:58:59,173 - log
+| epoch   2 step      300 |    119 batches | lr 0.00012 | ms/batch 31.72 | loss  0.00 | avg loss  3.31 | ppl 27.49 - 2025-03-27 15:59:02,346 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.362.pkl - 2025-03-27 15:59:04,281 - log
+start to train the model................ 3 - 2025-03-27 15:59:05,741 - log
+| epoch   3 step      400 |     38 batches | lr 0.00016 | ms/batch 12.36 | loss  2.64 | avg loss  2.97 | ppl 19.50 - 2025-03-27 15:59:06,977 - log
+| epoch   3 step      500 |    138 batches | lr 0.0002 | ms/batch 31.79 | loss  2.20 | avg loss  2.98 | ppl 19.70 - 2025-03-27 15:59:10,156 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.543.pkl - 2025-03-27 15:59:11,509 - log
+start to train the model................ 4 - 2025-03-27 15:59:12,917 - log
+| epoch   4 step      600 |     57 batches | lr 0.000151 | ms/batch 18.65 | loss  3.07 | avg loss  2.48 | ppl 11.91 - 2025-03-27 15:59:14,781 - log
+| epoch   4 step      700 |    157 batches | lr 0.000101 | ms/batch 31.91 | loss  2.40 | avg loss  2.79 | ppl 16.29 - 2025-03-27 15:59:17,973 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.724.pkl - 2025-03-27 15:59:18,710 - log
+start to train the model................ 5 - 2025-03-27 15:59:20,162 - log
+| epoch   5 step      800 |     76 batches | lr 5.19e-05 | ms/batch 24.41 | loss  2.76 | avg loss  2.53 | ppl 12.59 - 2025-03-27 15:59:22,603 - log
+| epoch   5 step      900 |    176 batches | lr 2.47e-06 | ms/batch 31.84 | loss  3.07 | avg loss  2.57 | ppl 13.13 - 2025-03-27 15:59:25,787 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.905.pkl - 2025-03-27 15:59:25,932 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-27 15:59:27,318 - log
+End of training - 2025-03-27 15:59:27,318 - log
+ms/batch 26.18 - 2025-03-27 15:59:27,318 - log
+==================================================================================================== - 2025-03-27 16:14:51,268 - log
+        - random_seed : 2025 - 2025-03-27 16:14:51,268 - log
+        - lr : 0.0002 - 2025-03-27 16:14:51,268 - log
+        - weight_decay : 0.01 - 2025-03-27 16:14:51,268 - log
+        - correct_bias : False - 2025-03-27 16:14:51,268 - log
+        - adam_epislon : 1e-06 - 2025-03-27 16:14:51,268 - log
+        - no_decay_bias : False - 2025-03-27 16:14:51,268 - log
+        - adam_beta1 : 0.9 - 2025-03-27 16:14:51,268 - log
+        - adam_beta2 : 0.999 - 2025-03-27 16:14:51,268 - log
+        - scheduler : linear - 2025-03-27 16:14:51,268 - log
+        - max_step : None - 2025-03-27 16:14:51,268 - log
+        - max_epoch : 5 - 2025-03-27 16:14:51,268 - log
+        - warmup_step : 500 - 2025-03-27 16:14:51,268 - log
+        - i_steps : 0 - 2025-03-27 16:14:51,268 - log
+        - i_lrs : 0.00025 - 2025-03-27 16:14:51,268 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-27 16:14:51,268 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-27 16:14:51,268 - log
+        - train_batch_size : 2 - 2025-03-27 16:14:51,268 - log
+        - valid_batch_size : 1 - 2025-03-27 16:14:51,268 - log
+        - grad_acc : 2 - 2025-03-27 16:14:51,268 - log
+        - clip : 0.0 - 2025-03-27 16:14:51,268 - log
+        - seq_len : 64 - 2025-03-27 16:14:51,268 - log
+        - model_card : gpt2.sm - 2025-03-27 16:14:51,268 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 16:14:51,268 - log
+        - fp16 : False - 2025-03-27 16:14:51,268 - log
+        - log_interval : 100 - 2025-03-27 16:14:51,268 - log
+        - eval_interval : 2000 - 2025-03-27 16:14:51,268 - log
+        - save_interval : 1000 - 2025-03-27 16:14:51,268 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 16:14:51,268 - log
+        - lora_dim : 4 - 2025-03-27 16:14:51,268 - log
+        - lora_alpha : 32 - 2025-03-27 16:14:51,268 - log
+        - obj : clm - 2025-03-27 16:14:51,269 - log
+        - lora_dropout : 0.1 - 2025-03-27 16:14:51,269 - log
+        - label_smooth : 0.1 - 2025-03-27 16:14:51,269 - log
+        - roll_interval : -1 - 2025-03-27 16:14:51,269 - log
+        - roll_lr : 1e-05 - 2025-03-27 16:14:51,269 - log
+        - roll_step : 100 - 2025-03-27 16:14:51,269 - log
+        - eval_epoch : 1 - 2025-03-27 16:14:51,269 - log
+        - device : cuda - 2025-03-27 16:14:51,269 - log
+==================================================================================================== - 2025-03-27 16:14:51,269 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 16:14:51,269 - log
+loading model pretrained weight. - 2025-03-27 16:14:51,372 - log
+set max_step: 905 - 2025-03-27 16:14:52,255 - log
+start to train the model................ 1 - 2025-03-27 16:14:52,256 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 34.23 | loss  6.20 | avg loss  5.43 | ppl 228.85 - 2025-03-27 16:14:55,679 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.181.pkl - 2025-03-27 16:14:58,209 - log
+start to train the model................ 2 - 2025-03-27 16:14:59,922 - log
+| epoch   2 step      200 |     19 batches | lr 8e-05 | ms/batch  6.49 | loss  4.09 | avg loss  3.93 | ppl 50.81 - 2025-03-27 16:15:00,572 - log
+| epoch   2 step      300 |    119 batches | lr 0.00012 | ms/batch 31.59 | loss  0.00 | avg loss  3.31 | ppl 27.49 - 2025-03-27 16:15:03,731 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.362.pkl - 2025-03-27 16:15:05,658 - log
+start to train the model................ 3 - 2025-03-27 16:15:07,385 - log
+| epoch   3 step      400 |     38 batches | lr 0.00016 | ms/batch 12.43 | loss  2.64 | avg loss  2.97 | ppl 19.50 - 2025-03-27 16:15:08,628 - log
+| epoch   3 step      500 |    138 batches | lr 0.0002 | ms/batch 31.70 | loss  2.20 | avg loss  2.98 | ppl 19.70 - 2025-03-27 16:15:11,798 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.543.pkl - 2025-03-27 16:15:13,147 - log
+start to train the model................ 4 - 2025-03-27 16:15:14,789 - log
+| epoch   4 step      600 |     57 batches | lr 0.000151 | ms/batch 18.59 | loss  3.07 | avg loss  2.48 | ppl 11.91 - 2025-03-27 16:15:16,648 - log
+| epoch   4 step      700 |    157 batches | lr 0.000101 | ms/batch 31.78 | loss  2.40 | avg loss  2.79 | ppl 16.29 - 2025-03-27 16:15:19,826 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.724.pkl - 2025-03-27 16:15:20,561 - log
+start to train the model................ 5 - 2025-03-27 16:15:22,250 - log
+| epoch   5 step      800 |     76 batches | lr 5.19e-05 | ms/batch 24.46 | loss  2.76 | avg loss  2.53 | ppl 12.59 - 2025-03-27 16:15:24,696 - log
+| epoch   5 step      900 |    176 batches | lr 2.47e-06 | ms/batch 31.86 | loss  3.07 | avg loss  2.57 | ppl 13.13 - 2025-03-27 16:15:27,882 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.905.pkl - 2025-03-27 16:15:28,027 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-27 16:15:29,724 - log
+End of training - 2025-03-27 16:15:29,724 - log
+ms/batch 25.74 - 2025-03-27 16:15:29,724 - log
+==================================================================================================== - 2025-03-27 16:42:33,456 - log
+        - random_seed : 2025 - 2025-03-27 16:42:33,456 - log
+        - lr : 0.0002 - 2025-03-27 16:42:33,456 - log
+        - weight_decay : 0.01 - 2025-03-27 16:42:33,457 - log
+        - correct_bias : False - 2025-03-27 16:42:33,457 - log
+        - adam_epislon : 1e-06 - 2025-03-27 16:42:33,457 - log
+        - no_decay_bias : False - 2025-03-27 16:42:33,457 - log
+        - adam_beta1 : 0.9 - 2025-03-27 16:42:33,457 - log
+        - adam_beta2 : 0.999 - 2025-03-27 16:42:33,457 - log
+        - scheduler : linear - 2025-03-27 16:42:33,457 - log
+        - max_step : None - 2025-03-27 16:42:33,457 - log
+        - max_epoch : 5 - 2025-03-27 16:42:33,457 - log
+        - warmup_step : 500 - 2025-03-27 16:42:33,457 - log
+        - i_steps : 0 - 2025-03-27 16:42:33,457 - log
+        - i_lrs : 0.00025 - 2025-03-27 16:42:33,457 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-27 16:42:33,457 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-27 16:42:33,457 - log
+        - train_batch_size : 2 - 2025-03-27 16:42:33,457 - log
+        - valid_batch_size : 1 - 2025-03-27 16:42:33,457 - log
+        - grad_acc : 2 - 2025-03-27 16:42:33,457 - log
+        - clip : 0.0 - 2025-03-27 16:42:33,457 - log
+        - seq_len : 64 - 2025-03-27 16:42:33,457 - log
+        - model_card : gpt2.sm - 2025-03-27 16:42:33,457 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-27 16:42:33,457 - log
+        - fp16 : False - 2025-03-27 16:42:33,457 - log
+        - log_interval : 100 - 2025-03-27 16:42:33,457 - log
+        - eval_interval : 2000 - 2025-03-27 16:42:33,457 - log
+        - save_interval : 1000 - 2025-03-27 16:42:33,457 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-27 16:42:33,457 - log
+        - lora_dim : 4 - 2025-03-27 16:42:33,457 - log
+        - lora_alpha : 32 - 2025-03-27 16:42:33,457 - log
+        - obj : clm - 2025-03-27 16:42:33,457 - log
+        - lora_dropout : 0.1 - 2025-03-27 16:42:33,457 - log
+        - label_smooth : 0.1 - 2025-03-27 16:42:33,457 - log
+        - roll_interval : -1 - 2025-03-27 16:42:33,457 - log
+        - roll_lr : 1e-05 - 2025-03-27 16:42:33,457 - log
+        - roll_step : 100 - 2025-03-27 16:42:33,457 - log
+        - eval_epoch : 1 - 2025-03-27 16:42:33,457 - log
+        - device : cuda - 2025-03-27 16:42:33,457 - log
+==================================================================================================== - 2025-03-27 16:42:33,457 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-27 16:42:33,457 - log
+loading model pretrained weight. - 2025-03-27 16:42:33,565 - log
+set max_step: 905 - 2025-03-27 16:42:35,291 - log
+start to train the model................ 1 - 2025-03-27 16:42:35,292 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 34.95 | loss  6.20 | avg loss  5.43 | ppl 228.85 - 2025-03-27 16:42:38,786 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.181.pkl - 2025-03-27 16:42:41,324 - log
+start to train the model................ 2 - 2025-03-27 16:42:43,032 - log
+| epoch   2 step      200 |     19 batches | lr 8e-05 | ms/batch  6.48 | loss  4.09 | avg loss  3.93 | ppl 50.81 - 2025-03-27 16:42:43,680 - log
+| epoch   2 step      300 |    119 batches | lr 0.00012 | ms/batch 31.45 | loss  0.00 | avg loss  3.31 | ppl 27.49 - 2025-03-27 16:42:46,826 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.362.pkl - 2025-03-27 16:42:48,759 - log
+start to train the model................ 3 - 2025-03-27 16:42:50,463 - log
+| epoch   3 step      400 |     38 batches | lr 0.00016 | ms/batch 12.30 | loss  2.64 | avg loss  2.97 | ppl 19.50 - 2025-03-27 16:42:51,693 - log
+| epoch   3 step      500 |    138 batches | lr 0.0002 | ms/batch 31.47 | loss  2.20 | avg loss  2.98 | ppl 19.70 - 2025-03-27 16:42:54,840 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.543.pkl - 2025-03-27 16:42:56,187 - log
+start to train the model................ 4 - 2025-03-27 16:42:57,878 - log
+| epoch   4 step      600 |     57 batches | lr 0.000151 | ms/batch 18.68 | loss  3.07 | avg loss  2.48 | ppl 11.91 - 2025-03-27 16:42:59,746 - log
+| epoch   4 step      700 |    157 batches | lr 0.000101 | ms/batch 31.72 | loss  2.40 | avg loss  2.79 | ppl 16.29 - 2025-03-27 16:43:02,918 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.724.pkl - 2025-03-27 16:43:03,652 - log
+start to train the model................ 5 - 2025-03-27 16:43:05,356 - log
+| epoch   5 step      800 |     76 batches | lr 5.19e-05 | ms/batch 24.38 | loss  2.76 | avg loss  2.53 | ppl 12.59 - 2025-03-27 16:43:07,794 - log
+| epoch   5 step      900 |    176 batches | lr 2.47e-06 | ms/batch 31.80 | loss  3.07 | avg loss  2.57 | ppl 13.13 - 2025-03-27 16:43:10,975 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.905.pkl - 2025-03-27 16:43:11,120 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-27 16:43:12,787 - log
+End of training - 2025-03-27 16:43:12,787 - log
+ms/batch 25.82 - 2025-03-27 16:43:12,787 - log
+==================================================================================================== - 2025-03-28 08:55:13,564 - log
+        - random_seed : 2025 - 2025-03-28 08:55:13,564 - log
+        - lr : 0.0002 - 2025-03-28 08:55:13,564 - log
+        - weight_decay : 0.01 - 2025-03-28 08:55:13,564 - log
+        - correct_bias : False - 2025-03-28 08:55:13,564 - log
+        - adam_epislon : 1e-06 - 2025-03-28 08:55:13,564 - log
+        - no_decay_bias : False - 2025-03-28 08:55:13,564 - log
+        - adam_beta1 : 0.9 - 2025-03-28 08:55:13,564 - log
+        - adam_beta2 : 0.999 - 2025-03-28 08:55:13,564 - log
+        - scheduler : linear - 2025-03-28 08:55:13,564 - log
+        - max_step : None - 2025-03-28 08:55:13,564 - log
+        - max_epoch : 5 - 2025-03-28 08:55:13,564 - log
+        - warmup_step : 500 - 2025-03-28 08:55:13,564 - log
+        - i_steps : 0 - 2025-03-28 08:55:13,564 - log
+        - i_lrs : 0.00025 - 2025-03-28 08:55:13,564 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-28 08:55:13,564 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-28 08:55:13,564 - log
+        - train_batch_size : 2 - 2025-03-28 08:55:13,564 - log
+        - valid_batch_size : 1 - 2025-03-28 08:55:13,564 - log
+        - grad_acc : 2 - 2025-03-28 08:55:13,564 - log
+        - clip : 0.0 - 2025-03-28 08:55:13,564 - log
+        - seq_len : 64 - 2025-03-28 08:55:13,564 - log
+        - model_card : gpt2.sm - 2025-03-28 08:55:13,564 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-28 08:55:13,564 - log
+        - fp16 : False - 2025-03-28 08:55:13,564 - log
+        - log_interval : 100 - 2025-03-28 08:55:13,564 - log
+        - eval_interval : 2000 - 2025-03-28 08:55:13,564 - log
+        - save_interval : 1000 - 2025-03-28 08:55:13,564 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-28 08:55:13,564 - log
+        - lora_dim : 4 - 2025-03-28 08:55:13,564 - log
+        - lora_alpha : 32 - 2025-03-28 08:55:13,564 - log
+        - obj : clm - 2025-03-28 08:55:13,564 - log
+        - lora_dropout : 0.1 - 2025-03-28 08:55:13,564 - log
+        - label_smooth : 0.1 - 2025-03-28 08:55:13,564 - log
+        - roll_interval : -1 - 2025-03-28 08:55:13,564 - log
+        - roll_lr : 1e-05 - 2025-03-28 08:55:13,564 - log
+        - roll_step : 100 - 2025-03-28 08:55:13,564 - log
+        - eval_epoch : 1 - 2025-03-28 08:55:13,564 - log
+        - device : cuda - 2025-03-28 08:55:13,564 - log
+==================================================================================================== - 2025-03-28 08:55:13,564 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-28 08:55:13,565 - log
+loading model pretrained weight. - 2025-03-28 08:55:13,692 - log
+set max_step: 905 - 2025-03-28 08:55:15,236 - log
+start to train the model................ 1 - 2025-03-28 08:55:15,237 - log
+| epoch   1 step      100 |    100 batches | lr 4e-05 | ms/batch 36.11 | loss  6.82 | avg loss  5.70 | ppl 300.31 - 2025-03-28 08:55:18,847 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.181.pkl - 2025-03-28 08:55:21,391 - log
+start to train the model................ 2 - 2025-03-28 08:55:23,030 - log
+| epoch   2 step      200 |     19 batches | lr 8e-05 | ms/batch  6.56 | loss  3.89 | avg loss  4.03 | ppl 56.44 - 2025-03-28 08:55:23,685 - log
+| epoch   2 step      300 |    119 batches | lr 0.00012 | ms/batch 31.59 | loss  3.47 | avg loss  3.46 | ppl 31.87 - 2025-03-28 08:55:26,845 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.362.pkl - 2025-03-28 08:55:28,777 - log
+start to train the model................ 3 - 2025-03-28 08:55:30,477 - log
+| epoch   3 step      400 |     38 batches | lr 0.00016 | ms/batch 12.32 | loss  3.67 | avg loss  2.82 | ppl 16.86 - 2025-03-28 08:55:31,709 - log
+| epoch   3 step      500 |    138 batches | lr 0.0002 | ms/batch 31.73 | loss  2.81 | avg loss  2.95 | ppl 19.10 - 2025-03-28 08:55:34,883 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.543.pkl - 2025-03-28 08:55:36,231 - log
+start to train the model................ 4 - 2025-03-28 08:55:37,906 - log
+| epoch   4 step      600 |     57 batches | lr 0.000151 | ms/batch 18.62 | loss  2.77 | avg loss  2.60 | ppl 13.51 - 2025-03-28 08:55:39,768 - log
+| epoch   4 step      700 |    157 batches | lr 0.000101 | ms/batch 31.79 | loss  2.66 | avg loss  2.70 | ppl 14.82 - 2025-03-28 08:55:42,947 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.724.pkl - 2025-03-28 08:55:43,681 - log
+start to train the model................ 5 - 2025-03-28 08:55:45,366 - log
+| epoch   5 step      800 |     76 batches | lr 5.19e-05 | ms/batch 24.47 | loss  2.73 | avg loss  2.57 | ppl 13.09 - 2025-03-28 08:55:47,814 - log
+| epoch   5 step      900 |    176 batches | lr 2.47e-06 | ms/batch 31.82 | loss  3.21 | avg loss  2.54 | ppl 12.68 - 2025-03-28 08:55:50,996 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.905.pkl - 2025-03-28 08:55:51,140 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-28 08:55:52,822 - log
+End of training - 2025-03-28 08:55:52,822 - log
+ms/batch 26.11 - 2025-03-28 08:55:52,822 - log
+==================================================================================================== - 2025-03-28 08:59:44,072 - log
+        - random_seed : 2025 - 2025-03-28 08:59:44,072 - log
+        - lr : 0.0002 - 2025-03-28 08:59:44,072 - log
+        - weight_decay : 0.01 - 2025-03-28 08:59:44,072 - log
+        - correct_bias : False - 2025-03-28 08:59:44,072 - log
+        - adam_epislon : 1e-06 - 2025-03-28 08:59:44,072 - log
+        - no_decay_bias : False - 2025-03-28 08:59:44,072 - log
+        - adam_beta1 : 0.9 - 2025-03-28 08:59:44,072 - log
+        - adam_beta2 : 0.999 - 2025-03-28 08:59:44,072 - log
+        - scheduler : linear - 2025-03-28 08:59:44,072 - log
+        - max_step : None - 2025-03-28 08:59:44,072 - log
+        - max_epoch : 5 - 2025-03-28 08:59:44,072 - log
+        - warmup_step : 500 - 2025-03-28 08:59:44,072 - log
+        - i_steps : 0 - 2025-03-28 08:59:44,072 - log
+        - i_lrs : 0.00025 - 2025-03-28 08:59:44,072 - log
+        - train_data : ./data/webnlg_challenge_2017/train.jsonl - 2025-03-28 08:59:44,072 - log
+        - valid_data : ./data/webnlg_challenge_2017/valid.jsonl - 2025-03-28 08:59:44,072 - log
+        - train_batch_size : 2 - 2025-03-28 08:59:44,072 - log
+        - valid_batch_size : 1 - 2025-03-28 08:59:44,072 - log
+        - grad_acc : 2 - 2025-03-28 08:59:44,072 - log
+        - clip : 0.0 - 2025-03-28 08:59:44,072 - log
+        - seq_len : 64 - 2025-03-28 08:59:44,072 - log
+        - model_card : gpt2.sm - 2025-03-28 08:59:44,072 - log
+        - init_checkpoint : ./pretrained_checkpoints/gpt2-pytorch_model.bin - 2025-03-28 08:59:44,072 - log
+        - fp16 : False - 2025-03-28 08:59:44,072 - log
+        - log_interval : 100 - 2025-03-28 08:59:44,072 - log
+        - eval_interval : 2000 - 2025-03-28 08:59:44,072 - log
+        - save_interval : 1000 - 2025-03-28 08:59:44,072 - log
+        - work_dir : ./trained_models/GPT2_M/webnlg - 2025-03-28 08:59:44,072 - log
+        - lora_dim : 4 - 2025-03-28 08:59:44,072 - log
+        - lora_alpha : 32 - 2025-03-28 08:59:44,072 - log
+        - obj : clm - 2025-03-28 08:59:44,072 - log
+        - lora_dropout : 0.1 - 2025-03-28 08:59:44,072 - log
+        - label_smooth : 0.1 - 2025-03-28 08:59:44,072 - log
+        - roll_interval : -1 - 2025-03-28 08:59:44,072 - log
+        - roll_lr : 1e-05 - 2025-03-28 08:59:44,072 - log
+        - roll_step : 100 - 2025-03-28 08:59:44,072 - log
+        - eval_epoch : 1 - 2025-03-28 08:59:44,072 - log
+        - device : cuda - 2025-03-28 08:59:44,072 - log
+==================================================================================================== - 2025-03-28 08:59:44,073 - log
+--------------------------------------------------train-------------------------------------------------- - 2025-03-28 08:59:44,073 - log
+loading model pretrained weight. - 2025-03-28 08:59:44,172 - log
+set max_step: 455 - 2025-03-28 08:59:44,941 - log
+start to train the model................ 1 - 2025-03-28 08:59:44,941 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.91.pkl - 2025-03-28 08:59:48,116 - log
+start to train the model................ 2 - 2025-03-28 08:59:49,709 - log
+| epoch   2 step      100 |      9 batches | lr 4e-05 | ms/batch  3.37 | loss  6.23 | avg loss  7.72 | ppl 2251.19 - 2025-03-28 08:59:50,047 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.182.pkl - 2025-03-28 08:59:52,606 - log
+start to train the model................ 3 - 2025-03-28 08:59:54,342 - log
+| epoch   3 step      200 |     18 batches | lr 8e-05 | ms/batch  5.95 | loss  4.31 | avg loss  4.43 | ppl 84.20 - 2025-03-28 08:59:54,938 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.273.pkl - 2025-03-28 08:59:57,240 - log
+start to train the model................ 4 - 2025-03-28 08:59:58,934 - log
+| epoch   4 step      300 |     27 batches | lr 0.00012 | ms/batch  9.07 | loss  3.23 | avg loss  2.98 | ppl 19.78 - 2025-03-28 08:59:59,841 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.364.pkl - 2025-03-28 09:00:01,848 - log
+start to train the model................ 5 - 2025-03-28 09:00:03,625 - log
+| epoch   5 step      400 |     36 batches | lr 0.00016 | ms/batch 12.05 | loss  2.61 | avg loss  2.89 | ppl 17.99 - 2025-03-28 09:00:04,830 - log
+saving checkpoint, ./trained_models/GPT2_M/webnlg/model.455.pkl - 2025-03-28 09:00:06,564 - log
+---------------------------------------------------------------------------------------------------- - 2025-03-28 09:00:08,296 - log
+End of training - 2025-03-28 09:00:08,296 - log
+ms/batch  6.09 - 2025-03-28 09:00:08,296 - log

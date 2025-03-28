@@ -214,7 +214,7 @@ def train_validate(
         train_step += 1
         is_update = True if train_step % args.grad_acc == 0 else False
         avg_lm_loss.update(_lm_loss.item())
-
+        # print('我在这里：',_lm_loss.item(),avg_lm_loss.avg,avg_lm_loss.count)
         # print(avg_lm_loss.val, '=' * 100)
         optimizer_step(
             _lm_loss/(args.grad_acc), optimizer, model, scheduler, args, is_update=is_update
